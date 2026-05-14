@@ -1,0 +1,178 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/layout/Header.astro';
+import Footer from '../../components/layout/Footer.astro';
+import PortfolioNav from '../../components/portfolio/PortfolioNav.astro';
+---
+
+<Layout title="The Parisian Elope: Sophie & Marc | Still">
+  <Header />
+  
+  <main class="pt-24 min-h-screen">
+    <!-- Hero Section -->
+    <section class="relative min-h-[80vh] md:min-h-screen w-full flex items-center justify-center overflow-hidden">
+      <div class="absolute inset-0 z-0">
+        <img class="w-full h-full object-cover grayscale-[20%] brightness-[85%]" data-alt="A chic minimalist wedding couple walking along a Parisian street with the Eiffel Tower softly blurred in the background under elegant evening light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBo_37y4QT1xCWLJY-tx5h9oKxWaZVBBXnDBNmcXsayHp-WxMiB5QHt5-N3jNxFUZgt9PwW5xWQUb_NirobYG6F4rFLbP5Ze-5thZWB3Q58NVqAmSExByXCiHyGlNp9MF3-x9NuX-CvxtiKdG4fcsm49Ht4Pykw6ABrs9_yYNAb8d3-_isNjb0QJam5eD6XJL9vdoQuPfhOxRY5n6W7XHAHtPaesep9q3TBnyAm86zpqZtchBe0RvE-OJ0rgBsSg755ivDIqpQTeUVL"/>
+        <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+      </div>
+      <div class="relative z-10 text-center px-6 animate-on-scroll mt-20">
+        <div class="inline-block px-4 py-1 mb-6 border border-white/20 backdrop-blur-md rounded-full">
+          <span class="text-white/80 text-xs tracking-[0.2em] font-medium uppercase font-label">Parisian Elopement Case Study</span>
+        </div>
+        <h1 class="font-headline text-5xl md:text-7xl lg:text-8xl text-white leading-tight max-w-5xl mx-auto break-words" style="text-wrap: balance;">
+          The Parisian Elope: <br/>
+          <span class="font-headline italic font-normal">Sophie &amp; Marc</span>
+        </h1>
+      </div>
+    </section>
+
+    <!-- Section 1: The Digital Vision -->
+    <section class="py-32 px-6 md:px-24 bg-surface-container-low">
+      <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-20">
+        <div class="md:w-1/2 animate-on-scroll">
+          <span class="text-primary font-medium tracking-widest text-xs uppercase mb-4 block font-label">Section 01</span>
+          <h2 class="font-headline text-4xl md:text-5xl text-on-surface mb-8">The Digital Vision</h2>
+          <p class="text-on-surface-variant text-lg leading-relaxed mb-10 font-light font-label">
+            For Sophie and Marc, Paris wasn't just a destination; it was a character in their story. We designed a bespoke digital invitation system that mirrored the city's effortless style—minimalist layouts, high-contrast typography, and interactive RSVPs that felt like unfolding a personal letter in a Marais café.
+          </p>
+          <div class="flex gap-12">
+            <div>
+              <span class="font-headline text-3xl text-primary">100%</span>
+              <p class="text-xs text-secondary mt-1 font-medium tracking-wider uppercase font-label">Digital RSVPs</p>
+            </div>
+            <div>
+              <span class="font-headline text-3xl text-primary">Luxury</span>
+              <p class="text-xs text-secondary mt-1 font-medium tracking-wider uppercase font-label">Tier Engagement</p>
+            </div>
+          </div>
+        </div>
+        <div class="md:w-1/2 relative animate-on-scroll" style="transition-delay: 200ms;">
+          <div class="aspect-[4/5] bg-surface-dim overflow-hidden shadow-2xl rounded-sm">
+            <img class="w-full h-full object-cover" data-alt="Minimalist digital wedding invitation displayed on a high-end smartphone resting on a marble table next to a sprig of white jasmine" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCDMUOFx0L1-e4p0YeM7X1plJTPupPGAfLki45iNPIbUMWAtVV8JOQlb3tlJxyZr4Oj6U-xGbBsKzbeFK6P3JyJuwSGlC_jLU1P4FkndvC9Dnpq2IMTpb2rzzuV36amvBq75kMnHCUR3Ca4OinCdoIrjyzc24kqtHAMG8wqm83X7gv34tg6Ed3HdePVkaXZeF6yMEemN2IAyGftfZkL0KMxJT9SVJ3tCtMnJ6woH6xl8ymzJrzbBI7fzUb21yfNCnzAwyl5It8u-K0Z"/>
+          </div>
+          <div class="absolute -bottom-10 -left-10 hidden md:block w-48 h-48 bg-primary-container p-8 flex flex-col justify-end rounded-sm shadow-lg border border-primary/10">
+            <span class="material-symbols-outlined text-on-primary-container text-4xl mb-4" style="font-variation-settings: 'FILL' 1;">auto_awesome</span>
+            <p class="text-on-primary-container font-headline text-sm leading-tight">Curated Digital Artistry</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 2: Curated Features -->
+    <section class="py-32 px-6 md:px-24 bg-surface">
+      <div class="max-w-7xl mx-auto">
+        <div class="mb-20 text-center animate-on-scroll">
+          <h2 class="font-headline text-4xl md:text-5xl text-on-surface mb-4">Curated Features</h2>
+          <div class="h-px w-24 bg-primary-fixed-dim mx-auto"></div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-8">
+          <!-- The Guest Journal -->
+          <div class="md:col-span-7 bg-surface-container-low p-12 flex flex-col justify-between group overflow-hidden relative rounded-sm border border-outline-variant/10 shadow-sm animate-on-scroll">
+            <div class="relative z-10">
+              <span class="text-primary font-medium tracking-widest text-xs uppercase mb-2 block font-label">Feature 01</span>
+              <h3 class="font-headline text-3xl mb-6">The Guest Journal</h3>
+              <p class="text-on-surface-variant max-w-md leading-relaxed font-label">
+                An interactive digital guestbook where loved ones from across the globe shared handwritten notes and voice recordings, later compiled into a bespoke physical archive.
+              </p>
+            </div>
+            <div class="mt-12 relative z-10">
+              <span class="text-primary font-headline italic">Interactive Digital Archive</span>
+            </div>
+            <div class="absolute top-0 right-0 w-64 h-full translate-x-12 opacity-5 group-hover:opacity-10 transition-opacity flex items-center justify-center">
+              <span class="material-symbols-outlined text-[15rem]" style="font-variation-settings: 'FILL' 1;">menu_book</span>
+            </div>
+          </div>
+          
+          <!-- Bespoke Map -->
+          <div class="md:col-span-5 bg-[#1A1A1A] text-[#FAFAF5] p-12 flex flex-col justify-between relative overflow-hidden rounded-sm shadow-xl shadow-black/10 animate-on-scroll" style="transition-delay: 150ms;">
+            <div>
+              <span class="text-primary-fixed-dim font-medium tracking-widest text-xs uppercase mb-2 block font-label">Feature 02</span>
+              <h3 class="font-headline text-3xl mb-6 text-surface">Bespoke Map</h3>
+              <p class="text-white/60 leading-relaxed font-label">
+                A hand-drawn, interactive map guiding guests through a curated trail of Sophie &amp; Marc's favorite hidden Parisian corners and event venues.
+              </p>
+            </div>
+            <div class="mt-8 aspect-video bg-white/5 overflow-hidden rounded-sm">
+              <img class="w-full h-full object-cover opacity-80" data-alt="Close up of a stylized hand-drawn map of Paris with gold ink markers on cream paper texture" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCEf9X7qkn41-lBM17w5Xfzo-VYZdNLkipGwxSWWqNJ1zOcuTu2Wlgtr6u97RezJ7fCRzk-HDz7JMU5KN9aHWL8-A6wJGldnpGcYVpw6eVowO2UCKMP-g_kBBgF5PpA-SjSvITAGzvV1KWF7DP1SUau-oC-50D3dZe8dQYC4bExkMtrtM1V4320WIfd3UiXkOnB-1UCtszAjB5cacoEbEqLTGL9TKRGEWPvP7coJIhvbwfYSwYS2NLGYzWOSqCmJoUfZqY703VRlM8U"/>
+            </div>
+          </div>
+          
+          <!-- The Gallery (Masonry style layout) -->
+          <div class="md:col-span-12 bg-surface-container-low p-6 md:p-12 rounded-sm border border-outline-variant/10 shadow-sm animate-on-scroll" style="transition-delay: 300ms;">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
+              <div class="max-w-xl">
+                <span class="text-primary font-medium tracking-widest text-xs uppercase mb-2 block font-label">Feature 03</span>
+                <h3 class="font-headline text-3xl mb-4 text-on-surface">The Gallery</h3>
+                <p class="text-on-surface-variant font-label">A sophisticated digital vault for post-wedding photography, curated with a rhythmic, editorial flow to preserve the magic forever.</p>
+              </div>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
+              <div class="space-y-4 md:space-y-6">
+                <div class="overflow-hidden rounded-sm bg-surface-container group">
+                  <img class="w-full h-48 md:h-64 object-cover group-hover:scale-105 transition-transform duration-1000" data-alt="Breathtaking wide shot of a wedding reception in a high-ceilinged Parisian hall with crystal chandeliers" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDIkBw3BQrHWxwwFweDl2bnflYPDLItTDYHXWPy0eBefuTNyFcZTDQzOyei3Kj3-3PWV9_37zNeFBaniKrErS5goGkfPKcuRD2Sqa7Wjd_AU3aB7tk6_3dXXTpZR_odJlI-EM_OI2MeZSDlwBrg7tz-u24JtNcxBuNaLM9l27nYF3ndiUPwuamaDBb4ZjnCtfFTw5YZKKyMvF6q1vDoqAQ8sjWU_-OzgMD50hxbMW_B0_Xn7YPruh-fREpzKGSF9zt2iTFffdjzIj70"/>
+                </div>
+                <div class="overflow-hidden rounded-sm bg-surface-container group">
+                  <img class="w-full h-72 md:h-96 object-cover group-hover:scale-105 transition-transform duration-1000" data-alt="Close up of a bridal bouquet of white anemones and eucalyptus" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBB8Ds4QeCLXuCTDTGUbPOR6H79gY5uiYDygoVe4BH4-tsdwY0KA2wKsh1RV19Rnwfos7pBU5zOJiS_hBPLEr0IoEPh83iS6F1fF68JHhIP2R5rQQZ7q1r-nfUA2nwbbDWlI5dfEYBd78H4Zw-r-NrDdlmLIXVcEDvcSZIB0yfjOrMiuEXo-dkC5Bl5c6nK0wKWBrJnO-tvi0ZiLy8kxB5_tfqjNELjZzP62U6-OqiS2OAO_xkpW-KIIBjdpHLUVyll6ppbFGDmp7Rc"/>
+                </div>
+              </div>
+              <div class="space-y-4 md:space-y-6 md:pt-12">
+                <div class="overflow-hidden rounded-sm bg-surface-container group">
+                  <img class="w-full h-64 md:h-80 object-cover group-hover:scale-105 transition-transform duration-1000" data-alt="Two champagne glasses being clinked together at a wedding toast" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBKZf1ZPZuNyTl_r7h8l3BtpPlDV9YMgNaH_TEu2j1f_WMWcVZ5lZLN_PjVvwi-1_WKgdG00wQlgiYaoxM00f6kSsk9BhGoT67HrnDG8UO1Tw8bFAGCjlMNHCZ8hyXT9wtKZ-E7SPxBqva-DrUTcplKxHkadPDZmwLy8tFZntnJMg5SuN2G9wki0cKzyiv3FEkScBxTyT3V8FeXgLkZ1AnSbwp7z1WbkyGxbfJTA2VZ6l_Bs9eg356PZgkIRgdatUr0GMIWkFWNyOxC"/>
+                </div>
+                <div class="overflow-hidden rounded-sm bg-surface-container group">
+                  <img class="w-full h-48 md:h-64 object-cover group-hover:scale-105 transition-transform duration-1000" data-alt="Detail of a silk wedding gown train trailing on an ornate parquet floor" src="https://lh3.googleusercontent.com/aida-public/AB6AXuARN3yd8o23M4ls2h8sdMdA3RvoYnKu2vvreWhca7usdzowcvibvF2s2ASujErx4NL7v3ZPrDwID4dl1WqQ-86dgFpTvaq8LSHyxGw40upRS0SJ2Y8w2lWo7hhxbKgT34OYybLnC-UPVb7RrEJcwqQ6KLyb4YARi4RzXobYnhD8KJFxCCkiTbWbPCTTRoC_eMngb1mE5d9ntx0iUsF3OVRM5gk_GRI-VC4ucmkl0q435_1YCuSRMaT4ASJj2I9KK4kZ0PMLCrVpNRfG"/>
+                </div>
+              </div>
+              <div class="space-y-4 md:space-y-6">
+                <div class="overflow-hidden rounded-sm bg-surface-container group">
+                  <img class="w-full h-72 md:h-96 object-cover group-hover:scale-105 transition-transform duration-1000" data-alt="Aerial view of a long outdoor wedding table decorated with candles and white flowers in a courtyard" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBT0papSuWoYV6eAToBjYKV6i7webOT_gtp4WwOIGBF0RU6zvtddW7lGAfeudITjkBnoVPzMpEkvDkpkfebCs9AhTBGhZ_pdihK1cdCJdB9mAwTM1pZHyK-ti2o6gM_IefZo8cIa5UD7fTLuXCZY1qop-mimqwkppAulKcV7pte4-d67tbIfjpLGPp7GtH_1tXS0NpBDuXWycKarUvajSFzobMlNcfWRjMritIr-ewJvIJyTMnj0RAglCe8YHA2W9MpGYRhgsD0XnL4"/>
+                </div>
+                <div class="overflow-hidden rounded-sm bg-surface-container group">
+                  <img class="w-full h-48 md:h-64 object-cover group-hover:scale-105 transition-transform duration-1000" data-alt="Close up of black and white photograph of a groom adjusting his tie" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCvcz7k27arQNTg1c9MIz0xqNWFbXgGEG2LT-YzRLllYLNAqyvGEQPLguQ_98ZV0bCMadyl9f_Wo9z9DqS9NtIpwPeI0tYPLH33svj7ejLwaAEyDyjxWPirwsuO4fTQRKDVLli01Q4rp2H7HLqCZQI0k6lSiWhaIT--k__6opwPYSEHb27IVNpMO0fcPosp_k2MZ2hdZUt3FY1ZhiIr5CDLReWUUzYcTe0yYbocuoB1p4O3ncgbDh2F_mUqg2b5EbqYzxc6RFSp6gKx"/>
+                </div>
+              </div>
+              <div class="space-y-4 md:space-y-6 md:pt-20">
+                <div class="overflow-hidden rounded-sm bg-surface-container group">
+                  <img class="w-full h-48 md:h-64 object-cover group-hover:scale-105 transition-transform duration-1000" data-alt="Night time wedding reception with strings of fairy lights over an outdoor dance floor" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB_c0PMxeEC2iOKWqG3lwIp-ocacpuKMKyAUU-GC4vEW1UBGu2ji9PMojEnMFW3__D583o6syBZ4GNzPdlXyPeudWNYzh1Ab9qT5RsAI61XUk2T_ehzYMGXHGbA94NwKmhhZ04g_jFCAJxd3tjBmuMrH0g21exfrGbfRmFBazXjrHbqT1rGxqn57gi7hod6TMFLY16OJKxjn2z-TvRK7UJTqGBSbxJQP53NxN1U7zooaVfXy-4sB_ZZxbh-e6aM1QBk-mWuSplyakmY"/>
+                </div>
+                <div class="overflow-hidden rounded-sm bg-surface-container group">
+                  <img class="w-full h-64 md:h-80 object-cover group-hover:scale-105 transition-transform duration-1000" data-alt="Detail of a wedding cake with minimal frosting and real flower decorations" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAlqKZTxr2CGiNl5LDRJKt7n_1HNrARLeo161OdKYyF5WwSdiypktJcC2W4KUVURoup9Ye88pgK7czgNlBgElkt-gRZpCDnWlPX2GLxQz9aALQTbf0eqwa2sosS5xBx-i4feI4fqgOY5XlgroXjgWRvqx-fTRmVxxi0FXYCuQPOShO_ynAPeI9fYm1SSe99qMeguf3Si2tMAUpYMvmf5LRXUgZE0_vo8kYEQKZlekrFsX5-r1gazI9cvdbwoo5XtTUES9SULmHjbE4Z"/>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 3: Full-width Testimonial -->
+    <section class="py-40 bg-surface-container-low overflow-hidden">
+      <div class="max-w-5xl mx-auto px-6 text-center relative animate-on-scroll">
+        <span class="material-symbols-outlined text-primary-fixed-dim text-7xl mb-12 block opacity-40" style="font-variation-settings: 'FILL' 1;">format_quote</span>
+        <blockquote class="font-headline text-3xl md:text-5xl text-on-surface leading-tight mb-12 italic">
+          "The team at Still captured the soul of our wedding before it even happened. Our guests were mesmerized by the digital experience."
+        </blockquote>
+        <div class="h-12 w-[1px] bg-primary mx-auto mb-6"></div>
+        <cite class="not-italic">
+          <span class="text-primary font-headline text-xl block mb-2 font-bold">Sophie &amp; Marc</span>
+          <span class="text-secondary text-sm tracking-widest uppercase font-label">Paris 2024</span>
+        </cite>
+      </div>
+    </section>
+
+    <!-- Final Section: Call to Action -->
+    <section class="py-32 px-6 text-center bg-surface">
+      <div class="max-w-2xl mx-auto border-t border-outline-variant/15 pt-24 animate-on-scroll">
+        <h2 class="font-headline text-4xl md:text-5xl mb-8">Ready to Build Your <br/> <span class="font-headline italic">Wedding Site?</span></h2>
+        <p class="text-on-surface-variant mb-12 text-lg font-label">Every story is unique. Let us curate yours with the elegance it deserves.</p>
+        <a class="inline-block bg-primary text-on-primary px-12 py-5 text-sm font-bold tracking-widest uppercase hover:bg-primary-container hover:text-primary transition-all shadow-xl shadow-primary/10 active:scale-95 rounded-sm" href="/contact">
+          Contact Us
+        </a>
+      </div>
+    </section>
+    
+    <PortfolioNav currentSlug="the-parisian-elope" />
+  </main>
+  
+  <Footer />
+</Layout>

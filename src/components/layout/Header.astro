@@ -1,0 +1,29 @@
+---
+import Button from '../ui/Button.astro';
+---
+
+<header class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-xl border-b border-outline-variant/10">
+  <div class="max-w-7xl mx-auto px-6 h-24 flex items-center justify-between">
+    <a href="/" class="text-3xl font-display text-primary tracking-tight">Still</a>
+    <nav class="hidden md:flex items-center gap-10 text-sm font-medium tracking-wide">
+      <div class="relative group h-24 flex items-center">
+        <a href="/portfolio" class="hover:text-primary transition-colors">Portfolio</a>
+        <div class="absolute top-24 left-0 w-64 bg-surface border border-outline-variant/10 shadow-xl rounded-sm opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform -translate-y-2 group-hover:translate-y-0 flex flex-col py-2">
+          <a href="/portfolio/the-amalfi-grandeur" class="px-5 py-3 hover:bg-surface-container-low hover:text-primary transition-colors">The Amalfi Grandeur</a>
+          <a href="/portfolio/the-santorini-serenity" class="px-5 py-3 hover:bg-surface-container-low hover:text-primary transition-colors">The Santorini Serenity</a>
+          <a href="/portfolio/the-stockholm-summer" class="px-5 py-3 hover:bg-surface-container-low hover:text-primary transition-colors">The Stockholm Summer</a>
+          <a href="/portfolio/the-cairo-tradition" class="px-5 py-3 hover:bg-surface-container-low hover:text-primary transition-colors">The Cairo Tradition</a>
+          <a href="/portfolio/the-parisian-elope" class="px-5 py-3 hover:bg-surface-container-low hover:text-primary transition-colors">The Parisian Elope</a>
+          <a href="/portfolio/the-modern-minimalist" class="px-5 py-3 hover:bg-surface-container-low hover:text-primary transition-colors border-t border-outline-variant/10">The Modern Minimalist</a>
+        </div>
+      </div>
+      <a href="/services" class="hover:text-primary transition-colors">Services</a>
+      <a href="/process" class="hover:text-primary transition-colors">The Process</a>
+      <a href="/investment" class="hover:text-primary transition-colors">Investment</a>
+      <a href="/about" class="hover:text-primary transition-colors">About</a>
+    </nav>
+    <div class="hidden md:block">
+      <Button href="/contact" variant="primary" class="px-6 py-3">Inquire</Button>
+    </div>
+  </div>
+</header>

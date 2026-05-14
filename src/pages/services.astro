@@ -1,0 +1,48 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/layout/Header.astro';
+import Footer from '../components/layout/Footer.astro';
+import Button from '../components/ui/Button.astro';
+---
+
+<Layout title="Services | Still">
+  <Header />
+  
+  <main class="pt-32">
+    <!-- Hero -->
+    <section class="min-h-[60vh] flex items-center relative overflow-hidden bg-surface">
+      <div class="absolute inset-0">
+        <img src="/assets/photo-1544161513-0179fe746fd5.png" alt="Services Hero" class="w-full h-full object-cover opacity-20" />
+        <div class="absolute inset-0 bg-gradient-to-t from-surface to-transparent"></div>
+      </div>
+      <div class="max-w-4xl mx-auto px-6 text-center relative z-10">
+        <span class="text-secondary text-sm tracking-widest uppercase mb-6 block">What We Build</span>
+        <h1 class="text-5xl md:text-6xl font-display text-primary leading-tight mb-8">
+          Bespoke Digital Experiences, Built for the World's Most <span class="italic">Intentional</span> Weddings
+        </h1>
+        <p class="text-lg text-on-surface-variant leading-relaxed">
+          We design and develop a unified, seamless digital experience for your wedding — built entirely from scratch, around your story. No templates. No off-the-shelf solutions. Every commission is a new project, serving as an editorial invitation on desktop and a frictionless concierge app on mobile.
+        </p>
+      </div>
+    </section>
+
+    <!-- Content Scaffold Placeholder -->
+    <section class="py-32 bg-surface-container-low">
+      <div class="max-w-7xl mx-auto px-6 text-center">
+        <h2 class="text-3xl font-display text-secondary mb-4">Product Breakdown</h2>
+        <p class="text-on-surface-variant">Detailed service information coming soon.</p>
+      </div>
+    </section>
+
+    <!-- Bottom CTA -->
+    <section class="py-32 bg-surface">
+      <div class="max-w-4xl mx-auto px-6 text-center animate-on-scroll">
+        <h2 class="text-5xl md:text-6xl font-display text-primary leading-tight mb-8">Let's Discuss Your Vision</h2>
+        <p class="text-lg text-on-surface-variant leading-relaxed mb-12">Most couples start with a conversation. Tell us about your wedding — the location, the guest list, how many people are travelling internationally — and we'll recommend the right digital approach. No obligation, no sales pressure.</p>
+        <Button href="/contact" variant="primary">Book a Discovery Call</Button>
+      </div>
+    </section>
+  </main>
+  
+  <Footer />
+</Layout>

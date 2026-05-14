@@ -1,0 +1,191 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/layout/Header.astro';
+import Footer from '../../components/layout/Footer.astro';
+import PortfolioNav from '../../components/portfolio/PortfolioNav.astro';
+---
+
+<Layout title="The Stockholm Summer: Astrid & Nils | Still">
+  <Header />
+  
+  <main class="pt-24 min-h-screen">
+    <!-- Hero Section -->
+    <section class="relative min-h-[80vh] md:min-h-screen flex items-center justify-center overflow-hidden">
+      <div class="absolute inset-0 z-0">
+        <img alt="Couple in Stockholm archipelago" class="w-full h-full object-cover" data-alt="Modern couple embracing in a sun-drenched Swedish forest clearing during golden hour, soft cinematic lighting, airy Scandinavian aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAzZYQs79kgRclpnyrWbmxvwGFD3QvBcL-Ymd_l9FHd1EuIe0Uo55xvZoJ_lU7Httk1wxx_ZNJATnrH_F9JNa1WH2SNczsgKbbo18lJUMZcOfAYQT4DKYaXo-Sv11z3kQ9znouTkObaCd5LHaqrQhjE17jSxwKZgp_O1BU-d5N-ZTYO7m2zHxRETCrvz31J4HuHTx3zPr_kqRKFgjsbw8_tpF0cLG9KSjOvLlv-kwD5OA1Xz2t5oAXFE2uWUH6wOHt8bR_BrquNUojs"/>
+        <div class="absolute inset-0 bg-on-surface/20 mix-blend-multiply"></div>
+      </div>
+      <div class="relative z-10 text-center px-6 max-w-4xl animate-on-scroll">
+        <span class="font-label text-sm uppercase tracking-[0.3em] text-on-primary mb-6 block">Case Study No. 04</span>
+        <h1 class="font-headline italic text-5xl md:text-7xl lg:text-8xl text-on-primary tracking-tighter leading-tight mb-8 break-words" style="text-wrap: balance;">The Stockholm Summer: Astrid &amp; Nils</h1>
+        <div class="flex flex-col md:flex-row items-center justify-center gap-6">
+          <div class="h-[1px] w-12 bg-primary-fixed-dim hidden md:block"></div>
+          <p class="font-label text-lg text-on-primary font-light tracking-wide uppercase">Nature-Centric &amp; Sustainable Design</p>
+          <div class="h-[1px] w-12 bg-primary-fixed-dim hidden md:block"></div>
+        </div>
+      </div>
+      <div class="absolute bottom-12 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 animate-on-scroll" style="transition-delay: 200ms;">
+        <span class="text-xs uppercase tracking-widest text-on-primary/80">Scroll to Explore</span>
+        <div class="w-[1px] h-12 bg-primary-fixed-dim/40"></div>
+      </div>
+    </section>
+
+    <!-- The Sustainable Brief -->
+    <section class="py-32 px-6 md:px-12 bg-surface">
+      <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-16 items-center">
+        <div class="md:col-span-5 animate-on-scroll">
+          <h2 class="font-headline text-4xl italic text-primary leading-tight mb-8">The Sustainable Brief</h2>
+          <p class="font-label text-lg text-secondary leading-relaxed mb-6">
+            For Astrid and Nils, luxury was defined not by excess, but by intention. Their vision was a celebration that honored the Swedish landscape without leaving a trace.
+          </p>
+          <p class="font-label text-lg text-secondary leading-relaxed">
+            We approached this project with a digital-first philosophy, replacing traditional heavy-stock paper invites with a sophisticated "Paperless Portal" and dynamic mobile-optimized itineraries.
+          </p>
+        </div>
+        <div class="md:col-span-7 relative animate-on-scroll" style="transition-delay: 200ms;">
+          <div class="aspect-[4/5] bg-surface-container-low overflow-hidden rounded-sm">
+            <img alt="Sustainable Wedding Textures" class="w-full h-full object-cover" data-alt="Close-up of organic linen textures and delicate dried wildflowers in soft sage and off-white tones, minimal lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA8KL4GjQRhQLJqotGtfqRYNhyPR9O5fBj96GR3hhTiwvjL5QVnKTc0tbx8o8mmrrSxejNMlh-KHrv1foSEn4kR1svZsr_-gVkmbQBciMxR-t0Gi4blzZaagLflQH3hTGGCZXYOvz218FkP5Zf4kXyue4MjZy9Lv6s93--eHh3uoiw5p7yctdwUqD1UAAd2FSAffmE_F1ZLhLhnV23D_hSDi_ZctmQgJI1KozwQdrmMM_UPQTGes65AkkhYQ_RtI3ZiDSV_4QvjSk88"/>
+          </div>
+          <div class="absolute -bottom-8 -left-8 p-10 bg-surface-container-lowest shadow-xl max-w-sm hidden lg:block rounded-sm border border-outline-variant/10">
+            <h4 class="font-headline italic text-xl text-on-surface mb-2">"True luxury is found in the things we choose to leave behind."</h4>
+            <span class="font-label text-xs uppercase tracking-widest text-primary">— Astrid</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Digital Features (Bento Grid) -->
+    <section class="py-32 px-6 md:px-12 bg-surface-container-low">
+      <div class="max-w-7xl mx-auto">
+        <div class="mb-20 text-center animate-on-scroll">
+          <h2 class="font-headline text-4xl italic text-on-surface mb-4">Digital Features</h2>
+          <p class="font-label text-secondary max-w-2xl mx-auto uppercase tracking-widest text-sm">Crafting a seamless, paperless guest experience.</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-8">
+          <!-- The Paperless Portal -->
+          <div class="md:col-span-8 bg-surface-container-lowest p-12 flex flex-col justify-between group transition-all duration-500 rounded-sm border border-outline-variant/10 shadow-sm animate-on-scroll">
+            <div>
+              <span class="font-label text-xs uppercase tracking-widest text-primary-dim mb-4 block">Interactive Design</span>
+              <h3 class="font-headline text-3xl mb-6">The Paperless Portal</h3>
+              <p class="font-label text-secondary max-w-lg mb-12">A high-fidelity digital hub where guests can view their bespoke invitations, manage RSVPs, and select seasonal menu preferences—all without a single sheet of paper.</p>
+            </div>
+            <div class="aspect-video bg-surface overflow-hidden rounded-sm">
+              <img alt="Digital Wedding Invitation UI" class="w-full h-full object-cover opacity-80 group-hover:scale-105 transition-transform duration-700" data-alt="Clean minimalist web interface on a tablet showing elegant serif typography for a wedding RSVP with high-end Scandinavian styling" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCMz4m5twcUKO8n8kBI16f4ly8-0SEjj5L9g05XA2G4gJgRCUMd-wFv9cp27LnwCKhmWpRcgEkrTCjI8aAobJk1n3gk3Fvlh-DFIxsdEtPXLVlO3nbtkZD0ZmaZOsFrXg4JNtS90SEr1ztoGcxYm_QNbKZc4ohGnXMMfYU2EpO93bHiouCwCXHo9uwsPxI6LUAcIF0aaeJvw8bxYNdf_hqJGXDzfcOkJSJ-B2HAnBkj29CnCdvRen78BQ1g98vx2bq3m4e9YqHfeT5T"/>
+            </div>
+          </div>
+          
+          <!-- The Green Guide -->
+          <div class="md:col-span-4 bg-tertiary-container/30 p-12 flex flex-col items-center text-center rounded-sm border border-outline-variant/10 shadow-sm animate-on-scroll" style="transition-delay: 150ms;">
+            <span class="material-symbols-outlined text-4xl text-primary mb-6" style="font-variation-settings: 'FILL' 1;">directions_boat</span>
+            <h3 class="font-headline text-2xl mb-4">The Green Guide</h3>
+            <p class="font-label text-sm text-secondary mb-8">Stockholm exploration curated for the eco-conscious guest. Highlighting electric ferry routes and bike rentals.</p>
+            <div class="w-full h-48 bg-surface-container overflow-hidden rounded-sm">
+              <div class="w-full h-full grayscale opacity-40 hover:grayscale-0 transition-all duration-500 bg-[url('https://lh3.googleusercontent.com/aida-public/AB6AXuA8KL4GjQRhQLJqotGtfqRYNhyPR9O5fBj96GR3hhTiwvjL5QVnKTc0tbx8o8mmrrSxejNMlh-KHrv1foSEn4kR1svZsr_-gVkmbQBciMxR-t0Gi4blzZaagLflQH3hTGGCZXYOvz218FkP5Zf4kXyue4MjZy9Lv6s93--eHh3uoiw5p7yctdwUqD1UAAd2FSAffmE_F1ZLhLhnV23D_hSDi_ZctmQgJI1KozwQdrmMM_UPQTGes65AkkhYQ_RtI3ZiDSV_4QvjSk88')] bg-cover bg-center"></div>
+            </div>
+          </div>
+          
+          <!-- Zero-Waste Itinerary -->
+          <div class="md:col-span-4 bg-surface-container-high p-12 rounded-sm border border-outline-variant/10 shadow-sm animate-on-scroll" style="transition-delay: 300ms;">
+            <h3 class="font-headline text-2xl mb-8">Zero-Waste Itinerary</h3>
+            <div class="space-y-6">
+              <div class="flex gap-4">
+                <span class="font-label text-xs font-bold text-primary">14:00</span>
+                <div>
+                  <p class="font-label text-sm font-semibold text-on-surface">Archipelago Welcome</p>
+                  <p class="font-label text-xs text-secondary">Vaxholm Harbor</p>
+                </div>
+              </div>
+              <div class="flex gap-4">
+                <span class="font-label text-xs font-bold text-primary">16:30</span>
+                <div>
+                  <p class="font-label text-sm font-semibold text-on-surface">The Vows</p>
+                  <p class="font-label text-xs text-secondary">The Orchard Glade</p>
+                </div>
+              </div>
+              <div class="flex gap-4">
+                <span class="font-label text-xs font-bold text-primary">19:00</span>
+                <div>
+                  <p class="font-label text-sm font-semibold text-on-surface">Solstice Dinner</p>
+                  <p class="font-label text-xs text-secondary">The Long Table</p>
+                </div>
+              </div>
+            </div>
+            <div class="mt-12 p-4 bg-surface-container-lowest flex items-center justify-between rounded-sm">
+              <span class="text-xs font-label uppercase tracking-widest text-on-surface">Live Updates</span>
+              <div class="w-2 h-2 rounded-full bg-primary animate-pulse"></div>
+            </div>
+          </div>
+          
+          <!-- Asymmetric Image Block -->
+          <div class="md:col-span-8 h-80 relative overflow-hidden group rounded-sm animate-on-scroll" style="transition-delay: 450ms;">
+            <img alt="Wedding Atmosphere" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-105" data-alt="Wide shot of a minimalist outdoor wedding ceremony set in a misty Swedish field with simple wooden chairs and no waste" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCFTfP4ylDz0Qtq6BGelM--56O9HEabbpBpJfCAhWVMAxDJ2wMuaVGgznPQxCGdOKCWOMEFOwWFGhNmx4fHKrWAEUawE96XemTRSG1_PX7UfZeVMhvpK0FdD_beuETzDzlSlNyMf6YitDIjodwk0-nY8qXQRiy2xvIrgEw-W7neG-44WmqBaxKdInWEywqtGI_uuCUWBdyAWP1h5ahR5VncDlny_oRBv9as220rZuxlK14Ob4WJWBWS_UKQpW_1c1ziSE6alanWrweC"/>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Visual Gallery -->
+    <section class="py-32 px-6 md:px-12 bg-surface overflow-hidden">
+      <div class="max-w-7xl mx-auto">
+        <div class="flex justify-between items-end mb-16 animate-on-scroll">
+          <div>
+            <span class="font-label text-xs uppercase tracking-widest text-secondary">The Aesthetic</span>
+            <h2 class="font-headline text-4xl italic text-on-surface mt-2">Organic Textures</h2>
+          </div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Photo 1 -->
+          <div class="space-y-4 animate-on-scroll group">
+            <div class="aspect-[3/4] bg-surface-container overflow-hidden rounded-sm">
+              <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000" data-alt="Close up of a sustainable wedding bouquet with local Swedish wildflowers, eucalyptus, and organic cotton ribbons" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDZ9EtgdFYF__DzV_PbhvgrZplifWosfLtyAjEKY_YIURB4UYNqzvHfqlUuB4zUHmUWkYTA7Jz5epCIwFLDFr7_k3ojcc1p7dDvF2gPiE3RzodTsS1m1s8IAi_5i3E9FJP3V3Tknw3TO5R5F59E--b7x7nYpzYa80ZUKAkVmoIw4x7W0Gmz6sw6eOBNAY4XuUIwLpjqQoHGyyz3CREoQHMvo647r0f1XA4ux_ou-RhFew4RlXU7v7Ko7DfkQ-666CJgTyoLGeHKioTw"/>
+            </div>
+            <p class="font-label text-xs uppercase tracking-widest text-secondary">I. Local Flora</p>
+          </div>
+          <!-- Photo 2 (Offset) -->
+          <div class="space-y-4 md:mt-20 animate-on-scroll group" style="transition-delay: 150ms;">
+            <div class="aspect-[3/4] bg-surface-container overflow-hidden rounded-sm">
+              <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000" data-alt="Long outdoor table set for a summer dinner in an old apple orchard, simple wooden furniture, glass jars, linen napkins" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCuHiHNw3kZGuSM9Db1tESwVCT24Ux0s9CV8YuW_NFAqt4RLY3EeLnIjXjeENHjZIWhPGYmLKrD3_SNSHuLni2KUEd5V6D2q2uJK7jBsulj_RFhTuIaP9svPDtlp4SbL0S7rDZeqiELOywxbfCbm7u9ai4KXO1YR-31hbfjFdvkepzYZ-VvFEujNYQF2uJ7e65B3LpRYK0_OWv1PEowozxlXz4sulagPRXY97vNN8XKuHpUACq7qVZoJ806P8oGKMGoaLHIGGGwsq3x"/>
+            </div>
+            <p class="font-label text-xs uppercase tracking-widest text-secondary">II. The Orchard Feast</p>
+          </div>
+          <!-- Photo 3 -->
+          <div class="space-y-4 animate-on-scroll group" style="transition-delay: 300ms;">
+            <div class="aspect-[3/4] bg-surface-container overflow-hidden rounded-sm">
+              <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000" data-alt="Minimalist table setting with charcoal plates, warm wood tones, and soft candle light at dusk" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBdig9QVDp2pg7fpdfakxwdYkuypNp_S4VsYXFop-XD2eSMw8rzkgJ8ypUlSjfeQybXSQQEjobdlZW1fBERegFXScVjv84fajVaW8GSiQMJBjcFG5mD1MrSinGs8m0HQgA7jCPFO7jLz1pu_-mFz2cQxjE5ZuWHCFQYonqUG9iU1l4Wnuy4qfc5kyfQnyDuOZHOrLHMwNl_ATqZ4EFgEqrONwes-pD5c_qPZZyumUCCg0DSXYKgBjnMDEG2BjC0g1B_HlT3H6zNmp3g"/>
+            </div>
+            <p class="font-label text-xs uppercase tracking-widest text-secondary">III. Sculptural Details</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Client Testimonial -->
+    <section class="py-32 px-6 md:px-12 bg-surface-container-low">
+      <div class="max-w-4xl mx-auto text-center animate-on-scroll">
+        <span class="material-symbols-outlined text-primary text-6xl mb-12" style="font-variation-settings: 'FILL' 1;">format_quote</span>
+        <blockquote class="font-headline text-3xl md:text-5xl italic text-on-surface leading-tight mb-12">
+          "The digital platform didn’t just simplify our planning; it elevated the entire guest journey. We were able to tell our story and share our commitment to sustainability without sacrificing a single ounce of elegance."
+        </blockquote>
+        <div class="h-12 w-[1px] bg-primary mx-auto mb-6"></div>
+        <cite class="font-label text-sm uppercase tracking-[0.3em] not-italic text-on-surface-variant">— Astrid &amp; Nils</cite>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-40 px-6 md:px-12 bg-surface">
+      <div class="max-w-7xl mx-auto flex flex-col items-center animate-on-scroll">
+        <div class="text-center mb-16">
+          <h2 class="font-headline text-5xl italic text-on-surface mb-6">Create Your Sustainable Heirloom</h2>
+          <p class="font-label text-secondary max-w-xl mx-auto text-lg">Let’s craft a digital experience that reflects your values and preserves your most cherished memories.</p>
+        </div>
+        <a class="px-12 py-5 bg-primary text-on-primary font-label uppercase tracking-widest text-sm hover:bg-primary-container hover:text-primary transition-colors rounded-sm" href="/contact">
+          Inquire About Your Celebration
+        </a>
+      </div>
+    </section>
+    
+    <PortfolioNav currentSlug="the-stockholm-summer" />
+  </main>
+  
+  <Footer />
+</Layout>

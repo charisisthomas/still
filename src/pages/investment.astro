@@ -1,0 +1,307 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/layout/Header.astro';
+import Footer from '../components/layout/Footer.astro';
+import Button from '../components/ui/Button.astro';
+---
+
+<Layout title="Investment | Still">
+  <Header />
+  
+  <main class="w-full bg-surface pt-[84px]">
+    
+    <!-- Hero Section -->
+    <section class="max-w-[1440px] mx-auto px-6 md:px-12">
+        <div class="max-w-[800px] pt-24 pb-20 animate-on-scroll">
+            <span class="block mb-6 font-label text-[11px] uppercase tracking-[0.28em] text-primary">
+                INVESTMENT
+            </span>
+            <h1 class="font-headline text-5xl md:text-[60px] leading-[1.1] text-on-surface mb-8" style="text-wrap: balance;">
+                Honest About <br/> <span class="italic">What It Costs</span>
+            </h1>
+            <div class="max-w-[600px]">
+                <p class="font-body text-lg md:text-[20px] leading-[1.7] text-secondary" style="text-wrap: pretty;">
+                    We don't publish fixed prices because every commission is genuinely different — the scope, the features, the languages, the timeline, the complexity of your guest logistics. What we can do is tell you exactly what shapes the investment, give you honest indicative ranges, and help you understand whether we're the right fit — before you've committed to anything.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Factors -->
+    <section class="w-full bg-surface-container-low py-24 md:py-[100px] border-y border-outline-variant/10">
+        <div class="max-w-[1440px] mx-auto px-6 md:px-12 grid grid-cols-1 md:grid-cols-12 gap-12">
+            <!-- Left Column -->
+            <div class="md:col-span-4 animate-on-scroll">
+                <span class="block mb-6 font-label text-[11px] uppercase tracking-[0.28em] text-primary">
+                    PRICING FACTORS
+                </span>
+                <h2 class="font-headline text-3xl md:text-[32px] text-on-surface mb-6 leading-tight" style="text-wrap: balance;">What Affects the Price</h2>
+                <p class="font-body text-[15px] leading-[1.7] text-secondary">
+                    Five variables shape every commission. Understanding them will help you estimate where your project sits — and give us the information we need to quote accurately.
+                </p>
+            </div>
+            
+            <!-- Right Column (Cards) -->
+            <div class="md:col-span-8">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <!-- Card 01 -->
+                    <div class="bg-surface border border-outline-variant/20 rounded-sm p-8 transition-colors duration-300 hover:shadow-md animate-on-scroll">
+                        <div class="font-headline italic text-[48px] text-primary-fixed-dim mb-4">01</div>
+                        <div class="font-label text-[14px] font-semibold tracking-[0.15em] text-on-surface mb-4 uppercase">THE PRODUCT</div>
+                        <p class="font-body text-[14px] leading-[1.65] text-secondary">
+                            A website-only commission starts at a different level to a website and app commission. The Full Commission — both products, fully integrated — is our most comprehensive and most impactful offering. The Paperless Portal is available as a standalone or as an addition to any commission.
+                        </p>
+                    </div>
+                    <!-- Card 02 -->
+                    <div class="bg-surface border border-outline-variant/20 rounded-sm p-8 transition-colors duration-300 hover:shadow-md animate-on-scroll" style="transition-delay: 100ms;">
+                        <div class="font-headline italic text-[48px] text-primary-fixed-dim mb-4">02</div>
+                        <div class="font-label text-[14px] font-semibold tracking-[0.15em] text-on-surface mb-4 uppercase">GUEST SCALE</div>
+                        <p class="font-body text-[14px] leading-[1.65] text-secondary">
+                            Your guest list size affects RSVP infrastructure, push notification capacity, photo gallery storage, and the complexity of concierge features. A 60-guest elopement and a 400-guest destination wedding are genuinely different engineering challenges — and priced accordingly.
+                        </p>
+                    </div>
+                    <!-- Card 03 -->
+                    <div class="bg-surface border border-outline-variant/20 rounded-sm p-8 transition-colors duration-300 hover:shadow-md animate-on-scroll">
+                        <div class="font-headline italic text-[48px] text-primary-fixed-dim mb-4">03</div>
+                        <div class="font-label text-[14px] font-semibold tracking-[0.15em] text-on-surface mb-4 uppercase">FEATURE COMPLEXITY</div>
+                        <p class="font-body text-[14px] leading-[1.65] text-secondary">
+                            A beautifully designed schedule page costs less to build than a real-time flight tracking and concierge coordination system. We'll always tell you which features deliver the most value for your specific wedding — and which ones you don't need.
+                        </p>
+                    </div>
+                    <!-- Card 04 -->
+                    <div class="bg-surface border border-outline-variant/20 rounded-sm p-8 transition-colors duration-300 hover:shadow-md animate-on-scroll" style="transition-delay: 100ms;">
+                        <div class="font-headline italic text-[48px] text-primary-fixed-dim mb-4">04</div>
+                        <div class="font-label text-[14px] font-semibold tracking-[0.15em] text-on-surface mb-4 uppercase">LANGUAGES</div>
+                        <p class="font-body text-[14px] leading-[1.65] text-secondary">
+                            Each additional language requires translation, interface adaptation, and multilingual testing across every device. We support multilingual builds as standard — the additional cost per language is quoted based on scope.
+                        </p>
+                    </div>
+                    <!-- Card 05 -->
+                    <div class="md:col-span-2 bg-surface border border-outline-variant/20 rounded-sm p-8 transition-colors duration-300 hover:shadow-md animate-on-scroll">
+                        <div class="font-headline italic text-[48px] text-primary-fixed-dim mb-4">05</div>
+                        <div class="font-label text-[14px] font-semibold tracking-[0.15em] text-on-surface mb-4 uppercase">TIMELINE</div>
+                        <p class="font-body text-[14px] leading-[1.65] text-secondary">
+                            A standard 12–16 week build and an expedited 8-week build are different commitments for our team — and priced differently. If you're reaching out with less than 6 months to go, let us know. We'll tell you honestly whether the timeline is feasible and what it would mean for the investment.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Indicative Ranges -->
+    <section class="w-full bg-surface py-24 md:py-[100px]">
+        <div class="max-w-[900px] mx-auto px-6 md:px-12 flex flex-col animate-on-scroll">
+            <span class="block mb-4 text-center font-label text-[11px] uppercase tracking-[0.28em] text-primary">INDICATIVE RANGES</span>
+            <h2 class="font-headline text-4xl md:text-[36px] text-on-surface text-center mb-4">What to Expect</h2>
+            <p class="font-body italic text-[14px] text-secondary text-center mb-12">Every commission is quoted individually to ensure you only pay for what you need.</p>
+            
+            <div class="w-full shadow-sm rounded-sm overflow-hidden border border-outline-variant/20">
+                <!-- Header Row -->
+                <div class="flex justify-between bg-surface-container-highest border-b border-outline-variant/20 py-4 px-6">
+                    <span class="font-label text-[11px] uppercase tracking-[0.2em] text-secondary font-bold">COMMISSION</span>
+                    <span class="font-label text-[11px] uppercase tracking-[0.2em] text-secondary font-bold">STARTING FROM</span>
+                </div>
+                <!-- Row 1 -->
+                <div class="flex flex-col sm:flex-row justify-between sm:items-center py-6 px-6 bg-surface border-b border-outline-variant/10 hover:bg-surface-container-lowest transition-colors">
+                    <span class="font-body font-semibold text-[15px] text-on-surface mb-2 sm:mb-0">The Paperless Portal (Standalone)</span>
+                    <span class="font-headline italic text-[20px] text-primary">$3,500</span>
+                </div>
+                <!-- Row 2 -->
+                <div class="flex flex-col sm:flex-row justify-between sm:items-center py-6 px-6 bg-surface-container-low border-b border-outline-variant/10 hover:bg-surface-container-lowest transition-colors">
+                    <span class="font-body font-semibold text-[15px] text-on-surface mb-2 sm:mb-0">Single Page Website</span>
+                    <span class="font-headline italic text-[20px] text-primary">$5,500</span>
+                </div>
+                <!-- Row 3 -->
+                <div class="flex flex-col sm:flex-row justify-between sm:items-center py-6 px-6 bg-surface border-b border-outline-variant/10 hover:bg-surface-container-lowest transition-colors">
+                    <span class="font-body font-semibold text-[15px] text-on-surface mb-2 sm:mb-0">Multi-Page Discovery Website</span>
+                    <span class="font-headline italic text-[20px] text-primary">$8,500</span>
+                </div>
+                <!-- Row 4 (Special) -->
+                <div class="flex flex-col sm:flex-row justify-between sm:items-center py-6 px-6 bg-primary-container border-l-[4px] border-primary border-b border-outline-variant/10 relative overflow-hidden">
+                    <span class="font-body font-semibold text-[15px] text-on-primary-container mb-2 sm:mb-0 relative z-10">Website + App — Full Commission</span>
+                    <span class="font-headline italic text-[22px] font-bold text-on-primary-container relative z-10">$12,000</span>
+                    <div class="absolute inset-0 bg-gradient-to-r from-transparent to-primary-fixed-dim/20 pointer-events-none"></div>
+                </div>
+                <!-- Row 5 -->
+                <div class="flex flex-col sm:flex-row justify-between sm:items-center py-6 px-6 bg-surface border-b border-outline-variant/10 hover:bg-surface-container-lowest transition-colors">
+                    <span class="font-body font-semibold text-[15px] text-on-surface mb-2 sm:mb-0">Destination Wedding Portal</span>
+                    <span class="font-headline italic text-[20px] text-primary">$14,500</span>
+                </div>
+                <!-- Row 6 -->
+                <div class="flex flex-col sm:flex-row justify-between sm:items-center py-6 px-6 bg-surface-container-low border-b border-outline-variant/10 hover:bg-surface-container-lowest transition-colors">
+                    <span class="font-body font-semibold text-[15px] text-on-surface mb-2 sm:mb-0">Custom Digital Concierge</span>
+                    <span class="font-headline italic text-[20px] text-primary">$18,000</span>
+                </div>
+                <!-- Row 7 -->
+                <div class="flex flex-col sm:flex-row justify-between sm:items-center py-6 px-6 bg-surface hover:bg-surface-container-lowest transition-colors">
+                    <span class="font-body font-semibold text-[15px] text-on-surface mb-2 sm:mb-0">Enterprise Scale Event</span>
+                    <span class="font-headline italic text-[20px] text-primary">On Request</span>
+                </div>
+            </div>
+            
+            <p class="font-body text-[13px] text-secondary text-center mt-12">All major currencies accepted. Prices shown are in USD for guidance only.</p>
+        </div>
+    </section>
+
+    <!-- Always Included -->
+    <section class="w-full bg-surface-container-low py-24 md:py-[80px] border-y border-outline-variant/10">
+        <div class="max-w-[1440px] mx-auto px-6 md:px-12 grid grid-cols-1 md:grid-cols-12 gap-12">
+            <div class="md:col-span-5 animate-on-scroll">
+                <span class="block mb-4 font-label text-[11px] uppercase tracking-[0.28em] text-primary">ALWAYS INCLUDED</span>
+                <h2 class="font-headline text-3xl md:text-[32px] text-on-surface mb-6 leading-tight" style="text-wrap: balance;">Every Commission Includes</h2>
+                <p class="font-body text-[15px] leading-[1.7] text-secondary max-w-md">Regardless of scope, these are non-negotiable standards of a Still commission. We don't believe in tiered quality — only tiered scale.</p>
+            </div>
+            <div class="md:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-10 animate-on-scroll" style="transition-delay: 100ms;">
+                <div class="flex flex-col gap-2">
+                    <div class="flex items-center gap-3">
+                        <span class="material-symbols-outlined text-primary text-[20px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                        <span class="font-body font-semibold text-[15px] text-on-surface">Bespoke Design</span>
+                    </div>
+                    <p class="font-body text-[14px] text-secondary leading-relaxed">No templates. Every element is designed to match your wedding aesthetic.</p>
+                </div>
+                <div class="flex flex-col gap-2">
+                    <div class="flex items-center gap-3">
+                        <span class="material-symbols-outlined text-primary text-[20px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                        <span class="font-body font-semibold text-[15px] text-on-surface">Mobile First Development</span>
+                    </div>
+                    <p class="font-body text-[14px] text-secondary leading-relaxed">Optimized for high performance on every handheld device your guests use.</p>
+                </div>
+                <div class="flex flex-col gap-2">
+                    <div class="flex items-center gap-3">
+                        <span class="material-symbols-outlined text-primary text-[20px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                        <span class="font-body font-semibold text-[15px] text-on-surface">Secure Hosting</span>
+                    </div>
+                    <p class="font-body text-[14px] text-secondary leading-relaxed">Global CDN hosting with enterprise-grade security and 99.9% uptime.</p>
+                </div>
+                <div class="flex flex-col gap-2">
+                    <div class="flex items-center gap-3">
+                        <span class="material-symbols-outlined text-primary text-[20px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                        <span class="font-body font-semibold text-[15px] text-on-surface">Technical SEO</span>
+                    </div>
+                    <p class="font-body text-[14px] text-secondary leading-relaxed">Ensuring your registry and portal are easily found by your guests only.</p>
+                </div>
+                <div class="flex flex-col gap-2">
+                    <div class="flex items-center gap-3">
+                        <span class="material-symbols-outlined text-primary text-[20px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                        <span class="font-body font-semibold text-[15px] text-on-surface">Dedicated Success Lead</span>
+                    </div>
+                    <p class="font-body text-[14px] text-secondary leading-relaxed">A single point of contact for you and your planners from start to finish.</p>
+                </div>
+                <div class="flex flex-col gap-2">
+                    <div class="flex items-center gap-3">
+                        <span class="material-symbols-outlined text-primary text-[20px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                        <span class="font-body font-semibold text-[15px] text-on-surface">Content Management</span>
+                    </div>
+                    <p class="font-body text-[14px] text-secondary leading-relaxed">Direct access to update details as they change throughout planning.</p>
+                </div>
+                <div class="flex flex-col gap-2">
+                    <div class="flex items-center gap-3">
+                        <span class="material-symbols-outlined text-primary text-[20px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                        <span class="font-body font-semibold text-[15px] text-on-surface">Post-Event Archives</span>
+                    </div>
+                    <p class="font-body text-[14px] text-secondary leading-relaxed">A permanent digital home for your photos and guest messages.</p>
+                </div>
+                <div class="flex flex-col gap-2">
+                    <div class="flex items-center gap-3">
+                        <span class="material-symbols-outlined text-primary text-[20px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                        <span class="font-body font-semibold text-[15px] text-on-surface">Global Privacy Compliance</span>
+                    </div>
+                    <p class="font-body text-[14px] text-secondary leading-relaxed">Strict adherence to data protection laws for you and your international guests.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Payment Schedule -->
+    <section class="w-full bg-surface py-24 md:py-[80px]">
+        <div class="max-w-[900px] mx-auto px-6 md:px-12 text-center animate-on-scroll">
+            <span class="block mb-6 font-label text-[11px] uppercase tracking-[0.28em] text-primary">HOW PAYMENT WORKS</span>
+            <h2 class="font-headline text-3xl md:text-[32px] text-on-surface mb-6 leading-tight">A Three-Stage Schedule</h2>
+            <p class="font-body text-[16px] leading-[1.7] text-secondary mb-16 max-w-2xl mx-auto">
+                We structure payment in three stages, aligned with project milestones. This means you're only paying for work that has been completed and approved.
+            </p>
+            
+            <div class="relative flex flex-col md:flex-row justify-between items-start gap-12 md:gap-8 mb-16">
+                <!-- Rule line for desktop -->
+                <div class="hidden md:block absolute top-[48px] left-[15%] right-[15%] h-[1px] bg-primary-fixed-dim/50 z-0"></div>
+                
+                <!-- Block 1 -->
+                <div class="relative z-10 flex-1 bg-surface md:bg-transparent p-4 md:p-0 rounded-sm">
+                    <div class="font-headline italic text-[56px] md:text-[64px] text-primary mb-4 transition-transform hover:scale-110 duration-500">30%</div>
+                    <div class="font-label text-[12px] font-bold tracking-[0.2em] text-on-surface mb-4 uppercase">ON CONTRACT</div>
+                    <p class="font-body text-[14px] leading-[1.6] text-secondary text-left md:text-center">Secures your date and formally begins the project. Discovery and creative direction work begins immediately.</p>
+                </div>
+                
+                <!-- Block 2 -->
+                <div class="relative z-10 flex-1 bg-surface md:bg-transparent p-4 md:p-0 rounded-sm" style="transition-delay: 150ms;">
+                    <div class="font-headline italic text-[56px] md:text-[64px] text-primary mb-4 transition-transform hover:scale-110 duration-500">40%</div>
+                    <div class="font-label text-[12px] font-bold tracking-[0.2em] text-on-surface mb-4 uppercase">ON DESIGN APPROVAL</div>
+                    <p class="font-body text-[14px] leading-[1.6] text-secondary text-left md:text-center">Paid once you have approved the full design — before the build stage begins. No design is handed to engineering without your sign-off.</p>
+                </div>
+                
+                <!-- Block 3 -->
+                <div class="relative z-10 flex-1 bg-surface md:bg-transparent p-4 md:p-0 rounded-sm" style="transition-delay: 300ms;">
+                    <div class="font-headline italic text-[56px] md:text-[64px] text-primary mb-4 transition-transform hover:scale-110 duration-500">30%</div>
+                    <div class="font-label text-[12px] font-bold tracking-[0.2em] text-on-surface mb-4 uppercase">ON LAUNCH</div>
+                    <p class="font-body text-[14px] leading-[1.6] text-secondary text-left md:text-center">Final payment on the day your platform goes live. Nothing launches until you're satisfied with the result.</p>
+                </div>
+            </div>
+            
+            <p class="font-body italic text-[14px] text-secondary">Payments are invoiced digitally and can be settled via bank transfer or major credit card.</p>
+        </div>
+    </section>
+
+    <!-- A Note From The Studio -->
+    <section class="w-full bg-surface py-12 md:py-[80px]">
+        <div class="max-w-[720px] mx-auto px-6 md:px-12 animate-on-scroll">
+            <div class="border-t border-outline-variant/30 pt-[40px]"></div>
+            <div class="flex flex-col">
+                <span class="block mb-[28px] font-label text-[11px] uppercase tracking-[0.28em] text-primary">A NOTE FROM THE STUDIO</span>
+                <div class="space-y-[28px]">
+                    <p class="font-headline text-[20px] leading-[1.8] text-primary">
+                      We know that commissioning a bespoke digital experience is a meaningful investment. We also know that you're likely comparing us to template platforms that cost a fraction of what we charge.
+                    </p>
+                    <p class="font-headline text-[20px] leading-[1.8] text-primary">
+                      Here's what we'd ask you to consider. A template platform gives every couple the same starting point. We give you a blank canvas — and we fill it with your specific story, your aesthetic, your guests' needs, your cultural context. The result is not a better version of something generic. It's something that could only belong to you.
+                    </p>
+                    <p class="font-headline text-[20px] leading-[1.8] text-primary">
+                      If that's what you're looking for, we'd love to talk. If it isn't, we're happy to say so early — and point you somewhere that fits better.
+                    </p>
+                </div>
+                <div class="mt-[28px] text-right">
+                    <span class="font-body italic text-[14px] text-secondary">— Still Studio</span>
+                </div>
+            </div>
+            <div class="border-b border-outline-variant/30 mt-[40px]"></div>
+        </div>
+    </section>
+
+    <!-- Bottom CTA (Dark Theme) -->
+    <section class="w-full bg-on-surface py-24 md:py-[120px]">
+        <div class="max-w-[700px] mx-auto px-6 md:px-12 text-center animate-on-scroll">
+            <span class="block mb-6 font-label text-[11px] font-semibold uppercase tracking-[0.28em] text-primary-fixed-dim">
+                LIMITED COMMISSIONS — 2026 &amp; 2027
+            </span>
+            <h2 class="font-headline text-4xl md:text-[48px] leading-[1.1] mb-8" style="text-wrap: balance;">
+                <span class="text-surface block">Let's Talk About</span>
+                <span class="text-primary-fixed-dim italic">Your Wedding</span>
+            </h2>
+            <p class="font-body text-[18px] leading-[1.7] text-surface-dim mb-12 max-w-xl mx-auto">
+                The best way to understand the investment for your specific commission is a free, no-obligation discovery call. Tell us about your wedding, and we'll tell you what's possible — honestly.
+            </p>
+            <div class="flex flex-col items-center gap-6">
+                <Button href="/contact" variant="primary" class="h-[48px] px-[32px] w-full sm:w-auto shadow-xl">
+                    BOOK A DISCOVERY CALL
+                </Button>
+                <a class="font-label text-[14px] text-outline-variant hover:text-surface transition-colors" href="/process">
+                    Or learn about the process →
+                </a>
+            </div>
+        </div>
+    </section>
+
+  </main>
+  
+  <Footer />
+</Layout>

@@ -1,0 +1,137 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/layout/Header.astro';
+import Footer from '../../components/layout/Footer.astro';
+import PortfolioNav from '../../components/portfolio/PortfolioNav.astro';
+---
+
+<Layout title="The Modern Minimalist: Elena & James | Still">
+  <Header />
+  
+  <main class="pt-24 min-h-screen">
+    <!-- Hero Section -->
+    <section class="relative w-full min-h-[80vh] md:min-h-screen flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-b from-transparent to-surface-dim/40 z-10"></div>
+        <img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&q=80&w=2000" 
+             alt="" 
+             data-alt="Modern minimalist wedding setup with white linen, gold accents, and architectural floral arrangements in a bright, sun-drenched airy gallery space."
+             class="absolute inset-0 w-full h-full object-cover">
+        <div class="relative z-20 text-center px-6 animate-on-scroll mt-20">
+            <span class="font-label uppercase tracking-[0.3em] text-on-surface/70 mb-4 block">Case Study: 06</span>
+            <h1 class="font-headline text-5xl md:text-7xl lg:text-8xl text-on-surface tracking-tighter leading-none mb-6 break-words" style="text-wrap: balance;">
+                The Modern Minimalist:<br>
+                <span class="italic font-normal">Elena &amp; James</span>
+            </h1>
+        </div>
+    </section>
+
+    <!-- Overview Section -->
+    <section class="py-32 px-6 md:px-12 max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-16 bg-surface">
+        <div class="md:col-span-5 flex flex-col justify-center animate-on-scroll">
+            <h2 class="font-headline text-3xl mb-8 tracking-tight">The Love Story in Code</h2>
+            <div class="h-px w-24 bg-primary-fixed-dim mb-8"></div>
+            <p class="font-label text-lg text-secondary leading-relaxed mb-6">
+                For Elena and James, the wedding was an exercise in restraint and purposeful beauty. Our goal was to translate their high-fashion aesthetic into a digital platform that felt as tactile as their letterpress invitations.
+            </p>
+            <p class="font-label text-lg text-secondary leading-relaxed">
+                We moved beyond standard templates to create a bespoke experience featuring a custom RSVP flow that adjusted based on guest types, and a narrative timeline that mirrored the rhythm of their ceremony.
+            </p>
+        </div>
+        <div class="md:col-span-7 flex items-center justify-end relative animate-on-scroll" style="transition-delay: 200ms;">
+            <div class="absolute -top-10 -left-10 w-64 h-64 bg-primary-container/20 rounded-full blur-3xl"></div>
+            <img src="https://images.unsplash.com/photo-1544161513-0179fe746fd5?auto=format&fit=crop&q=80&w=1200" 
+                 alt="" 
+                 data-alt="Close up of a luxury wedding invitation on cream textured paper with elegant gold typography and silk ribbon accents"
+                 class="w-full h-[600px] object-cover relative z-10 shadow-2xl rounded-sm">
+        </div>
+    </section>
+
+    <!-- Features Showcase: Bento Grid Layout -->
+    <section class="py-32 px-6 md:px-12 bg-surface-container-low">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-24 animate-on-scroll">
+                <h3 class="font-headline italic text-4xl mb-4 text-primary">Crafted Elements</h3>
+                <p class="font-label uppercase tracking-widest text-secondary text-sm">Bespoke technical implementations</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-8">
+                <!-- Feature 1: Large Asymmetric -->
+                <div class="md:col-span-8 bg-surface-container-lowest overflow-hidden group rounded-sm border border-outline-variant/10 shadow-sm animate-on-scroll">
+                    <div class="grid grid-cols-1 md:grid-cols-2">
+                        <div class="p-12 flex flex-col justify-center order-2 md:order-1">
+                            <span class="text-primary-fixed-dim text-4xl mb-6 material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">event_note</span>
+                            <h4 class="font-headline text-2xl mb-4 text-on-surface">Intelligent RSVP</h4>
+                            <p class="text-secondary leading-relaxed font-label">A conditional logic system that tailored guest options based on travel status and dietary preferences, streamlining planning for the couple.</p>
+                        </div>
+                        <div class="h-80 md:h-full order-1 md:order-2 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1522673607200-16488354435b?auto=format&fit=crop&q=80&w=800" 
+                                 alt="" 
+                                 data-alt="Minimalist digital user interface showing a sleek wedding RSVP form with elegant typography and golden buttons"
+                                 class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700 group-hover:scale-105">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Feature 2: Small Vertical -->
+                <div class="md:col-span-4 bg-surface-container-lowest p-12 flex flex-col justify-end min-h-[400px] border-t-4 border-primary rounded-sm shadow-sm animate-on-scroll" style="transition-delay: 150ms;">
+                    <span class="text-primary-fixed-dim text-4xl mb-6 material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">schedule</span>
+                    <h4 class="font-headline text-2xl mb-4 text-on-surface">The Narrative Timeline</h4>
+                    <p class="text-secondary leading-relaxed font-label">A scroll-activated visual journey mapping their weekend in Tuscany, from the welcome dinner to the sunrise breakfast.</p>
+                </div>
+
+                <!-- Feature 3: Full Width Visual -->
+                <div class="md:col-span-12 relative h-[500px] overflow-hidden group rounded-sm animate-on-scroll" style="transition-delay: 300ms;">
+                    <img src="https://images.unsplash.com/photo-1537633552985-df8429e8048b?auto=format&fit=crop&q=80&w=1600" 
+                         alt="" 
+                         data-alt="Panoramic shot of a long wedding table set in an olive grove with warm evening lighting and flickering candles"
+                         class="w-full h-full object-cover scale-105 group-hover:scale-100 transition-transform duration-1000">
+                    <div class="absolute inset-0 bg-on-surface/40 flex items-center justify-center">
+                        <div class="bg-surface/90 backdrop-blur-md p-10 max-w-lg text-center mx-6 rounded-sm">
+                            <h4 class="font-headline text-2xl mb-4 italic text-on-surface">Interactive Guest Gallery</h4>
+                            <p class="text-secondary leading-relaxed font-label">A private, high-speed upload portal for guests to share their captures instantly during the reception.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonial Section -->
+    <section class="py-40 px-6 md:px-12 bg-surface overflow-hidden relative">
+        <div class="absolute top-0 right-0 opacity-5 -mr-20 -mt-20">
+            <span class="font-headline text-[30rem] leading-none text-primary">"</span>
+        </div>
+        <div class="max-w-4xl mx-auto relative z-10 text-center animate-on-scroll">
+            <h3 class="font-headline text-3xl md:text-5xl italic leading-tight text-on-surface mb-12">
+                "The team at Still didn't just build us a website; they built us a digital heirloom. It perfectly captured the quiet luxury we wanted for our day."
+            </h3>
+            <div class="flex flex-col items-center">
+                <img src="https://images.unsplash.com/photo-1583939003579-730e3918a45a?auto=format&fit=crop&q=80&w=200" 
+                     alt="" 
+                     data-alt="Portrait of a young bride and groom smiling warmly at each other in a soft focus artistic black and white style"
+                     class="w-20 h-20 rounded-full object-cover border-2 border-primary mb-6 shadow-xl">
+                <p class="font-label uppercase tracking-widest text-on-surface font-bold">Elena &amp; James Sterling</p>
+                <p class="font-label text-sm text-secondary mt-1">Florence, Italy — August 2024</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="py-32 bg-surface-container-highest">
+        <div class="max-w-4xl mx-auto px-6 text-center animate-on-scroll">
+            <h2 class="font-headline text-4xl md:text-6xl mb-8 tracking-tighter text-on-surface">Want a Site Like This?</h2>
+            <p class="font-label text-xl text-secondary mb-12 max-w-2xl mx-auto leading-relaxed">
+                We specialize in high-end, editorial-grade wedding platforms for couples who value architectural design and seamless technology.
+            </p>
+            <div class="flex flex-col md:flex-row gap-6 justify-center items-center">
+                <a href="/contact" class="bg-primary text-on-primary px-12 py-4 font-label text-sm uppercase tracking-widest hover:bg-primary-container hover:text-primary transition-all w-full md:w-auto rounded-sm">Start Your Project</a>
+                <a href="/portfolio" class="font-headline italic text-xl text-primary border-b border-primary-fixed-dim hover:border-primary transition-all">View Our Portfolio</a>
+            </div>
+        </div>
+    </section>
+    
+    <PortfolioNav currentSlug="the-modern-minimalist" />
+  </main>
+  
+  <Footer />
+</Layout>

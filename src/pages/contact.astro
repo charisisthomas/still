@@ -1,0 +1,130 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/layout/Header.astro';
+import Footer from '../components/layout/Footer.astro';
+import Button from '../components/ui/Button.astro';
+---
+
+<Layout title="Contact | Still">
+  <Header />
+  
+  <main class="pt-32">
+    <!-- Hero -->
+    <section class="py-32 relative bg-surface overflow-hidden">
+      <div class="absolute inset-0">
+        <img src="/assets/photo-1519741497674-611481863552.png" alt="Contact Hero" class="w-full h-full object-cover opacity-20" />
+        <div class="absolute inset-0 bg-gradient-to-t from-surface to-transparent"></div>
+      </div>
+      <div class="max-w-4xl mx-auto px-6 text-center relative z-10">
+        <h1 class="text-5xl md:text-6xl font-display text-primary leading-tight italic mb-8">
+          Tell Us About Your Wedding
+        </h1>
+        <p class="text-lg text-on-surface-variant leading-relaxed">
+          Whether you're planning a quiet elopement or a grand destination celebration, we'd love to hear from you. Fill in the form below and we'll be in touch within 48 hours.
+        </p>
+      </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="py-20 bg-surface">
+      <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-16">
+        
+        <!-- Form -->
+        <div class="lg:col-span-8 bg-surface-container-low p-12 rounded-sm border border-outline-variant/10">
+          <form class="flex flex-col gap-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <div class="flex flex-col gap-2">
+                <label class="text-sm font-medium text-secondary">Name</label>
+                <input type="text" placeholder="Your full name" class="bg-transparent border-b border-outline-variant/20 py-2 focus:outline-none focus:border-primary transition-colors text-on-surface placeholder:text-outline-variant/50">
+              </div>
+              <div class="flex flex-col gap-2">
+                <label class="text-sm font-medium text-secondary">Email</label>
+                <input type="email" placeholder="Your email address" class="bg-transparent border-b border-outline-variant/20 py-2 focus:outline-none focus:border-primary transition-colors text-on-surface placeholder:text-outline-variant/50">
+              </div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <div class="flex flex-col gap-2">
+                <label class="text-sm font-medium text-secondary">Wedding Date</label>
+                <input type="date" class="bg-transparent border-b border-outline-variant/20 py-2 focus:outline-none focus:border-primary transition-colors text-on-surface placeholder:text-outline-variant/50">
+              </div>
+              <div class="flex flex-col gap-2">
+                <label class="text-sm font-medium text-secondary">Venue & Location</label>
+                <input type="text" placeholder="City, country — or 'still deciding'" class="bg-transparent border-b border-outline-variant/20 py-2 focus:outline-none focus:border-primary transition-colors text-on-surface placeholder:text-outline-variant/50">
+              </div>
+            </div>
+
+            <div class="flex flex-col gap-2">
+              <label class="text-sm font-medium text-secondary">Approximate Guest Count</label>
+              <input type="text" placeholder="Including international guests" class="bg-transparent border-b border-outline-variant/20 py-2 focus:outline-none focus:border-primary transition-colors text-on-surface placeholder:text-outline-variant/50">
+            </div>
+
+            <div class="flex flex-col gap-4">
+              <label class="text-sm font-medium text-secondary">What Are You Looking For?</label>
+              <div class="flex flex-wrap gap-6">
+                <label class="flex items-center gap-2 cursor-pointer">
+                  <input type="checkbox" class="accent-primary w-4 h-4">
+                  <span class="text-on-surface">Seamless Website</span>
+                </label>
+                <label class="flex items-center gap-2 cursor-pointer">
+                  <input type="checkbox" class="accent-primary w-4 h-4">
+                  <span class="text-on-surface">Paperless Portal</span>
+                </label>
+                <label class="flex items-center gap-2 cursor-pointer">
+                  <input type="checkbox" class="accent-primary w-4 h-4">
+                  <span class="text-on-surface">Destination Logistics</span>
+                </label>
+                <label class="flex items-center gap-2 cursor-pointer">
+                  <input type="checkbox" class="accent-primary w-4 h-4">
+                  <span class="text-on-surface">Not Sure Yet</span>
+                </label>
+              </div>
+            </div>
+
+            <div class="flex flex-col gap-2">
+              <label class="text-sm font-medium text-secondary">Tell Us About Your Wedding</label>
+              <textarea rows="5" placeholder="Where, when, how you're imagining it..." class="bg-transparent border-b border-outline-variant/20 py-2 focus:outline-none focus:border-primary transition-colors text-on-surface placeholder:text-outline-variant/50 resize-none"></textarea>
+            </div>
+
+            <div class="mt-4">
+              <Button variant="primary">Send Inquiry</Button>
+            </div>
+          </form>
+        </div>
+
+        <!-- Sidebar -->
+        <div class="lg:col-span-4 flex flex-col gap-12">
+          <div>
+            <h3 class="font-display text-2xl text-primary italic mb-6">What Happens Next</h3>
+            <div class="flex flex-col gap-6">
+              <div>
+                <span class="text-xs tracking-widest text-secondary uppercase block mb-1">Step 01</span>
+                <h4 class="font-medium text-on-surface mb-2">We Read Everything</h4>
+                <p class="text-sm text-on-surface-variant leading-relaxed">We'll review your inquiry carefully and respond within 48 hours — not with a generic reply, but with a considered response based on what you've shared.</p>
+              </div>
+              <div>
+                <span class="text-xs tracking-widest text-secondary uppercase block mb-1">Step 02</span>
+                <h4 class="font-medium text-on-surface mb-2">Discovery Call</h4>
+                <p class="text-sm text-on-surface-variant leading-relaxed">If it feels like a good fit, we'll invite you to a 30-minute video call to discuss your wedding, your aesthetic, your priorities, and your timeline.</p>
+              </div>
+              <div>
+                <span class="text-xs tracking-widest text-secondary uppercase block mb-1">Step 03</span>
+                <h4 class="font-medium text-on-surface mb-2">Your Proposal</h4>
+                <p class="text-sm text-on-surface-variant leading-relaxed">Following the call, we'll prepare a bespoke proposal — scope, timeline, and investment — designed specifically for your wedding.</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="pt-12 border-t border-outline-variant/20">
+            <h3 class="font-display text-2xl text-primary italic mb-6">Other Enquiries</h3>
+            <p class="text-sm text-on-surface-variant leading-relaxed">For press, partnerships, or general questions:<br>
+            <a href="mailto:hello@still.com" class="text-primary hover:text-primary-dim border-b border-primary-fixed-dim pb-0.5 mt-2 inline-block">hello@still.com</a></p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+  
+  <Footer />
+</Layout>

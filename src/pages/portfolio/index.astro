@@ -1,0 +1,57 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/layout/Header.astro';
+import Footer from '../../components/layout/Footer.astro';
+import caseStudiesData from '../../data/extracted_case_studies.json';
+
+const getHiResImage = (slug, fallback) => {
+  const caseData = caseStudiesData.find(c => c.slug === slug);
+  return (caseData && caseData.images && caseData.images[0]) ? caseData.images[0] : `/assets/${fallback}`;
+};
+---
+
+<Layout title="Our Work | Still">
+  <Header />
+  
+  <main class="pt-32 flex flex-col">
+    <!-- Hero -->
+    <section class="py-24 bg-surface flex-grow">
+      <div class="max-w-4xl mx-auto px-6 text-center relative z-10 animate-on-scroll">
+        <span class="text-secondary text-sm tracking-widest uppercase mb-6 block">Our Work</span>
+        <h1 class="text-5xl md:text-7xl font-display text-primary leading-tight mb-8">
+          A Global Gallery of <span class="italic text-primary-dim">Love</span>
+        </h1>
+        <p class="text-lg text-on-surface-variant leading-relaxed">
+          A curated selection of bespoke digital experiences from across the globe, each tailored to the cultural heritage and personal aesthetic of our couples.
+        </p>
+      </div>
+    </section>
+
+    <!-- Grid -->
+    <section class="pb-32 bg-surface">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+          {[
+            { title: "The Amalfi Grandeur", couple: "Julia & Robert", location: "Amalfi, Italy", image: getHiResImage('the-amalfi-grandeur', 'The_Amalfi_Grandeur.png'), slug: "the-amalfi-grandeur" },
+            { title: "The Santorini Serenity", couple: "Mei & Kenji", location: "Santorini, Greece", image: getHiResImage('the-santorini-serenity', 'The_Santorini_Serenity.png'), slug: "the-santorini-serenity" },
+            { title: "The Cairo Tradition", couple: "Layla & Omar", location: "Cairo, Egypt", image: getHiResImage('the-cairo-tradition', 'The_Cairo_Tradition.png'), slug: "the-cairo-tradition" },
+            { title: "The Stockholm Summer", couple: "Astrid & Nils", location: "Stockholm, Sweden", image: getHiResImage('the-stockholm-summer', 'The_Stockholm_Summer.png'), slug: "the-stockholm-summer" },
+            { title: "The Parisian Elope", couple: "Sophie & Marc", location: "Paris, France", image: getHiResImage('the-parisian-elope', 'Parisian_Haute_Elopement.png'), slug: "the-parisian-elope" },
+            { title: "The Modern Minimalist", couple: "Elena & James", location: "Florence, Italy", image: getHiResImage('the-modern-minimalist', ''), slug: "the-modern-minimalist" }
+          ].map((item, idx) => (
+            <a href={`/portfolio/${item.slug}`} class="group block cursor-pointer animate-on-scroll" style={`transition-delay: ${idx * 100}ms;`}>
+              <div class="aspect-[4/5] bg-surface-container-low mb-6 overflow-hidden relative rounded-sm shadow-md">
+                <img src={item.image} alt={item.title} class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+                <div class="absolute inset-0 bg-surface-dim opacity-10 transition-opacity group-hover:opacity-0"></div>
+              </div>
+              <h3 class="font-display text-2xl text-primary mb-2 group-hover:text-primary-dim transition-colors">{item.title}</h3>
+              <p class="text-on-surface-variant text-sm tracking-wide">{item.couple} — {item.location}</p>
+            </a>
+          ))}
+        </div>
+      </div>
+    </section>
+  </main>
+  
+  <Footer />
+</Layout>

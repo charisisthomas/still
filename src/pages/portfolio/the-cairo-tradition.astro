@@ -1,0 +1,179 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/layout/Header.astro';
+import Footer from '../../components/layout/Footer.astro';
+import PortfolioNav from '../../components/portfolio/PortfolioNav.astro';
+---
+
+<Layout title="The Cairo Tradition: Layla & Omar | Still">
+  <Header />
+  
+  <main class="pt-24 min-h-screen">
+    <!-- Hero Section -->
+    <section class="relative min-h-[80vh] md:min-h-screen w-full flex items-end overflow-hidden">
+      <img alt="" class="absolute inset-0 w-full h-full object-cover" data-alt="Luxurious cinematic shot of a couple in traditional wedding attire overlooking the Giza pyramids at sunset with warm golden light illuminating the desert sands." src="https://lh3.googleusercontent.com/aida-public/AB6AXuADXcmra5DofWBGnKScfzrRHzhYqUBl76wF41DCPjdDm4WbHl0TjKyo5e16KVdMy1FiXLM3BSeDtZtpln6X9obj3hk2NENk6tIrtBAm_AVcuiU21eRF8uj45FjPeq1Vr0MttF9oXBEARcJUAyC1e7PvA04Y-i-zCWXeqROVsYGLuYMdobFafQW68AabioOTDa4Bagpf3IS2gWyEs23KeWffBnbJ2JSmdRWwxHvfBO-i5DQEN_Hxz5nvdIPbNgefbsAxnNLqclWsrgDX"/>
+      <div class="absolute inset-0 bg-gradient-to-t from-surface via-transparent to-black/20"></div>
+      <div class="relative z-10 w-full max-w-7xl mx-auto px-6 pb-20 md:pb-32 animate-on-scroll">
+        <p class="font-label text-primary-fixed-dim tracking-[0.3em] uppercase text-sm mb-6">A Wedding Case Study</p>
+        <h1 class="text-5xl md:text-7xl lg:text-8xl text-on-surface leading-tight text-reveal max-w-4xl font-headline italic break-words" style="text-wrap: balance;">
+          The Cairo Tradition: <br/>
+          <span class="font-normal not-italic">Layla &amp; Omar</span>
+        </h1>
+      </div>
+    </section>
+
+    <!-- The Brief Section -->
+    <section class="py-32 px-6 max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-16 items-start">
+      <div class="md:col-span-4 sticky top-32 animate-on-scroll">
+        <h2 class="text-3xl font-headline text-primary border-l-2 border-primary-container pl-6 py-2">The Brief</h2>
+        <div class="mt-8 flex flex-col gap-4">
+          <div>
+            <span class="block text-[10px] uppercase tracking-widest text-secondary mb-1">Location</span>
+            <span class="text-sm font-medium">Cairo, Egypt</span>
+          </div>
+          <div>
+            <span class="block text-[10px] uppercase tracking-widest text-secondary mb-1">Scope</span>
+            <span class="text-sm font-medium">Digital Concierge &amp; Guest Experience</span>
+          </div>
+          <div>
+            <span class="block text-[10px] uppercase tracking-widest text-secondary mb-1">Guests</span>
+            <span class="text-sm font-medium">Global (14 Countries)</span>
+          </div>
+        </div>
+      </div>
+      <div class="md:col-span-8 animate-on-scroll" style="transition-delay: 200ms;">
+        <p class="text-2xl md:text-3xl font-headline leading-relaxed text-on-surface-variant">
+          Bridging continents through digital hospitality. Layla and Omar envisioned a wedding that didn’t just invite their global friends to Cairo, but immersed them in its rich history. 
+        </p>
+        <p class="mt-12 text-lg text-secondary leading-loose max-w-2xl font-body">
+          The goal was to create a digital bridge—a singular destination that offered a warm, Egyptian-inspired welcome while simplifying the complexities of international travel. We focused on reducing the friction of destination wedding logistics through an editorial-first guest portal.
+        </p>
+      </div>
+    </section>
+
+    <!-- Feature 1: The Welcome Map -->
+    <section class="py-32 bg-surface-container-low overflow-hidden">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+          <div class="order-2 lg:order-1 relative animate-on-scroll">
+            <div class="aspect-[4/5] bg-surface-container-lowest shadow-2xl shadow-primary/5 overflow-hidden p-4 group">
+              <img alt="" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000" data-alt="An elegant stylized gold foil map of Cairo showing landmarks like the Nile River, Old Cairo streets, and pyramids with subtle sand textures." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCX7EY4krSy5c6X4_zufmjiTWeLJtvgL19hM3z1L6wid6BUMfSiIrnAV2o-3uEtY3WRnlrLaVCgJibFR3qCohOPq18IXel3dwzcdrTU_JfctT_XSuZQO4H9Jv4pdC92BlzbdK6O3I4R0FbfClHVYv_bse5BUBVhJ3dgzXUqWzFLWAXNYmsylbCKI2s7ORFuF7NITt6fTdO3Cq8RIUsUjfqeu2u4nWjdpT_HX1qiDH2I3RswJW86lcyF7S8TWPY6fXff4yP1hiEy97Au"/>
+            </div>
+            <div class="absolute -bottom-8 -right-8 w-48 h-48 bg-primary-container/20 backdrop-blur-sm -z-10 rounded-full"></div>
+          </div>
+          <div class="order-1 lg:order-2 space-y-8 animate-on-scroll" style="transition-delay: 200ms;">
+            <span class="inline-block px-4 py-1.5 bg-primary-container text-on-primary-container text-[10px] uppercase tracking-widest font-bold">Feature 01</span>
+            <h3 class="text-4xl md:text-5xl font-headline text-on-surface">The Welcome Map</h3>
+            <p class="text-lg text-secondary leading-relaxed font-body">
+              An interactive sightseeing guide designed as a digital heirloom. Guests were able to explore Cairo's legendary landmarks—from the Giza plateau to the hidden cafes of Al-Muizz Street—all curated by the couple.
+            </p>
+            <ul class="space-y-6 pt-4">
+              <li class="flex items-center gap-4 text-on-surface">
+                <span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">explore</span>
+                <span class="font-body font-medium">Curated Pyramids at Dawn Experiences</span>
+              </li>
+              <li class="flex items-center gap-4 text-on-surface">
+                <span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">sailing</span>
+                <span class="font-body font-medium">Private Nile Felucca Navigation Guides</span>
+              </li>
+              <li class="flex items-center gap-4 text-on-surface">
+                <span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">restaurant</span>
+                <span class="font-body font-medium">Local Culinary Landmarks in Old Cairo</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Feature 2: Cultural Concierge -->
+    <section class="py-32 px-6 max-w-7xl mx-auto">
+      <div class="flex flex-col items-center text-center mb-24 animate-on-scroll">
+        <span class="inline-block px-4 py-1.5 bg-surface-container-highest text-on-surface-variant text-[10px] uppercase tracking-widest font-bold mb-6">Feature 02</span>
+        <h3 class="text-4xl md:text-6xl font-headline mb-8 text-on-surface">The Cultural Concierge</h3>
+        <p class="text-lg text-secondary max-w-2xl font-body">
+          We developed a bespoke travel module that provided real-time weather alerts, visa guidance, and cultural etiquette tips for Cairo’s international visitors.
+        </p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Concierge Cards -->
+        <div class="p-10 bg-surface-container-lowest shadow-lg shadow-primary/5 space-y-6 animate-on-scroll rounded-sm border border-outline-variant/10">
+          <span class="material-symbols-outlined text-3xl text-primary">wb_sunny</span>
+          <h4 class="text-xl font-headline text-on-surface">Atmospheric Insights</h4>
+          <p class="text-sm text-secondary font-body leading-relaxed">Predictive weather mapping to ensure guests packed for Cairo's specific daytime heat and cool desert evenings.</p>
+        </div>
+        <div class="p-10 bg-surface-container-lowest shadow-lg shadow-primary/5 space-y-6 md:translate-y-8 animate-on-scroll rounded-sm border border-outline-variant/10" style="transition-delay: 150ms;">
+          <span class="material-symbols-outlined text-3xl text-primary">language</span>
+          <h4 class="text-xl font-headline text-on-surface">Language Essentials</h4>
+          <p class="text-sm text-secondary font-body leading-relaxed">Integrated audio clips of Egyptian Arabic greetings, allowing guests to feel confident in local interactions.</p>
+        </div>
+        <div class="p-10 bg-surface-container-lowest shadow-lg shadow-primary/5 space-y-6 animate-on-scroll rounded-sm border border-outline-variant/10" style="transition-delay: 300ms;">
+          <span class="material-symbols-outlined text-3xl text-primary">local_taxi</span>
+          <h4 class="text-xl font-headline text-on-surface">Seamless Transit</h4>
+          <p class="text-sm text-secondary font-body leading-relaxed">A live-updating guide for Cairo's transportation, including secure booking links for private car services.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Visual Gallery: Asymmetric Layout -->
+    <section class="py-32 bg-white/50">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-12">
+          <div class="md:col-span-7 animate-on-scroll group overflow-hidden rounded-sm">
+            <img alt="" class="w-full aspect-[16/10] object-cover shadow-lg shadow-primary/5 group-hover:scale-105 transition-transform duration-1000" data-alt="Interior of a luxury hotel in Cairo with traditional Egyptian arches, ornate golden lamps, and intricate stone carvings." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBaTFfTAFg_0VYb7HETthAGC-sHkOg6BIoCl9QhLnVJMkCgL4TrEUjZ9oI0bsfedxQ1i2jId32vwxKuxpu5z00GeGzl1Wy6N6ap652WkE0IwVaynlRM9rjcYSbPovxWIwX1Ja1zVfQMblirEfDYusqNx2jnRURle2HhdcOmDIlH_qTzPf5Ui5AleCCqV9Ak27y14Aunktx60Ucjba6x1u0pOFtKbeA6rRcdMQDWRJIBCdG-m_THaH61ZyCgZyowRAUdY_HNYYZz55ie"/>
+          </div>
+          <div class="md:col-span-5 md:pt-24 animate-on-scroll group overflow-hidden rounded-sm" style="transition-delay: 150ms;">
+            <img alt="" class="w-full aspect-square object-cover shadow-lg shadow-primary/5 group-hover:scale-105 transition-transform duration-1000" data-alt="Close-up of traditional Egyptian wedding desserts including baklava and honey-soaked pastries on a silver platter." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD3mJ4ljqeZJg5Za8jEwVrRp4JWM5SnyymY-BWxAFkDC0cuzzl-1Tvg-1mlH0Syli1EEhGrP4odedDeIxMlGCHZlXsWb4w5WYtpYP6vIO_xCSCP-34PDJnYNP9atRQSFGIOAnVquO2d-sbuhZJKT2cVL0t8-iAJgWQEjgnd2uiVM4PYcfnS-zXF11TVmA92puk_OBmQdC0lsWugPE-9aSItfJXj7fArR9jLhUErQuZTxg2Vk3StsQ4NeKUZw7asASr3NU2C2F_L4PAB"/>
+          </div>
+          <div class="md:col-span-4 animate-on-scroll group overflow-hidden rounded-sm" style="transition-delay: 300ms;">
+            <img alt="" class="w-full aspect-[3/4] object-cover shadow-lg shadow-primary/5 group-hover:scale-105 transition-transform duration-1000" data-alt="Distant view of the Sphinx and Great Pyramids during the blue hour with glowing soft lights around the complex." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCcbEDkqRfSyUT7hxBE14u0DXu0_pZwzRn58PuwsuZpTgdkmmBUvjzQJXMydf5jf0aXC9UwXO6c-40Yt_6RRS6cTwJt2-FDHQoL8yOClIYGRYEOoKqN-QFyDf_2X85mIwukrDuTATLpljCcSrK1CKhFuKb7PBKx0_Daz3eASvXY0E1bhdkiBk-yeo5qlmSzijYP9xE5wJa58cUskldH_XG6Y5yMMrHoXJsJdxNOLXw7aZ6q9DmXADYDS5MhHWngcC6uMkeb7H7VWXYS"/>
+          </div>
+          <div class="md:col-span-8 md:-mt-12 animate-on-scroll" style="transition-delay: 450ms;">
+            <div class="h-full flex flex-col justify-center bg-primary-container p-16 md:p-24 text-on-primary-container rounded-sm">
+              <h3 class="text-3xl md:text-5xl font-headline leading-tight italic">"The city of Cairo was as much a guest at our wedding as our family was."</h3>
+              <p class="mt-8 font-label tracking-widest uppercase text-xs font-bold opacity-70">— Layla &amp; Omar</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonial -->
+    <section class="py-40 px-6">
+      <div class="max-w-4xl mx-auto text-center animate-on-scroll">
+        <span class="material-symbols-outlined text-primary text-6xl mb-8" style="font-variation-settings: 'FILL' 1;">format_quote</span>
+        <p class="text-3xl md:text-5xl font-headline italic leading-snug text-on-surface">
+          "The team at Still transformed our wedding logistics into a journey of discovery. Our global guests didn't just attend a wedding; they experienced our heritage through the most beautiful digital lens imaginable."
+        </p>
+        <div class="mt-12 flex flex-col items-center">
+          <div class="w-16 h-0.5 bg-primary mb-6"></div>
+          <p class="text-lg font-headline font-bold text-primary">Layla &amp; Omar</p>
+          <p class="text-sm font-label text-secondary tracking-widest uppercase mt-2">The Cairo Tradition</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="pb-32 px-6">
+      <div class="max-w-7xl mx-auto bg-primary py-32 px-12 text-center text-on-primary relative overflow-hidden rounded-sm animate-on-scroll">
+        <div class="absolute inset-0 opacity-10 pointer-events-none">
+          <img alt="" class="w-full h-full object-cover" data-alt="Faded textured background of an old Egyptian papyrus or stone wall with hieroglyphic patterns." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCHw9zQ5t9PAxhROJ-VeLPI5XFuk9NsE8U8aPCCTfzwCbZ3Qc_IgF2LW39RYImqgYL0rwo3uwhFwc4bsh6bMabBf_vXgq4FnusjOqvEHpJ1vx1CDHu1PNccp7U94K2CGjy2Pk68-XEpSWkunOaRmMJge35nF0LbbKqs0sboEm7KMOLwVb57kNHlW7IfGpcHRp7T-V1slmo_g6Me2uL1VYfWBKRaKooSEt-Khn2peiLm_nfnvVynuOUCs9tNQVgkWSnA8L0PH49JkZnx"/>
+        </div>
+        <div class="relative z-10 space-y-10">
+          <h2 class="text-4xl md:text-7xl font-headline">Ready to Build Your Wedding Site?</h2>
+          <p class="text-lg md:text-xl font-body max-w-2xl mx-auto opacity-90">
+            Let’s create a bespoke digital experience that reflects your unique love story and cultural heritage.
+          </p>
+          <div class="flex flex-col md:flex-row justify-center items-center gap-6 pt-4">
+            <a class="bg-on-primary text-primary px-12 py-5 font-bold tracking-[0.2em] uppercase text-sm rounded-[0.125rem] hover:bg-primary-container transition-colors" href="/contact">Contact Us</a>
+            <a class="text-on-primary border-b border-on-primary/30 py-2 italic font-headline text-xl hover:text-primary-container transition-colors" href="/services">Explore our services</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <PortfolioNav currentSlug="the-cairo-tradition" />
+  </main>
+  
+  <Footer />
+</Layout>

@@ -1,0 +1,187 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/layout/Header.astro';
+import Footer from '../../components/layout/Footer.astro';
+import PortfolioNav from '../../components/portfolio/PortfolioNav.astro';
+---
+
+<Layout title="The Amalfi Grandeur | Case Study | Still">
+  <Header />
+  
+  <main class="pt-24 min-h-screen">
+    <!-- Hero Section -->
+    <section class="relative min-h-[80vh] md:min-h-screen flex items-center justify-center overflow-hidden">
+      <div class="absolute inset-0 z-0">
+        <img class="w-full h-full object-cover" data-alt="elegant american couple in evening wear standing on a white stone terrace overlooking the amalfi coast at sunset" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBdByerWkb4hDWpSAncArN-gMoiq72nXPb-BIMJTBg-eURUU8xuDHB-x0RO0a8PT0LjFUSRXNyt1FyMk2Pj1g8q6IwrQmjUOlf7AQlha3-2upuftULaHJZyPOQ8CqELe6KOZpdAjCrhJfBMMxU2yCLH4NOjPGTVG49U6DjbBnxnMp9Wfy-L98aIquHw5PswXVlZKW-v7x08bF2T2_NtF8LYSGEc9bovfZVsiJ88LvA0KtVTCCNeT_cVsBC94BRpz5pvFngIgFKpqezw"/>
+        <div class="absolute inset-0 bg-black/20 bg-[radial-gradient(circle_at_center,_transparent_0%,_rgba(250,249,246,0.4)_100%)]"></div>
+      </div>
+      <div class="relative z-10 text-center text-on-primary animate-on-scroll mt-20 px-6">
+        <p class="font-label text-sm uppercase tracking-[0.3em] mb-4 text-primary-container">Julia &amp; Robert</p>
+        <h1 class="font-headline text-6xl md:text-7xl lg:text-8xl tracking-tighter drop-shadow-lg break-words">The Amalfi Grandeur</h1>
+      </div>
+    </section>
+
+    <!-- The Brief Section -->
+    <section class="py-32 px-6 md:px-12 bg-surface">
+      <div class="max-w-4xl mx-auto flex flex-col md:flex-row gap-16 items-start">
+        <div class="md:w-1/3 animate-on-scroll">
+          <h2 class="font-headline text-3xl italic text-primary">The Brief</h2>
+          <div class="mt-4 w-12 h-0.5 bg-primary-container"></div>
+        </div>
+        <div class="md:w-2/3 animate-on-scroll" style="transition-delay: 200ms;">
+          <p class="font-headline text-2xl md:text-3xl leading-relaxed text-on-surface-variant">
+            Managing an exclusive Italian getaway for a high-profile American couple requires more than just aesthetics. The challenge was orchestrating global guest logistics, ensuring each attendee felt like a VIP from the moment they landed in Naples.
+          </p>
+          <p class="mt-8 text-secondary leading-loose text-lg">
+            With guests flying in from three continents, the digital experience needed to serve as a 24/7 concierge—translating the complexity of coastal transport into a seamless, high-end editorial journey.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Feature 1: Concierge Travel Hub (Bento Style) -->
+    <section class="py-24 px-6 md:px-12 bg-surface-container-low">
+      <div class="max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-8">
+          <div class="md:col-span-8 bg-surface-container-lowest p-12 flex flex-col justify-between relative overflow-hidden group rounded-sm animate-on-scroll">
+            <div>
+              <span class="font-label text-xs uppercase tracking-widest text-primary mb-6 block">Experience 01</span>
+              <h3 class="font-headline text-4xl mb-6">Concierge Travel Hub</h3>
+              <p class="text-secondary max-w-md leading-relaxed">A centralized digital dashboard providing guests with real-time flight tracking, personalized weather alerts for Ravello, and custom-tailored itineraries delivered via the wedding app.</p>
+            </div>
+            <div class="mt-12 transform group-hover:translate-x-4 transition-transform duration-700">
+              <img class="w-full h-auto grayscale opacity-90 rounded-sm" data-alt="minimalist digital UI dashboard showing flight arrival times and travel status with elegant serif typography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD8ZpiCq-nVFjIX270KiAoB4gdjLksKOFuq2Q0hXD3vR6pWf63S8T68O18kKE0FxQLSA0Ur6rkp9LHBZTzTXf989MechbX0B4ja5HUb1PyjmichAbmZHBGDly_QdXXIficDIrzRcdPOLg6PbxFB6YcZIdhNblWqNWACgaf2A3Ade2YVvuQYXlerP9Q6UYlcKsBHbXAhCTg-aEgfEM4HO9WBjGfHrnj6z9CbIbMDSHii8sFSKQREnsLi-0eB191svS2z5k7HAektrJeA"/>
+            </div>
+          </div>
+          <div class="md:col-span-4 space-y-8 animate-on-scroll" style="transition-delay: 200ms;">
+            <div class="bg-primary text-on-primary p-10 h-full flex flex-col justify-center rounded-sm">
+              <span class="material-symbols-outlined text-5xl mb-6 text-primary-container" data-icon="flight_takeoff">flight_takeoff</span>
+              <h4 class="font-headline text-2xl mb-4 italic">Global Sync</h4>
+              <p class="text-on-primary/80 leading-relaxed">Real-time API integration with major airlines to provide automated pickup notifications for the fleet team.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Feature 2: Private Fleet (Asymmetric Layout) -->
+    <section class="py-32 px-6 md:px-12 bg-surface overflow-hidden">
+      <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-20">
+        <div class="md:w-1/2 relative animate-on-scroll">
+          <div class="absolute -top-10 -left-10 w-64 h-64 bg-primary-container/20 rounded-full blur-3xl"></div>
+          <img class="w-full h-[600px] object-cover relative z-10 rounded-sm" data-alt="luxury vintage italian sports car parked on a narrow cobbled street in a coastal village with sunlight filtering through leaves" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCcWkMvDPM5JCo5CHtAkDLaA0wf2tM42dFILmkVpln3k6RvHplbehaVn3jcLcYI2pCcVkg9dVk42HQkuubYfmtKV7tHq02EJrKmd60ArxgWeCBPbLvz3naU3vpxA8cMKVKL91TpwAkCFQqTlnncrkd8t8cWoigDMM74JHi6JrTLareGhwTm8eZjGKHFe2bwEqfljucq2-QzZL3fClcA0pe677Rfjm3SYgz1xH6ivQdRkg0-WWXrBWO1pGCDcRMXl1MG6q8I88tIZG2d"/>
+          <div class="absolute -bottom-8 -right-8 bg-surface-container-lowest p-8 shadow-md z-20 md:block hidden border border-outline-variant/10 rounded-sm">
+            <p class="font-headline text-xl italic text-primary max-w-xs leading-relaxed">"The driver was waiting before I even cleared customs."</p>
+          </div>
+        </div>
+        <div class="md:w-1/2 space-y-8 animate-on-scroll" style="transition-delay: 200ms;">
+          <span class="font-label text-xs uppercase tracking-widest text-primary">Experience 02</span>
+          <h3 class="font-headline text-5xl">Private Fleet Requests</h3>
+          <p class="text-secondary text-lg leading-relaxed">
+            Through the bespoke 'Car Pickup' feature, guests could request transport with a single tap. The system intelligently pooled guests arriving on similar schedules, coordinating a fleet of luxury Mercedes and vintage Alfas.
+          </p>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-8">
+            <div class="p-6 border border-outline-variant/20 flex flex-col gap-4 rounded-sm bg-surface-container-lowest hover:border-primary/30 transition-colors">
+              <span class="material-symbols-outlined text-primary text-3xl" data-icon="airport_shuttle">airport_shuttle</span>
+              <span class="font-label text-sm uppercase text-on-surface">Luxury Shuttle</span>
+            </div>
+            <div class="p-6 border border-outline-variant/20 flex flex-col gap-4 rounded-sm bg-surface-container-lowest hover:border-primary/30 transition-colors">
+              <span class="material-symbols-outlined text-primary text-3xl" data-icon="directions_car">directions_car</span>
+              <span class="font-label text-sm uppercase text-on-surface">Private Sedan</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Feature 3: Curated Excursions (Map/Grid) -->
+    <section class="py-24 bg-surface-container-low">
+      <div class="px-6 md:px-12 max-w-7xl mx-auto">
+        <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6 animate-on-scroll">
+          <div>
+            <span class="font-label text-xs uppercase tracking-widest text-primary mb-4 block">Experience 03</span>
+            <h3 class="font-headline text-5xl">Curated Excursions</h3>
+          </div>
+          <p class="text-secondary max-w-sm leading-relaxed">An interactive map of the coast allowed guests to book exclusive, pre-vetted local experiences.</p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+          <!-- Card 1 -->
+          <div class="space-y-6 group animate-on-scroll">
+            <div class="overflow-hidden rounded-sm">
+              <img class="w-full aspect-[3/4] object-cover group-hover:scale-105 transition-transform duration-1000" data-alt="private wooden boat cruising on clear turquoise water near the towering cliffs of capri" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBuT30WrJLRFtEyy4EeicSLAoWVBfE9dyZVeGhGOMOTAp-6t4k0-YBT22OoleFCkM4Kib-BseXEj_4Ds704LX4KylQIwk6ehoMnHYdcOmbWvb7uh58mbpVbJ6hHUmiwfL945urm_RqB4emn2YUkU3DOWOaax7AfHmEv2Ee4a6RUn4qM_s1rbRIcJdUIBFZATlqxfVcRzr77m5XRUDjAV1MakmmrriGc-23PjuKjCoOO7GtjjU93usYqSCTjJDIJXEaqIS9injl14HHW"/>
+            </div>
+            <div class="flex justify-between items-start">
+              <div>
+                <h4 class="font-headline text-xl text-on-surface">Boat Trips to Capri</h4>
+                <p class="text-secondary text-sm mt-2 leading-relaxed">Private Faraglioni tour with champagne.</p>
+              </div>
+              <span class="material-symbols-outlined text-primary" data-icon="sailing">sailing</span>
+            </div>
+          </div>
+          <!-- Card 2 (Offset) -->
+          <div class="space-y-6 group md:mt-24 animate-on-scroll" style="transition-delay: 150ms;">
+            <div class="overflow-hidden rounded-sm">
+              <img class="w-full aspect-[3/4] object-cover group-hover:scale-105 transition-transform duration-1000" data-alt="lush lemon groves with bright yellow lemons hanging from trees under a green canopy in ravello" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBw8Xuw3I_zn3xWBVBoR40Cr6dQBrDOJ7ZidA6XGksVVojasjmX-rPtyuYApNg0gXKhLPldfqfhPoBYcsBsk7B7bZPiVaY6sXCkB6h2U7yZhwNK-uFdgfnUCPgrlnlmhP70gCqT-PT4sM_ZZW2o3oQOd70oa5w-UaJ_nZqDyQao-1O0TrSOhST7yJHJYhPvgCZCIs1T1gfEreP1tI9UtUoFc0VR5Fa_EwbzRjuN_Y3LBL6obcP4VD62h2a4EaQITRxrO2K4KbuBBMte"/>
+            </div>
+            <div class="flex justify-between items-start">
+              <div>
+                <h4 class="font-headline text-xl text-on-surface">Lemon Grove Walks</h4>
+                <p class="text-secondary text-sm mt-2 leading-relaxed">Traditional Ravello agriculture tour.</p>
+              </div>
+              <span class="material-symbols-outlined text-primary" data-icon="park">park</span>
+            </div>
+          </div>
+          <!-- Card 3 -->
+          <div class="space-y-6 group animate-on-scroll" style="transition-delay: 300ms;">
+            <div class="overflow-hidden rounded-sm">
+              <img class="w-full aspect-[3/4] object-cover group-hover:scale-105 transition-transform duration-1000" data-alt="sunset view of amalfi town with warm lights beginning to glow against the blue sea" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCcDz9ZC8E7AZ_YE-C--U_EVHP2jJQ24cWqi_LBItlHGcukwK3VY_qY4v_BvVoyBrM8cxxiI6Y7W6CBNHi5iVzFU2I04M7pAOoteRapCYpp32IxmSSTcrXgfQcgONPAIdkO6jT-yTFAKoFWwq2DyAsZxJYFsZe8UOwMQES9XRa5pDFT_ZZ2HAyJGWYPBUAGizDkUeHOHB3E2rYg34vHaRVHxTUvFXYr3mpzJh4ryMBANX3GgdoJfd1kmH2qgYx-yk65sX0466KAXjiV"/>
+            </div>
+            <div class="flex justify-between items-start">
+              <div>
+                <h4 class="font-headline text-xl text-on-surface">Sunset Positano</h4>
+                <p class="text-secondary text-sm mt-2 leading-relaxed">Exclusive rooftop dining reservation.</p>
+              </div>
+              <span class="material-symbols-outlined text-primary" data-icon="restaurant">restaurant</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonial Section -->
+    <section class="py-40 px-6 md:px-12 bg-surface-container-lowest">
+      <div class="max-w-4xl mx-auto text-center animate-on-scroll">
+        <span class="material-symbols-outlined text-primary-container text-6xl mb-12" style="font-variation-settings: 'FILL' 1;">format_quote</span>
+        <blockquote class="font-headline text-4xl md:text-5xl leading-tight italic text-on-surface">
+          "The digital platform transformed what could have been a logistical nightmare into an effortless, editorial experience for our guests. It felt like every guest had their own personal concierge."
+        </blockquote>
+        <div class="mt-12 flex flex-col items-center">
+          <div class="w-16 h-0.5 bg-primary mb-6"></div>
+          <cite class="font-label uppercase tracking-widest text-sm not-italic text-on-surface">Julia &amp; Robert</cite>
+          <span class="text-secondary text-xs mt-2 uppercase tracking-tighter">Amalfi, Italy • June 2024</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-32 px-6 md:px-12 bg-primary text-on-primary">
+      <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-12 animate-on-scroll">
+        <div class="text-center md:text-left">
+          <h2 class="font-headline text-4xl md:text-6xl mb-6 text-on-primary">Create your masterpiece.</h2>
+          <p class="text-on-primary/70 text-xl max-w-lg leading-relaxed">Let's design a digital experience that honors your most precious moments.</p>
+        </div>
+        <div class="flex flex-col items-center md:items-end gap-6">
+          <a class="inline-block bg-surface text-primary px-12 py-5 text-sm font-bold uppercase tracking-widest hover:bg-primary-container hover:text-primary transition-all duration-300" href="/contact">
+            Work With Us
+          </a>
+          <p class="font-headline italic text-primary-container">Limited availability for 2025/26</p>
+        </div>
+      </div>
+    </section>
+    
+    <PortfolioNav currentSlug="the-amalfi-grandeur" />
+  </main>
+  
+  <Footer />
+</Layout>

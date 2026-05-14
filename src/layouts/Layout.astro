@@ -1,0 +1,39 @@
+---
+import '../styles/global.css';
+import SEO from '../components/seo/SEO.astro';
+
+interface Props {
+	title: string;
+	description?: string;
+}
+
+const { title, description = "Bespoke digital experiences for the world's most intentional weddings." } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<SEO title={title} description={description} />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&family=Noto+Serif:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL,GRAD,opsz@100..700,0..1,-50..200,20..48&display=swap" rel="stylesheet" />
+	</head>
+	<body class="antialiased selection:bg-primary-container selection:text-on-surface">
+		<slot />
+		<script>
+			const observer = new IntersectionObserver((entries) => {
+				entries.forEach((entry) => {
+					if (entry.isIntersecting) {
+						entry.target.classList.add('is-visible');
+						observer.unobserve(entry.target);
+					}
+				});
+			}, { threshold: 0.1, rootMargin: "0px 0px -50px 0px" });
+
+			document.querySelectorAll('.animate-on-scroll').forEach((el) => {
+				observer.observe(el);
+			});
+		</script>
+	</body>
+</html>

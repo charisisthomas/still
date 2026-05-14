@@ -1,0 +1,313 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/layout/Header.astro';
+import Footer from '../components/layout/Footer.astro';
+import Button from '../components/ui/Button.astro';
+---
+
+<Layout title="The Process | Still">
+  <Header />
+  
+  <main class="pt-[84px]"> <!-- Account for fixed header -->
+    
+    <!-- SECTION 2 — HERO -->
+    <section class="min-h-[80vh] flex items-center bg-surface px-6 md:px-12 py-24">
+        <div class="max-w-[1440px] mx-auto grid grid-cols-12 gap-12 items-center">
+            <div class="col-span-12 lg:col-span-7 animate-on-scroll">
+                <h1 class="text-5xl md:text-[64px] leading-[1.1] text-on-surface mb-8 font-headline" style="text-wrap: balance;">
+                    From First Conversation to <span class="italic text-primary">Digital Heirloom</span>
+                </h1>
+                <p class="text-lg text-secondary max-w-xl mb-12 leading-relaxed font-body" style="text-wrap: pretty;">
+                    Our method is an artisanal journey, transforming your unique love story into a timeless digital experience. We don't just build websites; we curate legacies that serve as the elegant gateway to your union, ensuring every guest interaction feels as bespoke as the day itself.
+                </p>
+                <div class="inline-flex items-center px-6 py-3 bg-primary-container text-on-primary-container rounded-sm border border-primary-fixed-dim/30 text-xs font-semibold tracking-[0.15em] uppercase">
+                    TYPICAL TIMELINE: 8 to 16 weeks from contract to launch
+                </div>
+            </div>
+            <div class="col-span-12 lg:col-span-5 relative animate-on-scroll" style="transition-delay: 200ms;">
+                <div class="aspect-[4/5] overflow-hidden rounded-sm bg-surface-container-low shadow-sm border border-outline-variant/10">
+                    <img alt="Designer at a minimalist desk reviewing wedding invitation layouts" class="w-full h-full object-cover transition-transform duration-1000 hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB7t-QJo4OHW4Yifbl_MWahuW6STsjTZrxdMy-hbwXQvJ_l9Dc3n6-bMu_Eupqgojx8rkM3ErYdNRzRsZ1w2Xshf-cbxwcEz_HqSep22rehc5FRGX3T-AoQS2zmwdJl-lHQiSEe3fs2tyjlUnowKcTRk65gxmn6mZugNEjyBXaEnr49vRCsoZvR150TChj26OaPoTUr6A0LcF_82JichOvYnWeYtdnoI5B93YD6dyD7fpcsgSTmZpiPEWQ-YrfBZ5eqZGIXzg09LgX4"/>
+                </div>
+                <div class="absolute -bottom-6 -left-6 bg-surface p-6 rounded-sm shadow-xl hidden lg:block border border-outline-variant/20">
+                    <div class="font-headline italic text-primary text-xl">The Curated Standard</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 3 — PROCESS STAGE NAVIGATOR -->
+    <nav class="sticky top-[84px] z-40 h-[56px] bg-surface-container-low/90 backdrop-blur-md border-y border-outline-variant/20 shadow-sm">
+        <div class="max-w-[1440px] mx-auto h-full flex items-center justify-center space-x-8 md:space-x-12 px-6 overflow-x-auto no-scrollbar">
+            <a class="font-label text-[11px] uppercase tracking-[0.2em] text-secondary hover:text-primary transition-colors whitespace-nowrap" href="#discovery">01 Discovery</a>
+            <a class="font-label text-[11px] uppercase tracking-[0.2em] text-secondary hover:text-primary transition-colors whitespace-nowrap" href="#design">02 Design</a>
+            <a class="font-label text-[11px] uppercase tracking-[0.2em] text-secondary hover:text-primary transition-colors whitespace-nowrap" href="#build">03 Build</a>
+            <a class="font-label text-[11px] uppercase tracking-[0.2em] text-secondary hover:text-primary transition-colors whitespace-nowrap" href="#launch">04 Launch</a>
+        </div>
+    </nav>
+
+    <!-- SECTION 4 — STAGE 01: DISCOVERY -->
+    <section class="py-24 md:py-32 bg-surface px-6 md:px-12" id="discovery">
+        <div class="max-w-[1440px] mx-auto grid grid-cols-1 md:grid-cols-12 gap-12 md:gap-16">
+            <div class="md:col-span-5 animate-on-scroll">
+                <span class="block text-[80px] md:text-[96px] leading-none font-headline italic text-primary-fixed-dim mb-4">01</span>
+                <h2 class="text-3xl md:text-4xl font-headline mb-2 text-on-surface" style="text-wrap: balance;">Discovery &amp; Narrative</h2>
+                <p class="font-label text-primary tracking-widest uppercase text-xs font-semibold">Weeks 1-2</p>
+            </div>
+            <div class="md:col-span-7 animate-on-scroll" style="transition-delay: 100ms;">
+                <div class="prose prose-on-surface max-w-none">
+                    <p class="text-xl text-secondary mb-12 leading-relaxed font-body" style="text-wrap: pretty;">
+                        Every masterpiece begins with a deep understanding of its subject. We host an intensive video consultation to unearth the nuances of your aesthetic, the logistics of your venue, and the specific narrative you wish to communicate to your guests.
+                    </p>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
+                    <div class="p-8 bg-surface-container-low rounded-sm shadow-sm border border-outline-variant/10">
+                        <h4 class="font-headline text-lg mb-6 text-on-surface">What you bring</h4>
+                        <ul class="space-y-4 text-secondary text-sm font-body">
+                            <li class="flex items-start gap-3"><span class="material-symbols-outlined text-primary text-lg" style="font-variation-settings: 'FILL' 1;">check_circle</span> Moodboards &amp; Inspiration</li>
+                            <li class="flex items-start gap-3"><span class="material-symbols-outlined text-primary text-lg" style="font-variation-settings: 'FILL' 1;">check_circle</span> Preliminary Guest Lists</li>
+                            <li class="flex items-start gap-3"><span class="material-symbols-outlined text-primary text-lg" style="font-variation-settings: 'FILL' 1;">check_circle</span> Venue Details</li>
+                        </ul>
+                    </div>
+                    <div class="p-8 bg-tertiary-container rounded-sm border border-primary-fixed-dim/30 shadow-sm">
+                        <h4 class="font-headline text-lg mb-6 text-primary">What we deliver</h4>
+                        <ul class="space-y-4 text-on-surface text-sm font-body">
+                            <li class="flex items-start gap-3"><span class="material-symbols-outlined text-primary text-lg" style="font-variation-settings: 'FILL' 1;">description</span> Strategic Narrative Brief</li>
+                            <li class="flex items-start gap-3"><span class="material-symbols-outlined text-primary text-lg" style="font-variation-settings: 'FILL' 1;">account_tree</span> Sitemap &amp; User Journey</li>
+                            <li class="flex items-start gap-3"><span class="material-symbols-outlined text-primary text-lg" style="font-variation-settings: 'FILL' 1;">calendar_month</span> Finalized Timeline</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 5 — STAGE 02: DESIGN -->
+    <section class="py-24 md:py-32 bg-surface-container-low px-6 md:px-12 border-y border-outline-variant/10" id="design">
+        <div class="max-w-[1440px] mx-auto grid grid-cols-1 md:grid-cols-12 gap-12 md:gap-16">
+            <div class="md:col-span-5 animate-on-scroll">
+                <span class="block text-[80px] md:text-[96px] leading-none font-headline italic text-primary-fixed-dim mb-4">02</span>
+                <h2 class="text-3xl md:text-4xl font-headline mb-2 text-on-surface" style="text-wrap: balance;">Design</h2>
+                <p class="font-label text-primary tracking-widest uppercase text-xs font-semibold">Weeks 3-6</p>
+                <div class="mt-12 overflow-hidden rounded-sm shadow-sm border border-outline-variant/10">
+                    <img alt="Designer sketching elegant typography" class="w-full grayscale hover:grayscale-0 transition-all duration-700 hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDBEIs0-OGxo6HMd7pWyXOxk6HmwRmIgTGwrR8xHo10LxVGXQyGmn9qtNaOwYE8te1gq0-qrtVOiMPWeKSRm8uxtpWs6UI7oE-nmBY9qQVrcEilbDFu1MvyOJtR7CcuNSy_b3_4hpozVVgcisc3QmD1x9By5onyYaXqPqi_wwHOPpKMBwLSpqZrZrS8TW1jCPMPi0ZEsMXU4tLsQz7j6yfb89hUbJLCzK5TBNT5nkUar2gVsYO6IYnjx6eMY6Kq6O-rFsUEdr66KNiE"/>
+                </div>
+            </div>
+            <div class="md:col-span-7 animate-on-scroll" style="transition-delay: 100ms;">
+                <div class="prose prose-on-surface max-w-none">
+                    <p class="text-xl text-secondary mb-12 leading-relaxed font-body" style="text-wrap: pretty;">
+                        This is where the vision takes visual form. We craft high-fidelity prototypes that balance editorial elegance with intuitive functionality. We explore typography pairings, color palettes derived from your floral arrangements, and layout structures that guide guests effortlessly.
+                    </p>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
+                    <div class="p-8 bg-surface rounded-sm shadow-sm border border-outline-variant/10">
+                        <h4 class="font-headline text-lg mb-6 text-on-surface">What you bring</h4>
+                        <ul class="space-y-4 text-secondary text-sm font-body">
+                            <li class="flex items-start gap-3"><span class="material-symbols-outlined text-primary text-lg" style="font-variation-settings: 'FILL' 1;">check_circle</span> Content &amp; Imagery</li>
+                            <li class="flex items-start gap-3"><span class="material-symbols-outlined text-primary text-lg" style="font-variation-settings: 'FILL' 1;">check_circle</span> Stationery Samples</li>
+                            <li class="flex items-start gap-3"><span class="material-symbols-outlined text-primary text-lg" style="font-variation-settings: 'FILL' 1;">check_circle</span> Feedback on Prototypes</li>
+                        </ul>
+                    </div>
+                    <div class="p-8 bg-tertiary-container rounded-sm border border-primary-fixed-dim/30 shadow-sm">
+                        <h4 class="font-headline text-lg mb-6 text-primary">What we deliver</h4>
+                        <ul class="space-y-4 text-on-surface text-sm font-body">
+                            <li class="flex items-start gap-3"><span class="material-symbols-outlined text-primary text-lg" style="font-variation-settings: 'FILL' 1;">palette</span> Visual Style Guide</li>
+                            <li class="flex items-start gap-3"><span class="material-symbols-outlined text-primary text-lg" style="font-variation-settings: 'FILL' 1;">web</span> Interactive Desktop Prototypes</li>
+                            <li class="flex items-start gap-3"><span class="material-symbols-outlined text-primary text-lg" style="font-variation-settings: 'FILL' 1;">smartphone</span> Mobile Flow Mockups</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 6 — STAGE 03: BUILD -->
+    <section class="py-24 md:py-32 bg-surface px-6 md:px-12" id="build">
+        <div class="max-w-[1440px] mx-auto grid grid-cols-1 md:grid-cols-12 gap-12 md:gap-16">
+            <div class="md:col-span-5 animate-on-scroll">
+                <span class="block text-[80px] md:text-[96px] leading-none font-headline italic text-primary-fixed-dim mb-4">03</span>
+                <h2 class="text-3xl md:text-4xl font-headline mb-2 text-on-surface" style="text-wrap: balance;">Build</h2>
+                <p class="font-label text-primary tracking-widest uppercase text-xs font-semibold">Weeks 7-12</p>
+                <div class="mt-12 p-4 bg-surface-container-low rounded-sm border border-outline-variant/20 shadow-sm">
+                    <img alt="Responsive design display on monitor and phone" class="w-full h-auto rounded-sm" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAE835m0mPYeQTbm9h_mdpgKSCCaCi_vxjf2QwU0eG2AZrXbpoyesaUVITDGrBMgY79pAjhcwByZxeLtqyZs1Ze0MfLigVrel5Vsdabs5jhVZh-d6AMsnFSsVlZ8W6LsX8Cw7Z7W5tB-GgLsmR0sdRj4ZNQklsfpWXxMBU-BFqS7_chM-rWPaA-KS6oGQ5DeMkJmClfaT51eUF9FnllULbM3voZWnsGxMPZ1-oyDIBpww6CEmDb7CAakfbsofCw_LUEUHyWUA5DQr48"/>
+                </div>
+            </div>
+            <div class="md:col-span-7 animate-on-scroll" style="transition-delay: 100ms;">
+                <div class="prose prose-on-surface max-w-none">
+                    <p class="text-xl text-secondary mb-12 leading-relaxed font-body" style="text-wrap: pretty;">
+                        Engineering the digital core. We translate the approved designs into a performant, responsive platform. This includes setting up secure RSVP management systems, dietary requirement tracking, and a dedicated guest app interface.
+                    </p>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
+                    <div class="p-8 bg-surface-container-low rounded-sm shadow-sm border border-outline-variant/10">
+                        <h4 class="font-headline text-lg mb-6 text-on-surface">What you bring</h4>
+                        <ul class="space-y-4 text-secondary text-sm font-body">
+                            <li class="flex items-start gap-3"><span class="material-symbols-outlined text-primary text-lg" style="font-variation-settings: 'FILL' 1;">check_circle</span> Final Wedding Details</li>
+                            <li class="flex items-start gap-3"><span class="material-symbols-outlined text-primary text-lg" style="font-variation-settings: 'FILL' 1;">check_circle</span> Registry Integrations</li>
+                            <li class="flex items-start gap-3"><span class="material-symbols-outlined text-primary text-lg" style="font-variation-settings: 'FILL' 1;">check_circle</span> RSVP Field Requirements</li>
+                        </ul>
+                    </div>
+                    <div class="p-8 bg-tertiary-container rounded-sm border border-primary-fixed-dim/30 shadow-sm">
+                        <h4 class="font-headline text-lg mb-6 text-primary">What we deliver</h4>
+                        <ul class="space-y-4 text-on-surface text-sm font-body">
+                            <li class="flex items-start gap-3"><span class="material-symbols-outlined text-primary text-lg" style="font-variation-settings: 'FILL' 1;">code</span> Fully Coded Bespoke Site</li>
+                            <li class="flex items-start gap-3"><span class="material-symbols-outlined text-primary text-lg" style="font-variation-settings: 'FILL' 1;">database</span> RSVP Management Dashboard</li>
+                            <li class="flex items-start gap-3"><span class="material-symbols-outlined text-primary text-lg" style="font-variation-settings: 'FILL' 1;">security</span> SSL &amp; Secure Hosting</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 7 — STAGE 04: LAUNCH & SUPPORT -->
+    <section class="py-24 md:py-32 bg-surface-container-low px-6 md:px-12 border-y border-outline-variant/10" id="launch">
+        <div class="max-w-[1440px] mx-auto grid grid-cols-1 md:grid-cols-12 gap-12 md:gap-16 items-center">
+            <div class="md:col-span-5 animate-on-scroll">
+                <span class="block text-[80px] md:text-[96px] leading-none font-headline italic text-primary-fixed-dim mb-4">04</span>
+                <h2 class="text-3xl md:text-4xl font-headline mb-2 text-on-surface" style="text-wrap: balance;">Launch &amp; Support</h2>
+                <p class="font-label text-primary tracking-widest uppercase text-xs font-semibold">Weeks 13-16</p>
+            </div>
+            <div class="md:col-span-7 animate-on-scroll" style="transition-delay: 100ms;">
+                <div class="flex flex-col md:flex-row gap-12 items-start">
+                    <div class="flex-1">
+                        <p class="text-xl text-secondary mb-12 leading-relaxed font-body" style="text-wrap: pretty;">
+                            The grand reveal. We handle the technical complexities of domain migration and live launch. Post-launch, we provide a concierge service for any updates as the big day approaches.
+                        </p>
+                        <div class="grid grid-cols-1 gap-6">
+                            <div class="p-8 bg-surface rounded-sm shadow-sm border border-outline-variant/10">
+                                <h4 class="font-headline text-lg mb-6 text-primary">The Handover</h4>
+                                <ul class="space-y-4 text-on-surface text-sm font-body">
+                                    <li class="flex items-start gap-3"><span class="material-symbols-outlined text-primary text-lg" style="font-variation-settings: 'FILL' 1;">rocket_launch</span> Domain Launch &amp; Setup</li>
+                                    <li class="flex items-start gap-3"><span class="material-symbols-outlined text-primary text-lg" style="font-variation-settings: 'FILL' 1;">support_agent</span> 4 Weeks Post-Launch Concierge</li>
+                                    <li class="flex items-start gap-3"><span class="material-symbols-outlined text-primary text-lg" style="font-variation-settings: 'FILL' 1;">folder_zip</span> Asset Package Archive</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="md:w-[45%] overflow-hidden rounded-sm shadow-2xl rotate-2 bg-surface p-2 border border-outline-variant/20 hover:rotate-0 transition-transform duration-500">
+                        <img alt="Smartphone with wedding screen in sun-drenched setting" class="w-full h-auto rounded-sm" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCypPKUsaqi-0ceEumNhPfzFcSt0RsP24URgQ-5qOyiFinceiVzaMxiJdErXsak7PVh5y6gqhYoU90A2ooi6ChfNp7UQMbOCMJs_FzleQY9d6wIfnWnp4JGfpWpZPEcfyPxezFfDnSpWnGDk3HUtk6_wEHUCL6airCyWOquQnFyRuGTZ7YJiqp-04DVv-GNSPjlU5sMPn0AYSO2S8Tp6atZwi8Ic8G5_iTKAq7w5clRXPCNtN1JYyzLW_eBEL1EJzO4RIuOqcBtYDzw"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 8 — TIMELINE OVERVIEW -->
+    <section class="py-32 bg-surface px-6 md:px-12">
+        <div class="max-w-[860px] mx-auto text-center animate-on-scroll">
+            <h2 class="text-4xl md:text-5xl font-headline mb-16 text-on-surface" style="text-wrap: balance;">From First Inquiry to <span class="italic text-primary">Your Wedding Day</span></h2>
+            
+            <div class="relative pt-10 pb-20 hidden md:block">
+                <div class="absolute top-[50px] left-0 w-full h-[1px] bg-outline-variant/30"></div>
+                <div class="relative flex justify-between items-start">
+                    <!-- Dots -->
+                    <div class="flex flex-col items-center">
+                        <div class="w-3 h-3 rounded-full bg-outline-variant mb-4 relative z-10 shadow-sm"></div>
+                        <span class="font-label text-[10px] uppercase tracking-widest text-secondary font-bold">Inquiry</span>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <div class="w-3 h-3 rounded-full bg-outline-variant mb-4 relative z-10 shadow-sm"></div>
+                        <span class="font-label text-[10px] uppercase tracking-widest text-secondary font-bold">Discovery</span>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <div class="w-3 h-3 rounded-full bg-outline-variant mb-4 relative z-10 shadow-sm"></div>
+                        <span class="font-label text-[10px] uppercase tracking-widest text-secondary font-bold">Design</span>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <div class="w-3 h-3 rounded-full bg-outline-variant mb-4 relative z-10 shadow-sm"></div>
+                        <span class="font-label text-[10px] uppercase tracking-widest text-secondary font-bold">Build</span>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <div class="w-3 h-3 rounded-full bg-outline-variant mb-4 relative z-10 shadow-sm"></div>
+                        <span class="font-label text-[10px] uppercase tracking-widest text-secondary font-bold">Launch</span>
+                    </div>
+                    <div class="flex flex-col items-center -mt-4">
+                        <div class="w-10 h-10 rounded-full bg-primary-container border border-primary-fixed-dim mb-2 flex items-center justify-center relative z-10 shadow-lg animate-pulse">
+                            <span class="material-symbols-outlined text-primary text-[20px]" style="font-variation-settings: 'FILL' 1;">favorite</span>
+                        </div>
+                        <span class="font-headline text-sm font-bold text-primary italic">The Day</span>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <div class="w-3 h-3 rounded-full bg-outline-variant mb-4 relative z-10 shadow-sm"></div>
+                        <span class="font-label text-[10px] uppercase tracking-widest text-secondary font-bold">Archive</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Mobile Timeline Fallback -->
+            <div class="md:hidden flex flex-col items-center space-y-6">
+                <span class="font-label text-xs uppercase tracking-widest text-secondary font-bold">Inquiry</span>
+                <div class="w-[1px] h-6 bg-outline-variant/50"></div>
+                <span class="font-label text-xs uppercase tracking-widest text-secondary font-bold">Discovery (Weeks 1-2)</span>
+                <div class="w-[1px] h-6 bg-outline-variant/50"></div>
+                <span class="font-label text-xs uppercase tracking-widest text-secondary font-bold">Design (Weeks 3-6)</span>
+                <div class="w-[1px] h-6 bg-outline-variant/50"></div>
+                <span class="font-label text-xs uppercase tracking-widest text-secondary font-bold">Build (Weeks 7-12)</span>
+                <div class="w-[1px] h-6 bg-outline-variant/50"></div>
+                <span class="font-label text-xs uppercase tracking-widest text-secondary font-bold">Launch (Weeks 13-16)</span>
+                <div class="w-[1px] h-6 bg-outline-variant/50"></div>
+                <div class="w-12 h-12 rounded-full bg-primary-container border border-primary-fixed-dim flex items-center justify-center shadow-lg">
+                    <span class="material-symbols-outlined text-primary text-[24px]" style="font-variation-settings: 'FILL' 1;">favorite</span>
+                </div>
+                <span class="font-headline text-lg font-bold text-primary italic">The Wedding Day</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 9 — FAQ TEASER -->
+    <section class="py-24 bg-surface-container-low px-6 md:px-12 border-t border-outline-variant/10">
+        <div class="max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-16">
+            <div class="lg:col-span-5 animate-on-scroll">
+                <h2 class="text-4xl font-headline leading-tight text-on-surface" style="text-wrap: balance;">Things Couples Ask Before They <span class="italic text-primary">Inquire</span></h2>
+                <p class="mt-6 text-secondary leading-relaxed font-body" style="text-wrap: pretty;">
+                    We believe in transparency. Understanding our workflows ensures a seamless creative partnership from day one.
+                </p>
+                <div class="mt-8">
+                    <a href="/faq" class="font-label text-sm uppercase tracking-widest text-primary hover:text-primary-dim border-b border-primary-fixed-dim pb-1 transition-colors">Read All FAQs</a>
+                </div>
+            </div>
+            <div class="lg:col-span-7 space-y-4 animate-on-scroll" style="transition-delay: 200ms;">
+                <details class="bg-surface border border-outline-variant/20 p-6 rounded-sm shadow-sm hover:shadow-md transition-shadow group cursor-pointer [&_summary::-webkit-details-marker]:hidden">
+                    <summary class="flex justify-between items-center list-none outline-none">
+                        <h3 class="font-headline text-lg md:text-xl text-on-surface group-hover:text-primary transition-colors">How far in advance do we need to reach out?</h3>
+                        <span class="material-symbols-outlined text-secondary group-hover:text-primary transition-transform duration-300 group-open:rotate-45">add</span>
+                    </summary>
+                    <div class="mt-6 text-secondary leading-relaxed font-body border-t border-outline-variant/20 pt-6">
+                        Ideally 12 months before your wedding date — this gives us the time to do our most considered work. We can work to timelines as short as 6 months, and occasionally shorter. The first step is always a discovery call, which is free and carries no obligation.
+                    </div>
+                </details>
+                
+                <details class="bg-surface border border-outline-variant/20 p-6 rounded-sm shadow-sm hover:shadow-md transition-shadow group cursor-pointer [&_summary::-webkit-details-marker]:hidden">
+                    <summary class="flex justify-between items-center list-none outline-none">
+                        <h3 class="font-headline text-lg md:text-xl text-on-surface group-hover:text-primary transition-colors">Do we need to provide our own copy and photos?</h3>
+                        <span class="material-symbols-outlined text-secondary group-hover:text-primary transition-transform duration-300 group-open:rotate-45">add</span>
+                    </summary>
+                    <div class="mt-6 text-secondary leading-relaxed font-body border-t border-outline-variant/20 pt-6">
+                        We provide a structured content brief that guides you through everything we need. If you'd like us to write the editorial copy — your love story, section introductions, and overall tone of voice — we offer a copywriting add-on. Photography comes from you or your photographer.
+                    </div>
+                </details>
+                
+                <details class="bg-surface border border-outline-variant/20 p-6 rounded-sm shadow-sm hover:shadow-md transition-shadow group cursor-pointer [&_summary::-webkit-details-marker]:hidden">
+                    <summary class="flex justify-between items-center list-none outline-none">
+                        <h3 class="font-headline text-lg md:text-xl text-on-surface group-hover:text-primary transition-colors">What happens if we want to make changes after launch?</h3>
+                        <span class="material-symbols-outlined text-secondary group-hover:text-primary transition-transform duration-300 group-open:rotate-45">add</span>
+                    </summary>
+                    <div class="mt-6 text-secondary leading-relaxed font-body border-t border-outline-variant/20 pt-6">
+                        Day-to-day content updates — schedule changes, new accommodation options, RSVP deadline adjustments — are handled through a simple content dashboard we build for you. Structural changes are handled by us, within the post-launch support window included in every commission.
+                    </div>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 10 — BOTTOM CTA -->
+    <section class="py-32 md:py-40 bg-surface px-6 md:px-12 text-center">
+        <div class="max-w-3xl mx-auto animate-on-scroll">
+            <h2 class="text-5xl md:text-7xl font-headline mb-12 text-on-surface">Ready to <span class="italic text-primary">Begin?</span></h2>
+            <Button href="/contact" variant="primary" class="px-12 py-5 shadow-xl">Start Your Inquiry</Button>
+        </div>
+    </section>
+  </main>
+  
+  <Footer />
+</Layout>

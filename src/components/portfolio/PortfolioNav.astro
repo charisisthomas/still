@@ -1,0 +1,43 @@
+---
+export interface Props {
+  currentSlug: string;
+}
+
+const { currentSlug } = Astro.props;
+
+const caseStudies = [
+  { slug: "the-amalfi-grandeur", title: "The Amalfi Grandeur", char: "logistical scale" },
+  { slug: "the-santorini-serenity", title: "The Santorini Serenity", char: "minimalist design" },
+  { slug: "the-stockholm-summer", title: "The Stockholm Summer", char: "sustainable approach" },
+  { slug: "the-cairo-tradition", title: "The Cairo Tradition", char: "cultural heritage" },
+  { slug: "the-parisian-elope", title: "The Parisian Elope", char: "editorial elegance" },
+  { slug: "the-modern-minimalist", title: "The Modern Minimalist", char: "architectural restraint" },
+];
+
+const currentIndex = caseStudies.findIndex(c => c.slug === currentSlug);
+
+// Wrap around logic
+const prevIndex = (currentIndex <= 0) ? caseStudies.length - 1 : currentIndex - 1;
+const nextIndex = (currentIndex >= caseStudies.length - 1) ? 0 : currentIndex + 1;
+
+const prevItem = caseStudies[prevIndex];
+const nextItem = caseStudies[nextIndex];
+---
+
+<section class="py-24 bg-surface border-t border-outline-variant/10">
+  <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-8 divide-y md:divide-y-0 md:divide-x divide-outline-variant/20">
+    <!-- Previous -->
+    <a href={`/portfolio/${prevItem.slug}`} class="group flex flex-col justify-center text-left hover:bg-surface-container-low transition-colors p-10 rounded-sm">
+      <span class="font-label text-xs tracking-[0.2em] uppercase text-secondary mb-3 flex items-center gap-2"><span class="material-symbols-outlined text-sm">arrow_back</span> Previous Case Study</span>
+      <span class="font-headline italic text-3xl text-on-surface group-hover:text-primary transition-colors mb-4">{prevItem.title}</span>
+      <span class="font-label text-sm text-secondary">Want to see more <span class="italic text-primary">'{prevItem.char}'</span>?</span>
+    </a>
+    
+    <!-- Next -->
+    <a href={`/portfolio/${nextItem.slug}`} class="group flex flex-col justify-center text-left md:text-right hover:bg-surface-container-low transition-colors p-10 rounded-sm md:items-end">
+      <span class="font-label text-xs tracking-[0.2em] uppercase text-secondary mb-3 flex items-center gap-2 md:flex-row-reverse">Next Case Study <span class="material-symbols-outlined text-sm">arrow_forward</span></span>
+      <span class="font-headline italic text-3xl text-on-surface group-hover:text-primary transition-colors mb-4">{nextItem.title}</span>
+      <span class="font-label text-sm text-secondary">Want to see more <span class="italic text-primary">'{nextItem.char}'</span>?</span>
+    </a>
+  </div>
+</section>
