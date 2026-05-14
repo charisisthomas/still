@@ -54,31 +54,62 @@ import Button from '../components/ui/Button.astro';
     </nav>
 
     <!-- Section 01: GETTING STARTED -->
-    <section id="getting-started" class="w-full bg-surface py-20 border-b border-outline-variant/10 scroll-mt-[140px]">
+    <section id="getting-started" class="w-full bg-surface py-20 md:py-[100px] border-b border-outline-variant/10 scroll-mt-[140px]">
         <div class="max-w-[1440px] mx-auto px-6 md:px-12">
             <div class="grid grid-cols-1 md:grid-cols-12 gap-12">
-                <div class="md:col-span-3 mb-8 animate-on-scroll">
-                    <span class="block font-headline italic text-[64px] text-primary-fixed-dim leading-none mb-2">01</span>
+                <div class="md:col-span-3 mb-8 md:mb-0 animate-on-scroll">
+                    <span class="block font-headline italic text-[56px] md:text-[64px] text-primary-fixed-dim leading-none mb-2">01</span>
                     <span class="block font-label text-[11px] font-semibold uppercase tracking-[0.22em] text-secondary">GETTING STARTED</span>
                 </div>
-                <div class="md:col-span-9 animate-on-scroll">
+                <div class="md:col-span-9 animate-on-scroll" style="transition-delay: 100ms;">
                     <div class="space-y-4">
                         <details class="bg-surface border border-outline-variant/20 p-6 rounded-sm shadow-sm hover:shadow-md transition-shadow group cursor-pointer [&_summary::-webkit-details-marker]:hidden">
                             <summary class="flex justify-between items-center list-none outline-none">
                                 <h3 class="font-headline text-lg md:text-xl text-on-surface group-hover:text-primary transition-colors">How far in advance should we reach out?</h3>
-                                <span class="material-symbols-outlined text-secondary group-hover:text-primary transition-transform duration-300 group-open:rotate-45">add</span>
+                                <span class="material-symbols-outlined text-secondary group-hover:text-primary transition-transform duration-300 group-open:rotate-45" style="font-variation-settings: 'FILL' 1;">add</span>
                             </summary>
                             <div class="mt-6 text-secondary leading-relaxed font-body border-t border-outline-variant/20 pt-6">
-                                Twelve months before your wedding date is our ideal starting point. We regularly work with six-month timelines and occasionally shorter. Reach out as soon as you start thinking about it.
+                                Twelve months before your wedding date is our ideal starting point — it gives us time to do our most considered work without pressure on either side. We regularly work with six-month timelines and occasionally shorter. The first step is always a free discovery call, so reach out as soon as you start thinking about it and we'll tell you honestly what's possible.
                             </div>
                         </details>
+                        
                         <details class="bg-surface border border-outline-variant/20 p-6 rounded-sm shadow-sm hover:shadow-md transition-shadow group cursor-pointer [&_summary::-webkit-details-marker]:hidden">
                             <summary class="flex justify-between items-center list-none outline-none">
                                 <h3 class="font-headline text-lg md:text-xl text-on-surface group-hover:text-primary transition-colors">Do you have availability for our date?</h3>
-                                <span class="material-symbols-outlined text-secondary group-hover:text-primary transition-transform duration-300 group-open:rotate-45">add</span>
+                                <span class="material-symbols-outlined text-secondary group-hover:text-primary transition-transform duration-300 group-open:rotate-45" style="font-variation-settings: 'FILL' 1;">add</span>
                             </summary>
                             <div class="mt-6 text-secondary leading-relaxed font-body border-t border-outline-variant/20 pt-6">
-                                We take a small number of commissions each year to ensure every project gets our full attention. Send us a brief inquiry; we respond within 48 hours.
+                                We take a small number of commissions each year — by design, so that every project gets our full attention. The quickest way to check availability is to send us a brief inquiry. We respond within 48 hours, every time.
+                            </div>
+                        </details>
+                        
+                        <details class="bg-surface border border-outline-variant/20 p-6 rounded-sm shadow-sm hover:shadow-md transition-shadow group cursor-pointer [&_summary::-webkit-details-marker]:hidden">
+                            <summary class="flex justify-between items-center list-none outline-none">
+                                <h3 class="font-headline text-lg md:text-xl text-on-surface group-hover:text-primary transition-colors pr-8">We're not sure whether we need a website, an app, or both. Can you help us decide?</h3>
+                                <span class="material-symbols-outlined text-secondary group-hover:text-primary transition-transform duration-300 group-open:rotate-45 flex-shrink-0" style="font-variation-settings: 'FILL' 1;">add</span>
+                            </summary>
+                            <div class="mt-6 text-secondary leading-relaxed font-body border-t border-outline-variant/20 pt-6">
+                                That's exactly what the discovery call is for. Tell us about your wedding — the location, the guest count, how many people are travelling internationally, what your day actually looks like — and we'll give you an honest recommendation. No obligation, no sales pressure. Some couples genuinely only need a website. We'll tell you if that's you.
+                            </div>
+                        </details>
+                        
+                        <details class="bg-surface border border-outline-variant/20 p-6 rounded-sm shadow-sm hover:shadow-md transition-shadow group cursor-pointer [&_summary::-webkit-details-marker]:hidden">
+                            <summary class="flex justify-between items-center list-none outline-none">
+                                <h3 class="font-headline text-lg md:text-xl text-on-surface group-hover:text-primary transition-colors pr-8">Do you work with couples based outside the UK or Europe?</h3>
+                                <span class="material-symbols-outlined text-secondary group-hover:text-primary transition-transform duration-300 group-open:rotate-45 flex-shrink-0" style="font-variation-settings: 'FILL' 1;">add</span>
+                            </summary>
+                            <div class="mt-6 text-secondary leading-relaxed font-body border-t border-outline-variant/20 pt-6">
+                                Yes. The majority of our commissions involve international couples, international guests, or both. We've built experiences for weddings across Europe, the Middle East, Asia, North America, and Australia, and we work entirely remotely. Timezone differences haven't been a barrier once.
+                            </div>
+                        </details>
+
+                        <details class="bg-surface border border-outline-variant/20 p-6 rounded-sm shadow-sm hover:shadow-md transition-shadow group cursor-pointer [&_summary::-webkit-details-marker]:hidden">
+                            <summary class="flex justify-between items-center list-none outline-none">
+                                <h3 class="font-headline text-lg md:text-xl text-on-surface group-hover:text-primary transition-colors pr-8">We've enquired with other studios who use templates. What makes Still different?</h3>
+                                <span class="material-symbols-outlined text-secondary group-hover:text-primary transition-transform duration-300 group-open:rotate-45 flex-shrink-0" style="font-variation-settings: 'FILL' 1;">add</span>
+                            </summary>
+                            <div class="mt-6 text-secondary leading-relaxed font-body border-t border-outline-variant/20 pt-6">
+                                Template platforms are built around a general use case. Still is built around your specific wedding — your story, your cultural context, your guests' needs, your aesthetic. The difference shows in the details: conditional RSVP logic for different guest types, real-time flight tracking, hand-illustrated maps, editorial narrative that sounds like you rather than a press release. We're also a human team you can hold accountable from first call to final delivery.
                             </div>
                         </details>
                     </div>
@@ -88,22 +119,82 @@ import Button from '../components/ui/Button.astro';
     </section>
 
     <!-- Section 02: THE PRODUCT -->
-    <section id="the-product" class="w-full bg-surface-container-low py-20 border-b border-outline-variant/10 scroll-mt-[140px]">
+    <section id="the-product" class="w-full bg-surface-container-low py-20 md:py-[100px] border-b border-outline-variant/10 scroll-mt-[140px]">
         <div class="max-w-[1440px] mx-auto px-6 md:px-12">
             <div class="grid grid-cols-1 md:grid-cols-12 gap-12">
-                <div class="md:col-span-3 mb-8 animate-on-scroll">
-                    <span class="block font-headline italic text-[64px] text-primary-fixed-dim leading-none mb-2">02</span>
+                <div class="md:col-span-3 mb-8 md:mb-0 animate-on-scroll">
+                    <span class="block font-headline italic text-[56px] md:text-[64px] text-primary-fixed-dim leading-none mb-2">02</span>
                     <span class="block font-label text-[11px] font-semibold uppercase tracking-[0.22em] text-secondary">THE PRODUCT</span>
                 </div>
-                <div class="md:col-span-9 animate-on-scroll">
+                <div class="md:col-span-9 animate-on-scroll" style="transition-delay: 100ms;">
                     <div class="space-y-4">
                         <details class="bg-surface border border-outline-variant/20 p-6 rounded-sm shadow-sm hover:shadow-md transition-shadow group cursor-pointer [&_summary::-webkit-details-marker]:hidden">
                             <summary class="flex justify-between items-center list-none outline-none">
                                 <h3 class="font-headline text-lg md:text-xl text-on-surface group-hover:text-primary transition-colors">What exactly is a wedding website?</h3>
-                                <span class="material-symbols-outlined text-secondary group-hover:text-primary transition-transform duration-300 group-open:rotate-45">add</span>
+                                <span class="material-symbols-outlined text-secondary group-hover:text-primary transition-transform duration-300 group-open:rotate-45" style="font-variation-settings: 'FILL' 1;">add</span>
                             </summary>
                             <div class="mt-6 text-secondary leading-relaxed font-body border-t border-outline-variant/20 pt-6">
-                                A Still wedding website is a bespoke, password-protected digital home for your wedding, featuring RSVP management, travel guides, and your unique story.
+                                A Still wedding website is a fully bespoke, password-protected digital space — the official home of your wedding from engagement announcement to the morning your last guest checks out. It contains your love story, RSVP management with conditional logic, travel and accommodation guides, your schedule, venue information, and anything else your guests need to know.
+                            </div>
+                        </details>
+                        
+                        <details class="bg-surface border border-outline-variant/20 p-6 rounded-sm shadow-sm hover:shadow-md transition-shadow group cursor-pointer [&_summary::-webkit-details-marker]:hidden">
+                            <summary class="flex justify-between items-center list-none outline-none">
+                                <h3 class="font-headline text-lg md:text-xl text-on-surface group-hover:text-primary transition-colors pr-8">What is a guest app, and does it require a download?</h3>
+                                <span class="material-symbols-outlined text-secondary group-hover:text-primary transition-transform duration-300 group-open:rotate-45 flex-shrink-0" style="font-variation-settings: 'FILL' 1;">add</span>
+                            </summary>
+                            <div class="mt-6 text-secondary leading-relaxed font-body border-t border-outline-variant/20 pt-6">
+                                Our guest apps are mobile-optimised web applications — your guests access them through a link, in their browser. No download, no account creation, no app store. It works on every modern smartphone, tablet, and laptop.
+                            </div>
+                        </details>
+                        
+                        <details class="bg-surface border border-outline-variant/20 p-6 rounded-sm shadow-sm hover:shadow-md transition-shadow group cursor-pointer [&_summary::-webkit-details-marker]:hidden">
+                            <summary class="flex justify-between items-center list-none outline-none">
+                                <h3 class="font-headline text-lg md:text-xl text-on-surface group-hover:text-primary transition-colors pr-8">What's the difference between the website and the guest app?</h3>
+                                <span class="material-symbols-outlined text-secondary group-hover:text-primary transition-transform duration-300 group-open:rotate-45 flex-shrink-0" style="font-variation-settings: 'FILL' 1;">add</span>
+                            </summary>
+                            <div class="mt-6 text-secondary leading-relaxed font-body border-t border-outline-variant/20 pt-6">
+                                The website is the pre-wedding experience — it tells your story, collects RSVPs, and builds anticipation. The guest app is the during-wedding experience — it provides live updates, real-time schedules, and concierge features your guests can use while they're there.
+                            </div>
+                        </details>
+
+                        <details class="bg-surface border border-outline-variant/20 p-6 rounded-sm shadow-sm hover:shadow-md transition-shadow group cursor-pointer [&_summary::-webkit-details-marker]:hidden">
+                            <summary class="flex justify-between items-center list-none outline-none">
+                                <h3 class="font-headline text-lg md:text-xl text-on-surface group-hover:text-primary transition-colors">What is the Paperless Portal?</h3>
+                                <span class="material-symbols-outlined text-secondary group-hover:text-primary transition-transform duration-300 group-open:rotate-45" style="font-variation-settings: 'FILL' 1;">add</span>
+                            </summary>
+                            <div class="mt-6 text-secondary leading-relaxed font-body border-t border-outline-variant/20 pt-6">
+                                The Paperless Portal is our sustainability-led offering — a beautifully designed digital suite that replaces your entire printed stationery set. Digital invitations, RSVP collection, menus, programmes, and seating guides all in one platform.
+                            </div>
+                        </details>
+
+                        <details class="bg-surface border border-outline-variant/20 p-6 rounded-sm shadow-sm hover:shadow-md transition-shadow group cursor-pointer [&_summary::-webkit-details-marker]:hidden">
+                            <summary class="flex justify-between items-center list-none outline-none">
+                                <h3 class="font-headline text-lg md:text-xl text-on-surface group-hover:text-primary transition-colors pr-8">Can our site and app work in multiple languages?</h3>
+                                <span class="material-symbols-outlined text-secondary group-hover:text-primary transition-transform duration-300 group-open:rotate-45 flex-shrink-0" style="font-variation-settings: 'FILL' 1;">add</span>
+                            </summary>
+                            <div class="mt-6 text-secondary leading-relaxed font-body border-t border-outline-variant/20 pt-6">
+                                Yes. We build multilingual platforms as standard for international weddings — the site or app automatically adapts to each visitor's browser language, or allows manual switching.
+                            </div>
+                        </details>
+
+                        <details class="bg-surface border border-outline-variant/20 p-6 rounded-sm shadow-sm hover:shadow-md transition-shadow group cursor-pointer [&_summary::-webkit-details-marker]:hidden">
+                            <summary class="flex justify-between items-center list-none outline-none">
+                                <h3 class="font-headline text-lg md:text-xl text-on-surface group-hover:text-primary transition-colors pr-8">How long does the site stay live after our wedding?</h3>
+                                <span class="material-symbols-outlined text-secondary group-hover:text-primary transition-transform duration-300 group-open:rotate-45 flex-shrink-0" style="font-variation-settings: 'FILL' 1;">add</span>
+                            </summary>
+                            <div class="mt-6 text-secondary leading-relaxed font-body border-t border-outline-variant/20 pt-6">
+                                Your digital experience stays live for 6 months after your wedding date, included in your commission fee. After that, we offer low-cost archival plans.
+                            </div>
+                        </details>
+
+                        <details class="bg-surface border border-outline-variant/20 p-6 rounded-sm shadow-sm hover:shadow-md transition-shadow group cursor-pointer [&_summary::-webkit-details-marker]:hidden">
+                            <summary class="flex justify-between items-center list-none outline-none">
+                                <h3 class="font-headline text-lg md:text-xl text-on-surface group-hover:text-primary transition-colors">Is our guest data secure?</h3>
+                                <span class="material-symbols-outlined text-secondary group-hover:text-primary transition-transform duration-300 group-open:rotate-45" style="font-variation-settings: 'FILL' 1;">add</span>
+                            </summary>
+                            <div class="mt-6 text-secondary leading-relaxed font-body border-t border-outline-variant/20 pt-6">
+                                Yes. Every platform we build is fully GDPR-compliant. Guest data is encrypted, never shared with third parties, and deleted from our servers after your wedding.
                             </div>
                         </details>
                     </div>
@@ -113,22 +204,42 @@ import Button from '../components/ui/Button.astro';
     </section>
 
     <!-- Section 03: WORKING WITH US -->
-    <section id="working-with-us" class="w-full bg-surface py-20 border-b border-outline-variant/10 scroll-mt-[140px]">
+    <section id="working-with-us" class="w-full bg-surface py-20 md:py-[100px] border-b border-outline-variant/10 scroll-mt-[140px]">
         <div class="max-w-[1440px] mx-auto px-6 md:px-12">
             <div class="grid grid-cols-1 md:grid-cols-12 gap-12">
-                <div class="md:col-span-3 mb-8 animate-on-scroll">
-                    <span class="block font-headline italic text-[64px] text-primary-fixed-dim leading-none mb-2">03</span>
+                <div class="md:col-span-3 mb-8 md:mb-0 animate-on-scroll">
+                    <span class="block font-headline italic text-[56px] md:text-[64px] text-primary-fixed-dim leading-none mb-2">03</span>
                     <span class="block font-label text-[11px] font-semibold uppercase tracking-[0.22em] text-secondary">WORKING WITH US</span>
                 </div>
-                <div class="md:col-span-9 animate-on-scroll">
+                <div class="md:col-span-9 animate-on-scroll" style="transition-delay: 100ms;">
                     <div class="space-y-4">
                         <details class="bg-surface border border-outline-variant/20 p-6 rounded-sm shadow-sm hover:shadow-md transition-shadow group cursor-pointer [&_summary::-webkit-details-marker]:hidden">
                             <summary class="flex justify-between items-center list-none outline-none">
                                 <h3 class="font-headline text-lg md:text-xl text-on-surface group-hover:text-primary transition-colors">What does the design process look like?</h3>
-                                <span class="material-symbols-outlined text-secondary group-hover:text-primary transition-transform duration-300 group-open:rotate-45">add</span>
+                                <span class="material-symbols-outlined text-secondary group-hover:text-primary transition-transform duration-300 group-open:rotate-45" style="font-variation-settings: 'FILL' 1;">add</span>
                             </summary>
                             <div class="mt-6 text-secondary leading-relaxed font-body border-t border-outline-variant/20 pt-6">
-                                Our process is iterative and collaborative, from discovery and mood-boarding to bespoke engineering and final launch.
+                                Our process is iterative and collaborative. We start with discovery and mood-boarding to align on aesthetic direction, followed by high-fidelity design and technical development.
+                            </div>
+                        </details>
+
+                        <details class="bg-surface border border-outline-variant/20 p-6 rounded-sm shadow-sm hover:shadow-md transition-shadow group cursor-pointer [&_summary::-webkit-details-marker]:hidden">
+                            <summary class="flex justify-between items-center list-none outline-none">
+                                <h3 class="font-headline text-lg md:text-xl text-on-surface group-hover:text-primary transition-colors">How much involvement is required from us?</h3>
+                                <span class="material-symbols-outlined text-secondary group-hover:text-primary transition-transform duration-300 group-open:rotate-45" style="font-variation-settings: 'FILL' 1;">add</span>
+                            </summary>
+                            <div class="mt-6 text-secondary leading-relaxed font-body border-t border-outline-variant/20 pt-6">
+                                We respect your time. We need your focused attention at three key stages: the initial discovery call, creative direction approval, and final sign-off.
+                            </div>
+                        </details>
+
+                        <details class="bg-surface border border-outline-variant/20 p-6 rounded-sm shadow-sm hover:shadow-md transition-shadow group cursor-pointer [&_summary::-webkit-details-marker]:hidden">
+                            <summary class="flex justify-between items-center list-none outline-none">
+                                <h3 class="font-headline text-lg md:text-xl text-on-surface group-hover:text-primary transition-colors">Can we update the site ourselves?</h3>
+                                <span class="material-symbols-outlined text-secondary group-hover:text-primary transition-transform duration-300 group-open:rotate-45" style="font-variation-settings: 'FILL' 1;">add</span>
+                            </summary>
+                            <div class="mt-6 text-secondary leading-relaxed font-body border-t border-outline-variant/20 pt-6">
+                                Yes. While we manage all technical aspects, we provide you with a simplified dashboard for essential updates like guest lists and schedule tweaks.
                             </div>
                         </details>
                     </div>
@@ -138,22 +249,32 @@ import Button from '../components/ui/Button.astro';
     </section>
 
     <!-- Section 04: DESTINATION WEDDINGS -->
-    <section id="destination-weddings" class="w-full bg-surface-container-low py-20 border-b border-outline-variant/10 scroll-mt-[140px]">
+    <section id="destination-weddings" class="w-full bg-surface-container-low py-20 md:py-[100px] border-b border-outline-variant/10 scroll-mt-[140px]">
         <div class="max-w-[1440px] mx-auto px-6 md:px-12">
             <div class="grid grid-cols-1 md:grid-cols-12 gap-12">
-                <div class="md:col-span-3 mb-8 animate-on-scroll">
-                    <span class="block font-headline italic text-[64px] text-primary-fixed-dim leading-none mb-2">04</span>
+                <div class="md:col-span-3 mb-8 md:mb-0 animate-on-scroll">
+                    <span class="block font-headline italic text-[56px] md:text-[64px] text-primary-fixed-dim leading-none mb-2">04</span>
                     <span class="block font-label text-[11px] font-semibold uppercase tracking-[0.22em] text-secondary">DESTINATION WEDDINGS</span>
                 </div>
-                <div class="md:col-span-9 animate-on-scroll">
+                <div class="md:col-span-9 animate-on-scroll" style="transition-delay: 100ms;">
                     <div class="space-y-4">
                         <details class="bg-surface border border-outline-variant/20 p-6 rounded-sm shadow-sm hover:shadow-md transition-shadow group cursor-pointer [&_summary::-webkit-details-marker]:hidden">
                             <summary class="flex justify-between items-center list-none outline-none">
-                                <h3 class="font-headline text-lg md:text-xl text-on-surface group-hover:text-primary transition-colors">Can we include an interactive map?</h3>
-                                <span class="material-symbols-outlined text-secondary group-hover:text-primary transition-transform duration-300 group-open:rotate-45">add</span>
+                                <h3 class="font-headline text-lg md:text-xl text-on-surface group-hover:text-primary transition-colors">How do you help guests with travel planning?</h3>
+                                <span class="material-symbols-outlined text-secondary group-hover:text-primary transition-transform duration-300 group-open:rotate-45" style="font-variation-settings: 'FILL' 1;">add</span>
                             </summary>
                             <div class="mt-6 text-secondary leading-relaxed font-body border-t border-outline-variant/20 pt-6">
-                                Yes. We specialize in illustrated digital maps that highlight venues and your favorite local spots.
+                                We build interactive travel hubs within your site. This includes custom maps, hotel recommendations, flight search integration, and detailed logistics.
+                            </div>
+                        </details>
+
+                        <details class="bg-surface border border-outline-variant/20 p-6 rounded-sm shadow-sm hover:shadow-md transition-shadow group cursor-pointer [&_summary::-webkit-details-marker]:hidden">
+                            <summary class="flex justify-between items-center list-none outline-none">
+                                <h3 class="font-headline text-lg md:text-xl text-on-surface group-hover:text-primary transition-colors">Can we include an interactive map?</h3>
+                                <span class="material-symbols-outlined text-secondary group-hover:text-primary transition-transform duration-300 group-open:rotate-45" style="font-variation-settings: 'FILL' 1;">add</span>
+                            </summary>
+                            <div class="mt-6 text-secondary leading-relaxed font-body border-t border-outline-variant/20 pt-6">
+                                Yes. We specialize in bespoke digital maps that highlight venue locations alongside curated local secrets.
                             </div>
                         </details>
                     </div>
@@ -163,22 +284,32 @@ import Button from '../components/ui/Button.astro';
     </section>
 
     <!-- Section 05: SUSTAINABILITY -->
-    <section id="sustainability" class="w-full bg-surface py-20 border-b border-outline-variant/10 scroll-mt-[140px]">
+    <section id="sustainability" class="w-full bg-surface py-20 md:py-[100px] border-b border-outline-variant/10 scroll-mt-[140px]">
         <div class="max-w-[1440px] mx-auto px-6 md:px-12">
             <div class="grid grid-cols-1 md:grid-cols-12 gap-12">
-                <div class="md:col-span-3 mb-8 animate-on-scroll">
-                    <span class="block font-headline italic text-[64px] text-primary-fixed-dim leading-none mb-2">05</span>
+                <div class="md:col-span-3 mb-8 md:mb-0 animate-on-scroll">
+                    <span class="block font-headline italic text-[56px] md:text-[64px] text-primary-fixed-dim leading-none mb-2">05</span>
                     <span class="block font-label text-[11px] font-semibold uppercase tracking-[0.22em] text-secondary">SUSTAINABILITY</span>
                 </div>
-                <div class="md:col-span-9 animate-on-scroll">
+                <div class="md:col-span-9 animate-on-scroll" style="transition-delay: 100ms;">
                     <div class="space-y-4">
                         <details class="bg-surface border border-outline-variant/20 p-6 rounded-sm shadow-sm hover:shadow-md transition-shadow group cursor-pointer [&_summary::-webkit-details-marker]:hidden">
                             <summary class="flex justify-between items-center list-none outline-none">
-                                <h3 class="font-headline text-lg md:text-xl text-on-surface group-hover:text-primary transition-colors">Will older guests know how to use it?</h3>
-                                <span class="material-symbols-outlined text-secondary group-hover:text-primary transition-transform duration-300 group-open:rotate-45">add</span>
+                                <h3 class="font-headline text-lg md:text-xl text-on-surface group-hover:text-primary transition-colors pr-8">How does the Paperless Portal actually help?</h3>
+                                <span class="material-symbols-outlined text-secondary group-hover:text-primary transition-transform duration-300 group-open:rotate-45 flex-shrink-0" style="font-variation-settings: 'FILL' 1;">add</span>
                             </summary>
                             <div class="mt-6 text-secondary leading-relaxed font-body border-t border-outline-variant/20 pt-6">
-                                Yes. Guests access the portal via a link. If they can open an email and tap a link, they can use Still.
+                                The Paperless Portal replaces everything you'd otherwise print, typically eliminating between 200 and 400 individual printed items for a 100-guest wedding.
+                            </div>
+                        </details>
+
+                        <details class="bg-surface border border-outline-variant/20 p-6 rounded-sm shadow-sm hover:shadow-md transition-shadow group cursor-pointer [&_summary::-webkit-details-marker]:hidden">
+                            <summary class="flex justify-between items-center list-none outline-none">
+                                <h3 class="font-headline text-lg md:text-xl text-on-surface group-hover:text-primary transition-colors pr-8">Will older guests know how to use it?</h3>
+                                <span class="material-symbols-outlined text-secondary group-hover:text-primary transition-transform duration-300 group-open:rotate-45 flex-shrink-0" style="font-variation-settings: 'FILL' 1;">add</span>
+                            </summary>
+                            <div class="mt-6 text-secondary leading-relaxed font-body border-t border-outline-variant/20 pt-6">
+                                Yes. Guests access the portal through a link, exactly like opening a website. No account or download required.
                             </div>
                         </details>
                     </div>
@@ -188,22 +319,32 @@ import Button from '../components/ui/Button.astro';
     </section>
 
     <!-- Section 06: PRICING -->
-    <section id="pricing" class="w-full bg-surface-container-low py-20 border-b border-outline-variant/10 scroll-mt-[140px]">
+    <section id="pricing" class="w-full bg-surface-container-low py-20 md:py-[100px] border-b border-outline-variant/10 scroll-mt-[140px]">
         <div class="max-w-[1440px] mx-auto px-6 md:px-12">
             <div class="grid grid-cols-1 md:grid-cols-12 gap-12">
-                <div class="md:col-span-3 mb-8 animate-on-scroll">
-                    <span class="block font-headline italic text-[64px] text-primary-fixed-dim leading-none mb-2">06</span>
+                <div class="md:col-span-3 mb-8 md:mb-0 animate-on-scroll">
+                    <span class="block font-headline italic text-[56px] md:text-[64px] text-primary-fixed-dim leading-none mb-2">06</span>
                     <span class="block font-label text-[11px] font-semibold uppercase tracking-[0.22em] text-secondary">PRICING</span>
                 </div>
-                <div class="md:col-span-9 animate-on-scroll">
+                <div class="md:col-span-9 animate-on-scroll" style="transition-delay: 100ms;">
                     <div class="space-y-4">
                         <details class="bg-surface border border-outline-variant/20 p-6 rounded-sm shadow-sm hover:shadow-md transition-shadow group cursor-pointer [&_summary::-webkit-details-marker]:hidden">
                             <summary class="flex justify-between items-center list-none outline-none">
                                 <h3 class="font-headline text-lg md:text-xl text-on-surface group-hover:text-primary transition-colors">What does a Still commission cost?</h3>
-                                <span class="material-symbols-outlined text-secondary group-hover:text-primary transition-transform duration-300 group-open:rotate-45">add</span>
+                                <span class="material-symbols-outlined text-secondary group-hover:text-primary transition-transform duration-300 group-open:rotate-45" style="font-variation-settings: 'FILL' 1;">add</span>
                             </summary>
                             <div class="mt-6 text-secondary leading-relaxed font-body border-t border-outline-variant/20 pt-6">
-                                Every commission is priced individually based on scope. Our Investment page has indicative starting ranges[cite: 2].
+                                Every commission is priced individually based on scope. Our Investment page has indicative starting ranges for each product type[cite: 2].
+                            </div>
+                        </details>
+                        
+                        <details class="bg-surface border border-outline-variant/20 p-6 rounded-sm shadow-sm hover:shadow-md transition-shadow group cursor-pointer [&_summary::-webkit-details-marker]:hidden">
+                            <summary class="flex justify-between items-center list-none outline-none">
+                                <h3 class="font-headline text-lg md:text-xl text-on-surface group-hover:text-primary transition-colors">Why don't you publish fixed prices?</h3>
+                                <span class="material-symbols-outlined text-secondary group-hover:text-primary transition-transform duration-300 group-open:rotate-45" style="font-variation-settings: 'FILL' 1;">add</span>
+                            </summary>
+                            <div class="mt-6 text-secondary leading-relaxed font-body border-t border-outline-variant/20 pt-6">
+                                Because every bespoke project is different. Publishing a single price would either undersell the complexity or exclude a perfect-fit couple.
                             </div>
                         </details>
                     </div>
