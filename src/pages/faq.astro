@@ -15,20 +15,27 @@ import Button from '../components/ui/Button.astro';
         <div class="max-w-[1440px] mx-auto px-6 md:px-12">
             <div class="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12">
                 <div class="md:col-span-7 flex flex-col justify-center relative z-10 animate-on-scroll">
-                    <span class="font-label text-[11px] font-semibold uppercase tracking-[0.22em] text-primary mb-6 block">FAQ</span>
+                    <span class="font-label text-[11px] font-semibold uppercase tracking-[0.28em] text-primary mb-6 block">
+                        FAQ
+                    </span>
                     <h1 class="font-headline text-5xl md:text-[64px] leading-[1.1] text-on-surface mb-8" style="text-wrap: balance;">
                         Questions We<br/>
                         <span class="italic text-primary">Hear Most Often</span>
                     </h1>
                     <p class="font-body text-lg text-secondary max-w-[520px] leading-[1.75] mb-8" style="text-wrap: pretty;">
-                        We've collected the questions couples ask us most — before the discovery call, during the proposal stage, and occasionally at 11pm two weeks before the wedding.
+                        We've collected the questions couples ask us most — before the discovery call, during the proposal stage, and occasionally at 11pm two weeks before the wedding. If your question isn't here, reach out directly. We read everything.
                     </p>
                     <div>
-                        <a class="font-label text-[14px] font-semibold text-primary hover:text-primary-fixed-dim border-b border-primary pb-1 transition-colors" href="mailto:hello@still.com">hello@still.com</a>
+                        <a class="font-label text-[14px] font-semibold text-primary hover:text-primary-fixed-dim border-b border-primary pb-1 transition-colors" href="mailto:hello@still.com">
+                            hello@still.com
+                        </a>
                     </div>
                 </div>
+                
                 <div class="hidden md:flex md:col-span-5 items-center justify-center relative pointer-events-none select-none animate-on-scroll" style="transition-delay: 200ms;">
-                    <span class="font-headline italic text-[320px] lg:text-[420px] text-primary-fixed-dim opacity-[0.15] leading-none transform translate-y-[-20px]">?</span>
+                    <span class="font-headline italic text-[320px] lg:text-[420px] text-primary-fixed-dim opacity-[0.15] leading-none transform translate-y-[-20px]">
+                        ?
+                    </span>
                 </div>
             </div>
         </div>
@@ -46,7 +53,7 @@ import Button from '../components/ui/Button.astro';
         </div>
     </nav>
 
-    <!-- FAQ Content Sections -->
+    <!-- Section 01: GETTING STARTED -->
     <section id="getting-started" class="w-full bg-surface py-20 border-b border-outline-variant/10 scroll-mt-[140px]">
         <div class="max-w-[1440px] mx-auto px-6 md:px-12">
             <div class="grid grid-cols-1 md:grid-cols-12 gap-12">
@@ -62,7 +69,16 @@ import Button from '../components/ui/Button.astro';
                                 <span class="material-symbols-outlined text-secondary group-hover:text-primary transition-transform duration-300 group-open:rotate-45">add</span>
                             </summary>
                             <div class="mt-6 text-secondary leading-relaxed font-body border-t border-outline-variant/20 pt-6">
-                                Twelve months before your wedding date is our ideal starting point — it gives us time to do our most considered work.
+                                Twelve months before your wedding date is our ideal starting point. We regularly work with six-month timelines and occasionally shorter. Reach out as soon as you start thinking about it.
+                            </div>
+                        </details>
+                        <details class="bg-surface border border-outline-variant/20 p-6 rounded-sm shadow-sm hover:shadow-md transition-shadow group cursor-pointer [&_summary::-webkit-details-marker]:hidden">
+                            <summary class="flex justify-between items-center list-none outline-none">
+                                <h3 class="font-headline text-lg md:text-xl text-on-surface group-hover:text-primary transition-colors">Do you have availability for our date?</h3>
+                                <span class="material-symbols-outlined text-secondary group-hover:text-primary transition-transform duration-300 group-open:rotate-45">add</span>
+                            </summary>
+                            <div class="mt-6 text-secondary leading-relaxed font-body border-t border-outline-variant/20 pt-6">
+                                We take a small number of commissions each year to ensure every project gets our full attention. Send us a brief inquiry; we respond within 48 hours.
                             </div>
                         </details>
                     </div>
@@ -71,9 +87,132 @@ import Button from '../components/ui/Button.astro';
         </div>
     </section>
 
-    <!-- Additional sections (Product, Working With Us, etc.) omitted for brevity but should follow the same structure as above -->
+    <!-- Section 02: THE PRODUCT -->
+    <section id="the-product" class="w-full bg-surface-container-low py-20 border-b border-outline-variant/10 scroll-mt-[140px]">
+        <div class="max-w-[1440px] mx-auto px-6 md:px-12">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-12">
+                <div class="md:col-span-3 mb-8 animate-on-scroll">
+                    <span class="block font-headline italic text-[64px] text-primary-fixed-dim leading-none mb-2">02</span>
+                    <span class="block font-label text-[11px] font-semibold uppercase tracking-[0.22em] text-secondary">THE PRODUCT</span>
+                </div>
+                <div class="md:col-span-9 animate-on-scroll">
+                    <div class="space-y-4">
+                        <details class="bg-surface border border-outline-variant/20 p-6 rounded-sm shadow-sm hover:shadow-md transition-shadow group cursor-pointer [&_summary::-webkit-details-marker]:hidden">
+                            <summary class="flex justify-between items-center list-none outline-none">
+                                <h3 class="font-headline text-lg md:text-xl text-on-surface group-hover:text-primary transition-colors">What exactly is a wedding website?</h3>
+                                <span class="material-symbols-outlined text-secondary group-hover:text-primary transition-transform duration-300 group-open:rotate-45">add</span>
+                            </summary>
+                            <div class="mt-6 text-secondary leading-relaxed font-body border-t border-outline-variant/20 pt-6">
+                                A Still wedding website is a bespoke, password-protected digital home for your wedding, featuring RSVP management, travel guides, and your unique story.
+                            </div>
+                        </details>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <!-- Terminal CTA Section (The Fix Area) -->
+    <!-- Section 03: WORKING WITH US -->
+    <section id="working-with-us" class="w-full bg-surface py-20 border-b border-outline-variant/10 scroll-mt-[140px]">
+        <div class="max-w-[1440px] mx-auto px-6 md:px-12">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-12">
+                <div class="md:col-span-3 mb-8 animate-on-scroll">
+                    <span class="block font-headline italic text-[64px] text-primary-fixed-dim leading-none mb-2">03</span>
+                    <span class="block font-label text-[11px] font-semibold uppercase tracking-[0.22em] text-secondary">WORKING WITH US</span>
+                </div>
+                <div class="md:col-span-9 animate-on-scroll">
+                    <div class="space-y-4">
+                        <details class="bg-surface border border-outline-variant/20 p-6 rounded-sm shadow-sm hover:shadow-md transition-shadow group cursor-pointer [&_summary::-webkit-details-marker]:hidden">
+                            <summary class="flex justify-between items-center list-none outline-none">
+                                <h3 class="font-headline text-lg md:text-xl text-on-surface group-hover:text-primary transition-colors">What does the design process look like?</h3>
+                                <span class="material-symbols-outlined text-secondary group-hover:text-primary transition-transform duration-300 group-open:rotate-45">add</span>
+                            </summary>
+                            <div class="mt-6 text-secondary leading-relaxed font-body border-t border-outline-variant/20 pt-6">
+                                Our process is iterative and collaborative, from discovery and mood-boarding to bespoke engineering and final launch.
+                            </div>
+                        </details>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 04: DESTINATION WEDDINGS -->
+    <section id="destination-weddings" class="w-full bg-surface-container-low py-20 border-b border-outline-variant/10 scroll-mt-[140px]">
+        <div class="max-w-[1440px] mx-auto px-6 md:px-12">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-12">
+                <div class="md:col-span-3 mb-8 animate-on-scroll">
+                    <span class="block font-headline italic text-[64px] text-primary-fixed-dim leading-none mb-2">04</span>
+                    <span class="block font-label text-[11px] font-semibold uppercase tracking-[0.22em] text-secondary">DESTINATION WEDDINGS</span>
+                </div>
+                <div class="md:col-span-9 animate-on-scroll">
+                    <div class="space-y-4">
+                        <details class="bg-surface border border-outline-variant/20 p-6 rounded-sm shadow-sm hover:shadow-md transition-shadow group cursor-pointer [&_summary::-webkit-details-marker]:hidden">
+                            <summary class="flex justify-between items-center list-none outline-none">
+                                <h3 class="font-headline text-lg md:text-xl text-on-surface group-hover:text-primary transition-colors">Can we include an interactive map?</h3>
+                                <span class="material-symbols-outlined text-secondary group-hover:text-primary transition-transform duration-300 group-open:rotate-45">add</span>
+                            </summary>
+                            <div class="mt-6 text-secondary leading-relaxed font-body border-t border-outline-variant/20 pt-6">
+                                Yes. We specialize in illustrated digital maps that highlight venues and your favorite local spots.
+                            </div>
+                        </details>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 05: SUSTAINABILITY -->
+    <section id="sustainability" class="w-full bg-surface py-20 border-b border-outline-variant/10 scroll-mt-[140px]">
+        <div class="max-w-[1440px] mx-auto px-6 md:px-12">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-12">
+                <div class="md:col-span-3 mb-8 animate-on-scroll">
+                    <span class="block font-headline italic text-[64px] text-primary-fixed-dim leading-none mb-2">05</span>
+                    <span class="block font-label text-[11px] font-semibold uppercase tracking-[0.22em] text-secondary">SUSTAINABILITY</span>
+                </div>
+                <div class="md:col-span-9 animate-on-scroll">
+                    <div class="space-y-4">
+                        <details class="bg-surface border border-outline-variant/20 p-6 rounded-sm shadow-sm hover:shadow-md transition-shadow group cursor-pointer [&_summary::-webkit-details-marker]:hidden">
+                            <summary class="flex justify-between items-center list-none outline-none">
+                                <h3 class="font-headline text-lg md:text-xl text-on-surface group-hover:text-primary transition-colors">Will older guests know how to use it?</h3>
+                                <span class="material-symbols-outlined text-secondary group-hover:text-primary transition-transform duration-300 group-open:rotate-45">add</span>
+                            </summary>
+                            <div class="mt-6 text-secondary leading-relaxed font-body border-t border-outline-variant/20 pt-6">
+                                Yes. Guests access the portal via a link. If they can open an email and tap a link, they can use Still.
+                            </div>
+                        </details>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 06: PRICING -->
+    <section id="pricing" class="w-full bg-surface-container-low py-20 border-b border-outline-variant/10 scroll-mt-[140px]">
+        <div class="max-w-[1440px] mx-auto px-6 md:px-12">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-12">
+                <div class="md:col-span-3 mb-8 animate-on-scroll">
+                    <span class="block font-headline italic text-[64px] text-primary-fixed-dim leading-none mb-2">06</span>
+                    <span class="block font-label text-[11px] font-semibold uppercase tracking-[0.22em] text-secondary">PRICING</span>
+                </div>
+                <div class="md:col-span-9 animate-on-scroll">
+                    <div class="space-y-4">
+                        <details class="bg-surface border border-outline-variant/20 p-6 rounded-sm shadow-sm hover:shadow-md transition-shadow group cursor-pointer [&_summary::-webkit-details-marker]:hidden">
+                            <summary class="flex justify-between items-center list-none outline-none">
+                                <h3 class="font-headline text-lg md:text-xl text-on-surface group-hover:text-primary transition-colors">What does a Still commission cost?</h3>
+                                <span class="material-symbols-outlined text-secondary group-hover:text-primary transition-transform duration-300 group-open:rotate-45">add</span>
+                            </summary>
+                            <div class="mt-6 text-secondary leading-relaxed font-body border-t border-outline-variant/20 pt-6">
+                                Every commission is priced individually based on scope. Our Investment page has indicative starting ranges[cite: 2].
+                            </div>
+                        </details>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Terminal CTA Section -->
     <section class="py-32 px-6 md:px-12 bg-surface text-center border-t border-outline-variant/10">
         <div class="max-w-[800px] mx-auto animate-on-scroll">
             <h2 class="font-headline text-4xl md:text-5xl mb-8 text-on-surface">Still have a question <br/><span class="italic text-primary">we haven't answered here?</span></h2>
