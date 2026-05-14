@@ -18,7 +18,6 @@ const getHiResImage = (slug, fallback) => {
   <main class="pt-32">
     <!-- Hero Section -->
     <section class="min-h-[85vh] flex items-center relative overflow-hidden bg-surface">
-      <!-- Subtle radial gradient background -->
       <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_right,_var(--color-primary-container)_0%,_transparent_50%)] opacity-20 pointer-events-none"></div>
       
       <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-16 items-center relative z-10">
@@ -32,7 +31,6 @@ const getHiResImage = (slug, fallback) => {
               We design and build fully bespoke digital experiences for couples around the world — seamless across desktop for meticulous planning, and functioning exactly like a native app on mobile for your guests.
             </p>
           <div class="flex flex-col sm:flex-row gap-6 mt-4">
-            <!-- Swapped variants to establish hierarchy -->
             <Button href="/contact" variant="primary">Start an Inquiry</Button>
             <Button href="/portfolio" variant="secondary">See Our Work</Button>
           </div>
@@ -46,8 +44,147 @@ const getHiResImage = (slug, fallback) => {
       </div>
     </section>
 
-    <!-- Rest of the sections remain unchanged -->
-    <!-- ... -->
+    <!-- What We Build -->
+    <section class="py-32 bg-surface-container-low">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="text-center mb-24 animate-on-scroll">
+          <span class="text-secondary text-sm tracking-widest uppercase mb-4 block">What We Build</span>
+          <h2 class="text-5xl font-display text-primary leading-tight mb-6">One Studio. One Seamless Experience.</h2>
+          <p class="text-lg text-on-surface-variant max-w-2xl mx-auto">We don't use templates. Every commission is built from a blank canvas to ensure your digital footprint is as considered as the physical details of your day.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-24">
+          <div class="animate-on-scroll">
+            <span class="text-secondary text-xs tracking-widest uppercase mb-6 block">The Desktop Experience</span>
+            <h3 class="font-display text-3xl text-primary mb-4">The Editorial Invitation</h3>
+            <p class="text-on-surface-variant leading-relaxed mb-6">A beautifully crafted gateway to your wedding. This is where your guests discover the story, the aesthetic, and the meticulously planned details of your celebration, presented with the elegance of a high-end editorial magazine.</p>
+            <ul class="space-y-3">
+              <li class="flex items-center gap-3 text-sm"><span class="w-1.5 h-1.5 rounded-full bg-primary-fixed-dim"></span> Bespoke typography & layouts</li>
+              <li class="flex items-center gap-3 text-sm"><span class="w-1.5 h-1.5 rounded-full bg-primary-fixed-dim"></span> Immersive photography integration</li>
+              <li class="flex items-center gap-3 text-sm"><span class="w-1.5 h-1.5 rounded-full bg-primary-fixed-dim"></span> Complex logic for multiple RSVP events</li>
+            </ul>
+          </div>
+
+          <div class="animate-on-scroll">
+            <span class="text-secondary text-xs tracking-widest uppercase mb-6 block">The Mobile Experience</span>
+            <h3 class="font-display text-3xl text-primary mb-4">Your Digital Concierge</h3>
+            <p class="text-on-surface-variant leading-relaxed mb-6">On the ground, your website transforms into a frictionless, app-like experience for your guests. Real-time itineraries, interactive maps, and cultural guides—accessible directly from their phones without any downloads required.</p>
+            <ul class="space-y-3">
+              <li class="flex items-center gap-3 text-sm"><span class="w-1.5 h-1.5 rounded-full bg-primary-fixed-dim"></span> Interactive local maps & transport links</li>
+              <li class="flex items-center gap-3 text-sm"><span class="w-1.5 h-1.5 rounded-full bg-primary-fixed-dim"></span> Live-updating itineraries</li>
+              <li class="flex items-center gap-3 text-sm"><span class="w-1.5 h-1.5 rounded-full bg-primary-fixed-dim"></span> Dress code & etiquette guides</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio Preview -->
+    <section class="py-32 bg-surface animate-on-scroll">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="mb-20 animate-on-scroll">
+          <span class="text-secondary text-sm tracking-widest uppercase mb-4 block">Our Work</span>
+          <h2 class="text-5xl font-display text-primary leading-tight max-w-3xl">A Portfolio Built Across Five Continents</h2>
+          <p class="text-lg text-on-surface-variant mt-6 max-w-2xl">Every project we take on is a commission — designed and built from scratch, for a specific couple, in a specific place, with a specific story to tell.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {[
+            { title: "The Amalfi Grandeur", couple: "Julia & Robert", location: "Amalfi, Italy", image: getHiResImage('the-amalfi-grandeur', 'The_Amalfi_Grandeur.png'), slug: 'the-amalfi-grandeur' },
+            { title: "The Santorini Serenity", couple: "Mei & Kenji", location: "Santorini, Greece", image: getHiResImage('the-santorini-serenity', 'The_Santorini_Serenity.png'), slug: 'the-santorini-serenity' },
+            { title: "The Cairo Tradition", couple: "Layla & Omar", location: "Cairo, Egypt", image: getHiResImage('the-cairo-tradition', 'The_Cairo_Tradition.png'), slug: 'the-cairo-tradition' },
+            { title: "The Stockholm Summer", couple: "Astrid & Nils", location: "Stockholm, Sweden", image: getHiResImage('the-stockholm-summer', 'The_Stockholm_Summer.png'), slug: 'the-stockholm-summer' },
+            { title: "The Parisian Elope", couple: "Sophie & Marc", location: "Paris, France", image: getHiResImage('the-parisian-elope', 'Parisian_Haute_Elopement.png'), slug: 'the-parisian-elope' },
+            { title: "The Modern Minimalist", couple: "Elena & James", location: "Florence, Italy", image: getHiResImage('the-modern-minimalist', ''), slug: 'the-modern-minimalist' }
+          ].map((item) => (
+            <a href={`/portfolio/${item.slug}`} class="group block cursor-pointer">
+              <div class="aspect-[4/5] bg-surface-container-low mb-6 overflow-hidden relative rounded-sm">
+                <img src={item.image} alt={item.title} class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+                <div class="absolute inset-0 bg-surface-dim opacity-20 transition-opacity group-hover:opacity-0"></div>
+              </div>
+              <h3 class="font-display text-2xl text-primary mb-2 group-hover:text-primary-dim transition-colors">{item.title}</h3>
+              <p class="text-on-surface-variant text-sm tracking-wide">{item.couple} — {item.location}</p>
+            </a>
+          ))}
+        </div>
+
+        <div class="mt-20 flex justify-center">
+          <Button href="/portfolio" variant="tertiary">View All Projects &rarr;</Button>
+        </div>
+      </div>
+    </section>
+
+    <!-- The Method -->
+    <section class="py-32 bg-surface-container-low">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="mb-24 text-center animate-on-scroll">
+          <span class="text-secondary text-sm tracking-widest uppercase mb-4 block">How We Work</span>
+          <h2 class="text-5xl font-display text-primary leading-tight">Designed Around You. Built to Last.</h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+          <div class="animate-on-scroll" style="transition-delay: 100ms;">
+            <span class="font-display text-3xl text-primary-fixed-dim block mb-6">01</span>
+            <h3 class="font-display text-2xl text-primary mb-4">Discovery & Narrative</h3>
+            <p class="text-on-surface leading-relaxed text-sm">We begin with your story. Your aesthetic, your guests, your cultural heritage, your vision. Every design decision flows from this foundation.</p>
+          </div>
+          <div class="animate-on-scroll" style="transition-delay: 200ms;">
+            <span class="font-display text-3xl text-primary-fixed-dim block mb-6">02</span>
+            <h3 class="font-display text-2xl text-primary mb-4">Bespoke Design</h3>
+            <p class="text-on-surface leading-relaxed text-sm">Every page, every colour, every typeface is chosen to reflect the specific atmosphere of your celebration. We don't adapt templates.</p>
+          </div>
+          <div class="animate-on-scroll" style="transition-delay: 300ms;">
+            <span class="font-display text-3xl text-primary-fixed-dim block mb-6">03</span>
+            <h3 class="font-display text-2xl text-primary mb-4">Precision Engineering</h3>
+            <p class="text-on-surface leading-relaxed text-sm">We build for performance across every device, every timezone, every language. Your guests get a flawless experience.</p>
+          </div>
+          <div class="animate-on-scroll" style="transition-delay: 400ms;">
+            <span class="font-display text-3xl text-primary-fixed-dim block mb-6">04</span>
+            <h3 class="font-display text-2xl text-primary mb-4">Your Digital Heirloom</h3>
+            <p class="text-on-surface leading-relaxed text-sm">Long after the last dance, your digital experience remains — a permanent record of the most considered day of your lives.</p>
+          </div>
+        </div>
+
+        <div class="mt-20 flex justify-center">
+          <Button href="/process" variant="secondary">Learn About Our Process</Button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Eco-Friendly Block -->
+    <section class="py-32 bg-primary text-on-primary">
+      <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+        <div class="animate-on-scroll">
+          <span class="text-primary-container text-sm tracking-widest uppercase mb-4 block">Sustainable by Design</span>
+          <h2 class="text-5xl font-display leading-tight mb-8">Going Paperless Has Never Looked This Good</h2>
+          <p class="text-lg text-primary-container leading-relaxed mb-8">Every printed invitation suite contributes to waste your wedding doesn't need. Our Paperless Portal replaces all of it with a digital experience so beautifully crafted that guests won't miss the paper.</p>
+          <ul class="flex flex-col gap-4 text-on-primary mb-12">
+            <li class="flex items-start gap-4">
+              <span class="w-1.5 h-1.5 rounded-full bg-primary-container mt-2"></span>
+              <span>Digital invitations — designed with the same care as a letterpress suite</span>
+            </li>
+            <li class="flex items-start gap-4">
+              <span class="w-1.5 h-1.5 rounded-full bg-primary-container mt-2"></span>
+              <span>Paperless RSVPs — dietary preferences and group bookings handled digitally</span>
+            </li>
+            <li class="flex items-start gap-4">
+              <span class="w-1.5 h-1.5 rounded-full bg-primary-container mt-2"></span>
+              <span>Live itinerary — updates in real time, so there's never a need for a reprint</span>
+            </li>
+          </ul>
+          <Button href="/portfolio/the-stockholm-summer" variant="tertiary" class="!text-primary-container !border-primary-container hover:!text-on-primary">See the Portal in Action &rarr;</Button>
+        </div>
+        <div class="relative">
+          <div class="aspect-square bg-primary-dim rounded-full overflow-hidden flex items-center justify-center border border-primary-container/20 relative">
+            <img src="/assets/Couple_in_Stockholm_archipelago.png" alt="Couple in Stockholm archipelago" class="absolute inset-0 w-full h-full object-cover opacity-40 mix-blend-overlay" />
+            <div class="text-center p-12 relative z-10">
+              <p class="font-display text-3xl italic leading-relaxed text-primary-container mb-6">"True luxury is found in the things we choose to leave behind."</p>
+              <p class="text-sm tracking-wider uppercase">— Astrid & Nils, The Stockholm Summer</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- Bottom CTA -->
     <section class="py-32 bg-surface">
