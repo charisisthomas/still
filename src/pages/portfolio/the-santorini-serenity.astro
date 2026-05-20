@@ -12,7 +12,7 @@ import PortfolioNav from '../../components/portfolio/PortfolioNav.astro';
     <!-- Hero Section -->
     <section class="relative min-h-[80vh] md:min-h-screen overflow-hidden flex items-center justify-center">
     <div class="absolute inset-0 z-0">
-    <img class="w-full h-full object-cover grayscale-[20%]" data-alt="Cinematic wide shot of a Chinese couple, Mei and Kenji, standing on a white Santorini balcony at sunset with blue domes in the distance." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCEVrilFYkXx9NoteSSCkRBFVc7ZA30sZt0uRttVLuV-WDUN0-L85pWNKqzIE-wMx85EOzgOJrQgV-dBYFRP546moDUME_gnNdZ6Um2SAEjVc961VF4HAP5RiANepH7LWdhzcSS4b-1HKD8Eza9IPabTzRedu9ZqZ7XjZuG_sWPa3jHnkZ6-w06mALqvR-smQVxyyUwAK7Ll-hU6-yM2upjiRYv4x4uAIZmZ6rmNTmV5abZN5ckWG6kIDrNRRVuR2rD6W67tg-tPh35"/>
+    <img class="w-full h-full object-cover grayscale-[20%]" data-alt="Cinematic wide shot of a Chinese couple, Mei and Kenji, standing on a white Santorini balcony at sunset with blue domes in the distance." src="/images/santorini-hero.png"/>
     <div class="absolute inset-0 bg-gradient-to-b from-transparent via-aegean/30 to-aegean/80"></div>
     </div>
     <div class="relative z-10 text-center px-6 animate-on-scroll mt-20">
@@ -25,6 +25,35 @@ import PortfolioNav from '../../components/portfolio/PortfolioNav.astro';
     <span class="material-symbols-outlined text-white text-3xl">keyboard_double_arrow_down</span>
     </div>
     </section>
+    <!-- The Brief Section -->
+    <section class="py-32 px-6 max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-16 items-start">
+      <div class="md:col-span-4 sticky top-32 animate-on-scroll">
+        <h2 class="text-3xl font-headline text-primary border-l-2 border-primary-container pl-6 py-2">The Brief</h2>
+        <div class="mt-8 flex flex-col gap-4">
+          <div>
+            <span class="block text-[10px] uppercase tracking-widest text-secondary mb-1">Location</span>
+            <span class="text-sm font-medium">Oia, Santorini</span>
+          </div>
+          <div>
+            <span class="block text-[10px] uppercase tracking-widest text-secondary mb-1">Scope</span>
+            <span class="text-sm font-medium">Offline-First Guest Experience</span>
+          </div>
+          <div>
+            <span class="block text-[10px] uppercase tracking-widest text-secondary mb-1">Guests</span>
+            <span class="text-sm font-medium">Destination Gathering</span>
+          </div>
+        </div>
+      </div>
+      <div class="md:col-span-8 animate-on-scroll" style="transition-delay: 200ms;">
+        <p class="text-2xl md:text-3xl font-headline leading-relaxed text-on-surface-variant">
+          "We wanted our guests to feel the salt in the air before they even boarded their flights."
+        </p>
+        <p class="mt-12 text-lg text-secondary leading-loose max-w-2xl font-body">
+          Still transformed a minimalist aesthetic into a digital platform that managed every detail while feeling like a luxury editorial piece, countering low-connectivity environments on the island.
+        </p>
+      </div>
+    </section>
+
     
     <!-- The Vision -->
     <section class="py-24 md:py-32 bg-surface">
@@ -61,7 +90,7 @@ import PortfolioNav from '../../components/portfolio/PortfolioNav.astro';
     <div class="p-6 pt-12 flex-grow">
     <div class="font-headline text-aegean italic text-xl mb-4">The Aegean Journal</div>
     <div class="h-32 w-full bg-surface-container rounded-sm mb-4">
-    <img class="w-full h-full object-cover" data-alt="Abstract blue water texture from the Santorini caldera with golden sunlight reflecting on surface." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCKPnrwjYGqFAmeOfWxEolOEn_kxS7mJPWePFx7a60Z-D8_H5wpLwB_Hx4QQMAo30dqNxh18nnXY6ExA4XwzRhhQEqgSMlvNXsRMW0F8MIMnZUIvu4DUUdau4lgnBMXo6MrK6vFGK0W7nJ214VORjzKl-6iNaAnRPfx9zwUNJVBBiI6vaopzbGMtNBvEty699j3lVYdPwsXrUgVbrau4045uLciT020zHKoyaoqNsjMGrziFJPc7HrycuVQxILDR-gZIqA8dbQxcm-z"/>
+    <img class="w-full h-full object-cover" data-alt="Abstract blue water texture from the Santorini caldera with golden sunlight reflecting on surface." src="/images/santorini-landscape.jpg"/>
     </div>
     <h4 class="font-bold text-xs uppercase tracking-tighter mb-2 text-on-surface">Issue No. 4: Island Flora</h4>
     <p class="text-[10px] text-secondary leading-relaxed">Discover the native blossoms of Santorini that inspired our floral arrangements...</p>
@@ -108,13 +137,13 @@ import PortfolioNav from '../../components/portfolio/PortfolioNav.astro';
     </div>
     <div class="grid grid-cols-2 gap-2">
     <div class="h-20 bg-surface-container">
-    <img class="w-full h-full object-cover" data-alt="Polaroid style photo of wedding appetizers on a stone table." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDrGRubi8dWjDfnB0StfEAOahn_xzF3vvvq5lzIABw2e7JSYrd-hkGuE4BWP346uTOuWvrveGZjGJQPkQWJu2VUD7YcQy3aWx6VEqbIs5Bbsj6cZtZqoOI5DRvPl2cFlr2r9yAxoWppZgltGWAqVzQR0sVS7uNKjL7-A7n7O64TjDyjeWvQpZmj3u1mmEdmKLBHPXgk29Mau2v64bxgXXqYIMC8POXxC8tvobf3ivFhvkTPNu78AEeZOuVC2w1slvpB3UKYRmqE_OpN"/>
+    <img class="w-full h-full object-cover" data-alt="Polaroid style photo of wedding appetizers on a stone table." src="/images/santorini-cake.jpg"/>
     </div>
     <div class="h-20 bg-surface-container">
-    <img class="w-full h-full object-cover" data-alt="Polaroid style photo of the groom Kenji adjusting his gold watch." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAGtpFFNuzkjcgelStFaHVLS24vmNLUnRH1tWeKa6BNGs1uMIRhixbPfw-1i4-EqlzwiIU0nEsNObpBSSOXMmfb6vojq_6oMq5C8eFUAr15BXP82Tb3L1tdLGhJlWyQkn6BmQc_zHgY7AP3YzqlTOsDeDoKYf6Up1hC-ln-UQRhieD6GkJbk7uxHWCVNyD-AQMLDKtskVqNuIbW4yI5eJiyzPy8VxaldfjFOcIab2q29R6ryqOS1yTrjyU-LOPGLx92hvuK59NodlBR"/>
+    <img class="w-full h-full object-cover" data-alt="Polaroid style photo of the groom Kenji adjusting his gold watch." src="/images/santorini-sightseen.jpg"/>
     </div>
     <div class="h-32 col-span-2 bg-surface-container">
-    <img class="w-full h-full object-cover" data-alt="Close up of white rose and gold wedding decorations." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC1vaUmj-o__7fFozgo2Rd03zztD0GKHu4a2A0vrFqFz8sXvIVJuS6UiFBifU2jVEPs2eRQE-ycfeGaKRqPQJIrI3hn4Jk6Am2gMeJH_DAhklGKvPSN86kxliK359WtOmGeYdehu6J8wzgqW33gDdU2XKuZPdYES2y06eIqxRrHcE_VfBfvCS5GCXgRr5K-jcctl6Eh0cDkIbqlNvZowNklcRn4Eah60yvQVhL1Fnvl8dpVlkQh25ZwjQMw9fphOabFxCrRNLlDPbZP"/>
+    <img class="w-full h-full object-cover" data-alt="Close up of white rose and gold wedding decorations." src="/images/woman-hands-ring-closeup-jonathanborba.jpg"/>
     </div>
     </div>
     </div>
@@ -159,7 +188,7 @@ import PortfolioNav from '../../components/portfolio/PortfolioNav.astro';
     <div class="w-full h-[600px] relative animate-on-scroll" style="transition-delay: 200ms;">
     <div class="absolute inset-0 bg-surface-container-low p-2">
     <div class="w-full h-full relative overflow-hidden bg-white/50 backdrop-blur-sm border border-outline-variant/20">
-    <img class="w-full h-full object-cover opacity-60" data-alt="Stylized top-down view of Santorini cliffside architecture with hand-drawn gold line map overlays and marker pins." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA5e1YR-DZ88ljNpL7oiPJQXX89Bnv8PlcGO61usAyVdC7snmMg8FK_ddEXPcNSkL2-MeRa1fjbYZdy5F46HQIVl3_Uhx0CAumb8jujru6mnkNE96p11LmXYJRcRcLQ5AC0XvNsA4Pp1ODye3syC41zkqyz0ElMXEKdwqKzkAG8CAseDCbhzRy567UrVYUXMBOlteRdyBBo2_EgVPIpzwrZGCtVg7tL1EJpeAyMFAzQz8D4vcgQhlNpszkfwNBG88YW5HI7GchxCn1m"/>
+    <img class="w-full h-full object-cover opacity-60" data-alt="Stylized top-down view of Santorini cliffside architecture with hand-drawn gold line map overlays and marker pins." src="/images/santorini-map.jpg"/>
     <div class="absolute top-1/4 left-1/3 p-4 bg-white shadow-xl flex items-center gap-3">
     <span class="material-symbols-outlined text-aegean">place</span>
     <span class="text-[10px] font-bold uppercase tracking-tighter text-on-surface">Proposal Point</span>
@@ -184,10 +213,10 @@ import PortfolioNav from '../../components/portfolio/PortfolioNav.astro';
     <div class="container mx-auto px-6">
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
     <div class="animate-on-scroll self-center">
-    <img class="w-full h-auto grayscale transition-all hover:grayscale-0 duration-700 rounded-sm shadow-sm" data-alt="Detailed close up of a minimalist white wedding cake with a single sprig of gold-leaf olive branch." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDFQrQ4AT4sW9jnVp2fPSfB3sZ0hZydu0YXGc4s-dYE9ewy62bOXq-pVTaXfe6d8vffqIbiO4xFAmb8fjGwRqMmQTR6_mZwmQI-SGQkbNiNQGAg4D-zjO2jQFtl06lnTREYZuuKxZ3X7u5JbohAoL4-16Mry0PZgV86-6Ecg50DNwDO-LCY7g0Q5Es0pDZVoXCHOtVXx-oUGY7TyHKXbri6JinUrw35oe5ljSWn4OoCBwMzGW9Q3sFdvxPfvtM0SFaMu2JuWdX_hrfv"/>
+    <img class="w-full h-auto grayscale transition-all hover:grayscale-0 duration-700 rounded-sm shadow-sm" data-alt="Detailed close up of a minimalist white wedding cake with a single sprig of gold-leaf olive branch." src="/images/santorini-hero.png"/>
     </div>
     <div class="animate-on-scroll self-center" style="transition-delay: 100ms;">
-    <img class="w-full h-auto rounded-sm shadow-sm" data-alt="Mei in her elegant wedding dress walking through a narrow white-walled Santorini alley." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBkE3UhS6uj8KhHeUju6fuzfQPp6O5FpoeBYvG2k87gPkhzF9TsQ36VIOJksmUpZrbxgsb366qy9KUGwsWK7ykYLglyweOC0eRmhn73LEzPvzHYtRGDa0ngADukeafoYyODXe3RyjNwWB5eJBAecFOtHjCxp1I03XlmceZ2slPIEONCujZgEWCtbK5vRS8BL7MMrFniztIX549oNq-3U8TdLWwrT8XbK6l2MqsFZHPid2ljOP3BNqe4fEvfmB2ccNc0ctwlRS1z9zmL"/>
+    <img class="w-full h-auto rounded-sm shadow-sm" data-alt="Mei in her elegant wedding dress walking through a narrow white-walled Santorini alley." src="/images/santorini-landscape.jpg"/>
     </div>
     <div class="animate-on-scroll self-center" style="transition-delay: 200ms;">
     <div class="p-12 bg-surface-container flex flex-col justify-center items-center text-center rounded-sm h-full min-h-[300px]">
@@ -197,13 +226,13 @@ import PortfolioNav from '../../components/portfolio/PortfolioNav.astro';
     </div>
     </div>
     <div class="animate-on-scroll self-center">
-    <img class="w-full h-auto rounded-sm shadow-sm" data-alt="Kenji looking out over the Aegean sea at sunset, silhouetted against the orange and pink sky." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDnfJ7gTOYUxDZ0avZ6FVBm8rOwIFvPOwEBPnFO6o6AsvlDQf1hbbiD6LaHtiDKoXHTD5zmG0Nxij9i4sq5VY-u_bCV9wmWrxYHLtouitjjzxvBXKPZu-SfTyLvPuUJzs3sBWWTbUEV_-senuuW0Gsz7HKJfvlvaskiDqRh1PlUwGIKs_HYoMLewF9416-bbcU2o0U3z5Oo7gYNYTSsDelUZrF-QKpjfQASlBLZnsfchQ8U_HIMgl3-sR55Or9mffIoN6wLcJ5K3s4I"/>
+    <img class="w-full h-auto rounded-sm shadow-sm" data-alt="Kenji looking out over the Aegean sea at sunset, silhouetted against the orange and pink sky." src="/images/santorini-cake.jpg"/>
     </div>
     <div class="animate-on-scroll self-center" style="transition-delay: 100ms;">
-    <img class="w-full h-auto rounded-sm shadow-sm" data-alt="Long exposure shot of the wedding dinner table set up outdoors on a terrace at night under fairy lights." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBGqir0hnbCmXbSfaRfPjbHaiEYupA_y3ClEngSUHvwnfAR28pG3lx-5XBYafVTuo_zwqhe9LXy6EmyfphbC-i76ctM__9dPk5RS2hyX4ImWxhQztn3ninlpyaBKAB7nefSe38hSrXX3LRrX3G32ltk1lIW5bDwhcuP5ZVg248RgBuPQiGDF9u2DXEGpQINg5TA82zDwKo0dEeH9I3oMwu6BmOsuVi8_S0g9BeWBY6ocRK-Z9RZbZFhH1Pn7053zGNexiQq6N3R6634"/>
+    <img class="w-full h-auto rounded-sm shadow-sm" data-alt="Long exposure shot of the wedding dinner table set up outdoors on a terrace at night under fairy lights." src="/images/santorini-sightseen.jpg"/>
     </div>
     <div class="animate-on-scroll self-center" style="transition-delay: 200ms;">
-    <img class="w-full h-auto grayscale transition-all hover:grayscale-0 duration-700 rounded-sm shadow-sm" data-alt="The couple's hands joined together showing simple gold wedding bands." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCiBecHEqGr5BG39GDYpR02jgr1lvpTg8O6CTfzwwLS-eEF5Oa3AUJhgBsAjHiHwr0tqsy5Tll_BGaQsxu2ss6euIqCEtUwCyU1mPCuIjF96RvAhgTHc8xtz1Iww9mTN02_u4JgX3MxJPkmjXoYvEbzJY3UoQywlDjOelxdyDrOOKCaJ8J3PXpssNZuKQ5kklKgSmD7foskh03GsGaGAfDeTO5APs7juOLx7zzBgHPpt1X0ZF_cwGXVCOA2yqVsyLJnEac-j9ELINoj"/>
+    <img class="w-full h-auto grayscale transition-all hover:grayscale-0 duration-700 rounded-sm shadow-sm" data-alt="The couple's hands joined together showing simple gold wedding bands." src="/images/woman-hands-ring-closeup-jonathanborba.jpg"/>
     </div>
     </div>
     </div>
@@ -214,7 +243,7 @@ import PortfolioNav from '../../components/portfolio/PortfolioNav.astro';
     <div class="container mx-auto px-6 animate-on-scroll">
     <span class="material-symbols-outlined text-5xl mb-12 opacity-30">format_quote</span>
     <blockquote class="font-headline text-3xl md:text-5xl max-w-4xl mx-auto leading-tight italic text-white">
-                        "The team at Still didn’t just build us a website; they built us a digital heirloom. It was the heart of our wedding experience from the first email to the last photo upload."
+                        "The team at Still didn’t just build us a website; they built us a digital legacy asset. It was the heart of our wedding experience from the first email to the last photo upload."
                     </blockquote>
     <cite class="mt-12 block not-italic font-bold tracking-[0.2em] uppercase text-sm text-white">— Mei &amp; Kenji</cite>
     </div>

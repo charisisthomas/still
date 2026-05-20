@@ -5,9 +5,9 @@ import Footer from '../../components/layout/Footer.astro';
 import Button from '../../components/ui/Button.astro';
 import caseStudiesData from '../../data/extracted_case_studies.json';
 
-const getHiResImage = (slug, fallback) => {
+const getHiResImage = (slug, index = 0, fallback) => {
   const caseData = caseStudiesData.find(c => c.slug === slug);
-  return (caseData && caseData.images && caseData.images[0]) ? caseData.images[0] : `/assets/${fallback}`;
+  return (caseData && caseData.images && caseData.images[index]) ? caseData.images[index] : `/assets/${fallback}`;
 };
 ---
 
@@ -33,22 +33,38 @@ const getHiResImage = (slug, fallback) => {
       <div class="max-w-7xl mx-auto px-6">
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
           {[
-            { title: "The Amalfi Grandeur", couple: "Julia & Robert", location: "Amalfi, Italy", image: getHiResImage('the-amalfi-grandeur', 'The_Amalfi_Grandeur.png'), slug: "the-amalfi-grandeur" },
-            { title: "The Santorini Serenity", couple: "Mei & Kenji", location: "Santorini, Greece", image: getHiResImage('the-santorini-serenity', 'The_Santorini_Serenity.png'), slug: "the-santorini-serenity" },
-            { title: "The Cairo Tradition", couple: "Layla & Omar", location: "Cairo, Egypt", image: getHiResImage('the-cairo-tradition', 'The_Cairo_Tradition.png'), slug: "the-cairo-tradition" },
-            { title: "The Stockholm Summer", couple: "Astrid & Nils", location: "Stockholm, Sweden", image: getHiResImage('the-stockholm-summer', 'The_Stockholm_Summer.png'), slug: "the-stockholm-summer" },
-            { title: "The Parisian Elope", couple: "Sophie & Marc", location: "Paris, France", image: getHiResImage('the-parisian-elope', 'Parisian_Haute_Elopement.png'), slug: "the-parisian-elope" },
-            { title: "The Modern Minimalist", couple: "Elena & James", location: "Florence, Italy", image: getHiResImage('the-modern-minimalist', ''), slug: "the-modern-minimalist" }
+            { title: "The Amalfi Grandeur", couple: "Julia & Robert", location: "Amalfi, Italy", image: getHiResImage('the-amalfi-grandeur', 0, 'The_Amalfi_Grandeur.png'), slug: "the-amalfi-grandeur", feature: "Multi-Day Tracking" },
+            { title: "The Santorini Serenity", couple: "Mei & Kenji", location: "Santorini, Greece", image: getHiResImage('the-santorini-serenity', 1, 'The_Santorini_Serenity.png'), slug: "the-santorini-serenity", feature: "Offline-First Maps" },
+            { title: "The Cairo Tradition", couple: "Layla & Omar", location: "Cairo, Egypt", image: getHiResImage('the-cairo-tradition', 2, 'The_Cairo_Tradition.png'), slug: "the-cairo-tradition", feature: "Cultural Concierge" },
+            { title: "The Stockholm Summer", couple: "Astrid & Nils", location: "Stockholm, Sweden", image: getHiResImage('the-stockholm-summer', 1, 'The_Stockholm_Summer.png'), slug: "the-stockholm-summer", feature: "Paperless Portal" },
+            { title: "The Parisian Elope", couple: "Sophie & Marc", location: "Paris, France", image: getHiResImage('the-parisian-elope', 0, 'Parisian_Haute_Elopement.png'), slug: "the-parisian-elope", feature: "Password Protected" },
+            { title: "The Modern Minimalist", couple: "Elena & James", location: "Florence, Italy", image: getHiResImage('the-modern-minimalist', 1, ''), slug: "the-modern-minimalist", feature: "Mobile-First UI" }
           ].map((item, idx) => (
             <a href={`/portfolio/${item.slug}`} class="group block cursor-pointer animate-on-scroll" style={`transition-delay: ${idx * 100}ms;`}>
               <div class="aspect-[4/5] bg-surface-container-low mb-6 overflow-hidden relative rounded-sm shadow-md">
                 <img src={item.image} alt={item.title} class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
                 <div class="absolute inset-0 bg-surface-dim opacity-10 transition-opacity group-hover:opacity-0"></div>
+                {item.feature && (
+                  <div class="absolute top-4 right-4 bg-surface/90 backdrop-blur-sm px-3 py-1.5 rounded-sm">
+                    <span class="font-label text-[9px] uppercase tracking-widest text-primary font-bold">{item.feature}</span>
+                  </div>
+                )}
               </div>
               <h3 class="font-display text-2xl text-primary mb-2 group-hover:text-primary-dim transition-colors">{item.title}</h3>
               <p class="text-on-surface-variant text-sm tracking-wide">{item.couple} — {item.location}</p>
             </a>
           ))}
+          
+          <!-- Coming Soon Placeholder -->
+          <div class="group block animate-on-scroll" style="transition-delay: 600ms;">
+              <div class="aspect-[4/5] bg-surface-container border border-outline-variant/20 border-dashed mb-6 overflow-hidden relative rounded-sm shadow-sm flex items-center justify-center">
+                <div class="text-center px-6">
+                    <span class="material-symbols-outlined text-4xl text-secondary mb-4 opacity-50" style="font-variation-settings: 'FILL' 1;">hourglass_empty</span>
+                    <h3 class="font-display text-xl text-secondary mb-2">More Commissions</h3>
+                    <p class="font-label text-xs uppercase tracking-widest text-secondary/70">Coming Soon</p>
+                </div>
+              </div>
+          </div>
         </div>
       </div>
     </section>

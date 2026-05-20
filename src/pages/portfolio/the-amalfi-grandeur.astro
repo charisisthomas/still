@@ -12,7 +12,7 @@ import PortfolioNav from '../../components/portfolio/PortfolioNav.astro';
     <!-- Hero Section -->
     <section class="relative min-h-[80vh] md:min-h-screen flex items-center justify-center overflow-hidden">
       <div class="absolute inset-0 z-0">
-        <img class="w-full h-full object-cover" data-alt="elegant american couple in evening wear standing on a white stone terrace overlooking the amalfi coast at sunset" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBdByerWkb4hDWpSAncArN-gMoiq72nXPb-BIMJTBg-eURUU8xuDHB-x0RO0a8PT0LjFUSRXNyt1FyMk2Pj1g8q6IwrQmjUOlf7AQlha3-2upuftULaHJZyPOQ8CqELe6KOZpdAjCrhJfBMMxU2yCLH4NOjPGTVG49U6DjbBnxnMp9Wfy-L98aIquHw5PswXVlZKW-v7x08bF2T2_NtF8LYSGEc9bovfZVsiJ88LvA0KtVTCCNeT_cVsBC94BRpz5pvFngIgFKpqezw"/>
+        <img class="w-full h-full object-cover" data-alt="elegant american couple in evening wear standing on a white stone terrace overlooking the amalfi coast at sunset" src="/images/amalfi-hero.jpg"/>
         <div class="absolute inset-0 bg-black/20 bg-[radial-gradient(circle_at_center,_transparent_0%,_rgba(250,249,246,0.4)_100%)]"></div>
       </div>
       <div class="relative z-10 text-center text-on-primary animate-on-scroll mt-20 px-6">
@@ -20,6 +20,35 @@ import PortfolioNav from '../../components/portfolio/PortfolioNav.astro';
         <h1 class="font-headline text-6xl md:text-7xl lg:text-8xl tracking-tighter drop-shadow-lg break-words">The Amalfi Grandeur</h1>
       </div>
     </section>
+    <!-- The Brief Section -->
+    <section class="py-32 px-6 max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-16 items-start">
+      <div class="md:col-span-4 sticky top-32 animate-on-scroll">
+        <h2 class="text-3xl font-headline text-primary border-l-2 border-primary-container pl-6 py-2">The Brief</h2>
+        <div class="mt-8 flex flex-col gap-4">
+          <div>
+            <span class="block text-[10px] uppercase tracking-widest text-secondary mb-1">Location</span>
+            <span class="text-sm font-medium">Amalfi Coast, Italy</span>
+          </div>
+          <div>
+            <span class="block text-[10px] uppercase tracking-widest text-secondary mb-1">Scope</span>
+            <span class="text-sm font-medium">Complex Multi-Day Logistics</span>
+          </div>
+          <div>
+            <span class="block text-[10px] uppercase tracking-widest text-secondary mb-1">Guests</span>
+            <span class="text-sm font-medium">150+ Guests</span>
+          </div>
+        </div>
+      </div>
+      <div class="md:col-span-8 animate-on-scroll" style="transition-delay: 200ms;">
+        <p class="text-2xl md:text-3xl font-headline leading-relaxed text-on-surface-variant">
+          Managing an exclusive Italian getaway requires more than just aesthetics. The challenge was orchestrating global guest logistics seamlessly.
+        </p>
+        <p class="mt-12 text-lg text-secondary leading-loose max-w-2xl font-body">
+          With guests flying in from three continents, the digital experience needed to serve as a 24/7 concierge—translating the complexity of coastal transport into a seamless, high-end editorial journey.
+        </p>
+      </div>
+    </section>
+
 
     <!-- The Brief Section -->
     <section class="py-32 px-6 md:px-12 bg-surface">
@@ -47,10 +76,10 @@ import PortfolioNav from '../../components/portfolio/PortfolioNav.astro';
             <div>
               <span class="font-label text-xs uppercase tracking-widest text-primary mb-6 block">Experience 01</span>
               <h3 class="font-headline text-4xl mb-6">Concierge Travel Hub</h3>
-              <p class="text-secondary max-w-md leading-relaxed">A centralized digital dashboard providing guests with real-time flight tracking, personalized weather alerts for Ravello, and custom-tailored itineraries delivered via the wedding app.</p>
+              <p class="text-secondary max-w-md leading-relaxed">A centralized digital platform providing guests with real-time flight tracking, personalized weather alerts for Ravello, and custom-tailored itineraries delivered via the wedding app.</p>
             </div>
             <div class="mt-12 transform group-hover:translate-x-4 transition-transform duration-700">
-              <img class="w-full h-auto grayscale opacity-90 rounded-sm" data-alt="minimalist digital UI dashboard showing flight arrival times and travel status with elegant serif typography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD8ZpiCq-nVFjIX270KiAoB4gdjLksKOFuq2Q0hXD3vR6pWf63S8T68O18kKE0FxQLSA0Ur6rkp9LHBZTzTXf989MechbX0B4ja5HUb1PyjmichAbmZHBGDly_QdXXIficDIrzRcdPOLg6PbxFB6YcZIdhNblWqNWACgaf2A3Ade2YVvuQYXlerP9Q6UYlcKsBHbXAhCTg-aEgfEM4HO9WBjGfHrnj6z9CbIbMDSHii8sFSKQREnsLi-0eB191svS2z5k7HAektrJeA"/>
+              <img class="w-full h-auto grayscale opacity-90 rounded-sm" data-alt="minimalist digital UI showing flight arrival times and travel status with elegant serif typography" src="/images/amalfi-holding-hands.jpg"/>
             </div>
           </div>
           <div class="md:col-span-4 space-y-8 animate-on-scroll" style="transition-delay: 200ms;">
@@ -69,7 +98,7 @@ import PortfolioNav from '../../components/portfolio/PortfolioNav.astro';
       <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-20">
         <div class="md:w-1/2 relative animate-on-scroll">
           <div class="absolute -top-10 -left-10 w-64 h-64 bg-primary-container/20 rounded-full blur-3xl"></div>
-          <img class="w-full h-[600px] object-cover relative z-10 rounded-sm" data-alt="luxury vintage italian sports car parked on a narrow cobbled street in a coastal village with sunlight filtering through leaves" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCcWkMvDPM5JCo5CHtAkDLaA0wf2tM42dFILmkVpln3k6RvHplbehaVn3jcLcYI2pCcVkg9dVk42HQkuubYfmtKV7tHq02EJrKmd60ArxgWeCBPbLvz3naU3vpxA8cMKVKL91TpwAkCFQqTlnncrkd8t8cWoigDMM74JHi6JrTLareGhwTm8eZjGKHFe2bwEqfljucq2-QzZL3fClcA0pe677Rfjm3SYgz1xH6ivQdRkg0-WWXrBWO1pGCDcRMXl1MG6q8I88tIZG2d"/>
+          <img class="w-full h-[600px] object-cover relative z-10 rounded-sm" data-alt="luxury vintage italian sports car parked on a narrow cobbled street in a coastal village with sunlight filtering through leaves" src="/images/amalfi-fleet.jpg"/>
           <div class="absolute -bottom-8 -right-8 bg-surface-container-lowest p-8 shadow-md z-20 md:block hidden border border-outline-variant/10 rounded-sm">
             <p class="font-headline text-xl italic text-primary max-w-xs leading-relaxed">"The driver was waiting before I even cleared customs."</p>
           </div>
@@ -109,7 +138,7 @@ import PortfolioNav from '../../components/portfolio/PortfolioNav.astro';
           <!-- Card 1 -->
           <div class="space-y-6 group animate-on-scroll">
             <div class="overflow-hidden rounded-sm">
-              <img class="w-full aspect-[3/4] object-cover group-hover:scale-105 transition-transform duration-1000" data-alt="private wooden boat cruising on clear turquoise water near the towering cliffs of capri" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBuT30WrJLRFtEyy4EeicSLAoWVBfE9dyZVeGhGOMOTAp-6t4k0-YBT22OoleFCkM4Kib-BseXEj_4Ds704LX4KylQIwk6ehoMnHYdcOmbWvb7uh58mbpVbJ6hHUmiwfL945urm_RqB4emn2YUkU3DOWOaax7AfHmEv2Ee4a6RUn4qM_s1rbRIcJdUIBFZATlqxfVcRzr77m5XRUDjAV1MakmmrriGc-23PjuKjCoOO7GtjjU93usYqSCTjJDIJXEaqIS9injl14HHW"/>
+              <img class="w-full aspect-[3/4] object-cover group-hover:scale-105 transition-transform duration-1000" data-alt="private wooden boat cruising on clear turquoise water near the towering cliffs of capri" src="/images/amalfi-boat.jpg"/>
             </div>
             <div class="flex justify-between items-start">
               <div>
@@ -122,7 +151,7 @@ import PortfolioNav from '../../components/portfolio/PortfolioNav.astro';
           <!-- Card 2 (Offset) -->
           <div class="space-y-6 group md:mt-24 animate-on-scroll" style="transition-delay: 150ms;">
             <div class="overflow-hidden rounded-sm">
-              <img class="w-full aspect-[3/4] object-cover group-hover:scale-105 transition-transform duration-1000" data-alt="lush lemon groves with bright yellow lemons hanging from trees under a green canopy in ravello" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBw8Xuw3I_zn3xWBVBoR40Cr6dQBrDOJ7ZidA6XGksVVojasjmX-rPtyuYApNg0gXKhLPldfqfhPoBYcsBsk7B7bZPiVaY6sXCkB6h2U7yZhwNK-uFdgfnUCPgrlnlmhP70gCqT-PT4sM_ZZW2o3oQOd70oa5w-UaJ_nZqDyQao-1O0TrSOhST7yJHJYhPvgCZCIs1T1gfEreP1tI9UtUoFc0VR5Fa_EwbzRjuN_Y3LBL6obcP4VD62h2a4EaQITRxrO2K4KbuBBMte"/>
+              <img class="w-full aspect-[3/4] object-cover group-hover:scale-105 transition-transform duration-1000" data-alt="lush lemon groves with bright yellow lemons hanging from trees under a green canopy in ravello" src="/images/amalfi-lemon.jpg"/>
             </div>
             <div class="flex justify-between items-start">
               <div>
@@ -135,7 +164,7 @@ import PortfolioNav from '../../components/portfolio/PortfolioNav.astro';
           <!-- Card 3 -->
           <div class="space-y-6 group animate-on-scroll" style="transition-delay: 300ms;">
             <div class="overflow-hidden rounded-sm">
-              <img class="w-full aspect-[3/4] object-cover group-hover:scale-105 transition-transform duration-1000" data-alt="sunset view of amalfi town with warm lights beginning to glow against the blue sea" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCcDz9ZC8E7AZ_YE-C--U_EVHP2jJQ24cWqi_LBItlHGcukwK3VY_qY4v_BvVoyBrM8cxxiI6Y7W6CBNHi5iVzFU2I04M7pAOoteRapCYpp32IxmSSTcrXgfQcgONPAIdkO6jT-yTFAKoFWwq2DyAsZxJYFsZe8UOwMQES9XRa5pDFT_ZZ2HAyJGWYPBUAGizDkUeHOHB3E2rYg34vHaRVHxTUvFXYr3mpzJh4ryMBANX3GgdoJfd1kmH2qgYx-yk65sX0466KAXjiV"/>
+              <img class="w-full aspect-[3/4] object-cover group-hover:scale-105 transition-transform duration-1000" data-alt="sunset view of amalfi town with warm lights beginning to glow against the blue sea" src="/images/amalfi-dining.jpg"/>
             </div>
             <div class="flex justify-between items-start">
               <div>

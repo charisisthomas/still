@@ -8,40 +8,493 @@ import Button from '../components/ui/Button.astro';
 <Layout title="Services | Still">
   <Header />
   
-  <main class="pt-32">
-    <!-- Hero -->
-    <section class="min-h-[60vh] flex items-center relative overflow-hidden bg-surface">
-      <div class="absolute inset-0">
-        <img src="/assets/photo-1544161513-0179fe746fd5.png" alt="Services Hero" class="w-full h-full object-cover opacity-20" />
-        <div class="absolute inset-0 bg-gradient-to-t from-surface to-transparent"></div>
-      </div>
-      <div class="max-w-4xl mx-auto px-6 text-center relative z-10">
-        <span class="text-secondary text-sm tracking-widest uppercase mb-6 block">What We Build</span>
-        <h1 class="text-5xl md:text-6xl font-display text-primary leading-tight mb-8">
-          Bespoke Digital Experiences, Built for the World's Most <span class="italic">Intentional</span> Weddings
-        </h1>
-        <p class="text-lg text-on-surface-variant leading-relaxed">
-          We design and develop a unified, seamless digital experience for your wedding — built entirely from scratch, around your story. No templates. No off-the-shelf solutions. Every commission is a new project, serving as an editorial invitation on desktop and a frictionless concierge app on mobile.
-        </p>
-      </div>
+  <main class="w-full bg-surface pt-[84px]">
+    
+    <!-- Hero Section -->
+    <section class="max-w-[1440px] mx-auto px-6 md:px-12 pt-24 pb-20">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div class="max-w-[800px] animate-on-scroll">
+                <span class="block mb-6 font-label text-[11px] uppercase tracking-[0.28em] text-primary">
+                    SERVICES & COMMISSIONS
+                </span>
+                <h1 class="font-headline text-5xl md:text-[60px] leading-[1.1] text-on-surface mb-8" style="text-wrap: balance;">
+                    Digital Experiences for <br/> <span class="italic text-primary">the Modern Wedding</span>
+                </h1>
+                <div class="max-w-[600px]">
+                    <p class="font-body text-lg md:text-[20px] leading-[1.7] text-secondary" style="text-wrap: pretty;">
+                        We build bespoke digital infrastructure for high-end celebrations. From a single-page editorial announcement to a multi-day guest app with real-time flight tracking, every commission is built from a blank canvas. We do not use templates. We do not recycle code. We build for you.
+                    </p>
+                </div>
+            </div>
+            <div class="animate-on-scroll" style="transition-delay: 200ms;">
+                <div class="aspect-[4/3] bg-surface-container-low rounded-sm overflow-hidden shadow-lg relative">
+                    <img src="/images/couple-holding-hands.jpg" alt="Bespoke Digital Design" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-1000">
+                    <div class="absolute inset-0 bg-primary/5 pointer-events-none"></div>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <!-- Content Scaffold Placeholder -->
-    <section class="py-32 bg-surface-container-low">
-      <div class="max-w-7xl mx-auto px-6 text-center">
-        <h2 class="text-3xl font-display text-secondary mb-4">Product Breakdown</h2>
-        <p class="text-on-surface-variant">Detailed service information coming soon.</p>
-      </div>
+    <!-- The Commissions -->
+    <section class="w-full bg-surface-container-low py-24 border-y border-outline-variant/10">
+        <div class="max-w-[1440px] mx-auto px-6 md:px-12">
+            <div class="mb-16 animate-on-scroll">
+                <span class="block mb-4 font-label text-[11px] uppercase tracking-[0.28em] text-primary">THE COMMISSIONS</span>
+                <h2 class="font-headline text-3xl md:text-[40px] text-on-surface mb-6 leading-tight" style="text-wrap: balance;">Our Core Offerings</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- 01 Paperless Portal -->
+                <div class="bg-surface border border-outline-variant/20 p-8 rounded-sm hover:shadow-md transition-all animate-on-scroll">
+                    <div class="font-headline italic text-[48px] text-primary-fixed-dim mb-4">01</div>
+                    <h3 class="font-headline text-[24px] text-on-surface mb-2">The Paperless Portal</h3>
+                    <p class="font-body text-[14px] leading-[1.65] text-secondary mb-6">
+                        A beautiful, single-page digital suite that replaces your entire printed stationery set. Digital invitations, RSVP collection, menus, and a live itinerary, all in one platform. Zero print.
+                    </p>
+                    <ul class="space-y-2 mb-6">
+                        <li class="flex items-start gap-2">
+                            <span class="material-symbols-outlined text-primary text-[18px] mt-0.5" style="font-variation-settings: 'FILL' 1;">check</span>
+                            <span class="font-body text-[13px] text-on-surface-variant">Digital invitation & RSVP logic</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="material-symbols-outlined text-primary text-[18px] mt-0.5" style="font-variation-settings: 'FILL' 1;">check</span>
+                            <span class="font-body text-[13px] text-on-surface-variant">Menu & seating guide integration</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="material-symbols-outlined text-primary text-[18px] mt-0.5" style="font-variation-settings: 'FILL' 1;">check</span>
+                            <span class="font-body text-[13px] text-on-surface-variant">Live digital itinerary</span>
+                        </li>
+                    </ul>
+                    <div class="font-body text-[12px] text-secondary italic">
+                        Best for: Couples prioritizing sustainability or looking for a sleek alternative to paper goods.
+                    </div>
+                </div>
+
+                <!-- 02 Single Page Website -->
+                <div class="bg-surface border border-outline-variant/20 p-8 rounded-sm hover:shadow-md transition-all animate-on-scroll" style="transition-delay: 100ms;">
+                    <div class="font-headline italic text-[48px] text-primary-fixed-dim mb-4">02</div>
+                    <h3 class="font-headline text-[24px] text-on-surface mb-2">Single Page Website</h3>
+                    <p class="font-body text-[14px] leading-[1.65] text-secondary mb-6">
+                        A continuous, scrolling editorial experience. Perfect for intimate weddings or modern couples who want to deliver all information in one cohesive narrative flow.
+                    </p>
+                    <ul class="space-y-2 mb-6">
+                        <li class="flex items-start gap-2">
+                            <span class="material-symbols-outlined text-primary text-[18px] mt-0.5" style="font-variation-settings: 'FILL' 1;">check</span>
+                            <span class="font-body text-[13px] text-on-surface-variant">Continuous editorial scroll</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="material-symbols-outlined text-primary text-[18px] mt-0.5" style="font-variation-settings: 'FILL' 1;">check</span>
+                            <span class="font-body text-[13px] text-on-surface-variant">Integrated schedule & venue info</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="material-symbols-outlined text-primary text-[18px] mt-0.5" style="font-variation-settings: 'FILL' 1;">check</span>
+                            <span class="font-body text-[13px] text-on-surface-variant">Basic travel & accommodation guide</span>
+                        </li>
+                    </ul>
+                    <div class="font-body text-[12px] text-secondary italic">
+                        Best for: Intimate or local weddings with straightforward logistics.
+                    </div>
+                </div>
+
+                <!-- 03 Multi-Page Discovery -->
+                <div class="bg-surface border border-outline-variant/20 p-8 rounded-sm hover:shadow-md transition-all animate-on-scroll" style="transition-delay: 200ms;">
+                    <div class="font-headline italic text-[48px] text-primary-fixed-dim mb-4">03</div>
+                    <h3 class="font-headline text-[24px] text-on-surface mb-2">Multi-Page Discovery</h3>
+                    <p class="font-body text-[14px] leading-[1.65] text-secondary mb-6">
+                        A deeply immersive website with dedicated pages for your story, complex travel guides, multi-event schedules, and segmented RSVP logic.
+                    </p>
+                    <ul class="space-y-2 mb-6">
+                        <li class="flex items-start gap-2">
+                            <span class="material-symbols-outlined text-primary text-[18px] mt-0.5" style="font-variation-settings: 'FILL' 1;">check</span>
+                            <span class="font-body text-[13px] text-on-surface-variant">Multi-page architecture</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="material-symbols-outlined text-primary text-[18px] mt-0.5" style="font-variation-settings: 'FILL' 1;">check</span>
+                            <span class="font-body text-[13px] text-on-surface-variant">Conditional RSVP logic</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="material-symbols-outlined text-primary text-[18px] mt-0.5" style="font-variation-settings: 'FILL' 1;">check</span>
+                            <span class="font-body text-[13px] text-on-surface-variant">Dedicated travel & accommodation hubs</span>
+                        </li>
+                    </ul>
+                    <div class="font-body text-[12px] text-secondary italic">
+                        Best for: Weekend-long domestic weddings requiring detailed guest guidance.
+                    </div>
+                    <a href="/portfolio/the-parisian-elope" class="block mt-4 font-label text-[11px] font-semibold text-primary hover:underline">→ See it in The Parisian Elope</a>
+                </div>
+
+                <!-- 04 Full Commission -->
+                <div class="bg-primary-container border-l-4 border-primary p-8 rounded-sm shadow-md animate-on-scroll relative overflow-hidden">
+                    <div class="absolute inset-0 bg-gradient-to-br from-transparent to-primary-fixed-dim/10 pointer-events-none"></div>
+                    <div class="relative z-10">
+                        <div class="font-headline italic text-[48px] text-on-primary-container/80 mb-4">04</div>
+                        <h3 class="font-headline text-[24px] text-on-primary-container mb-2">Website + App</h3>
+                        <p class="font-body text-[14px] leading-[1.65] text-on-primary-container/80 mb-6">
+                            Our flagship offering. The website builds anticipation and handles RSVPs; the mobile web app serves as a live concierge on the day with push notifications and photo sharing.
+                        </p>
+                        <ul class="space-y-2 mb-6">
+                            <li class="flex items-start gap-2">
+                                <span class="material-symbols-outlined text-on-primary-container text-[18px] mt-0.5" style="font-variation-settings: 'FILL' 1;">check</span>
+                                <span class="font-body text-[13px] text-on-primary-container/90">Multi-page pre-wedding website</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="material-symbols-outlined text-on-primary-container text-[18px] mt-0.5" style="font-variation-settings: 'FILL' 1;">check</span>
+                                <span class="font-body text-[13px] text-on-primary-container/90">Mobile guest app (no download required)</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="material-symbols-outlined text-on-primary-container text-[18px] mt-0.5" style="font-variation-settings: 'FILL' 1;">check</span>
+                                <span class="font-body text-[13px] text-on-primary-container/90">Live itinerary & push notifications</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="material-symbols-outlined text-on-primary-container text-[18px] mt-0.5" style="font-variation-settings: 'FILL' 1;">check</span>
+                                <span class="font-body text-[13px] text-on-primary-container/90">Live guest photo sharing feed</span>
+                            </li>
+                        </ul>
+                        <div class="font-body text-[12px] text-on-primary-container/70 italic">
+                            Best for: Elevated weddings where the on-the-day guest experience is paramount.
+                        </div>
+                        <a href="/portfolio/the-amalfi-grandeur" class="block mt-4 font-label text-[11px] font-semibold text-on-primary-container hover:underline">→ See it in The Amalfi Grandeur</a>
+                    </div>
+                </div>
+
+                <!-- 05 Destination Portal -->
+                <div class="bg-surface border border-outline-variant/20 p-8 rounded-sm hover:shadow-md transition-all animate-on-scroll">
+                    <div class="font-headline italic text-[48px] text-primary-fixed-dim mb-4">05</div>
+                    <h3 class="font-headline text-[24px] text-on-surface mb-2">Destination Portal</h3>
+                    <p class="font-body text-[14px] leading-[1.65] text-secondary mb-6">
+                        Built specifically for international weddings. Features comprehensive travel hubs, real-time flight tracking, multilingual support, and curated local guides.
+                    </p>
+                    <ul class="space-y-2 mb-6">
+                        <li class="flex items-start gap-2">
+                            <span class="material-symbols-outlined text-primary text-[18px] mt-0.5" style="font-variation-settings: 'FILL' 1;">check</span>
+                            <span class="font-body text-[13px] text-on-surface-variant">Interactive international travel hub</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="material-symbols-outlined text-primary text-[18px] mt-0.5" style="font-variation-settings: 'FILL' 1;">check</span>
+                            <span class="font-body text-[13px] text-on-surface-variant">Real-time flight tracking integration</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="material-symbols-outlined text-primary text-[18px] mt-0.5" style="font-variation-settings: 'FILL' 1;">check</span>
+                            <span class="font-body text-[13px] text-on-surface-variant">Multilingual interface (up to 2 languages)</span>
+                        </li>
+                    </ul>
+                    <div class="font-body text-[12px] text-secondary italic">
+                        Best for: Couples bringing guests from multiple countries to a destination wedding.
+                    </div>
+                    <a href="/portfolio/the-cairo-tradition" class="block mt-4 font-label text-[11px] font-semibold text-primary hover:underline">→ See it in The Cairo Tradition</a>
+                </div>
+
+                <!-- 06 Custom Digital Concierge -->
+                <div class="bg-surface border border-outline-variant/20 p-8 rounded-sm hover:shadow-md transition-all animate-on-scroll" style="transition-delay: 100ms;">
+                    <div class="font-headline italic text-[48px] text-primary-fixed-dim mb-4">06</div>
+                    <h3 class="font-headline text-[24px] text-on-surface mb-2">Custom Concierge</h3>
+                    <p class="font-body text-[14px] leading-[1.65] text-secondary mb-6">
+                        For weddings that go beyond a standard brief. We start from your specific requirements, scoping out custom features, complex logistics, and advanced guest personalisation logic.
+                    </p>
+                    <ul class="space-y-2 mb-6">
+                        <li class="flex items-start gap-2">
+                            <span class="material-symbols-outlined text-primary text-[18px] mt-0.5" style="font-variation-settings: 'FILL' 1;">check</span>
+                            <span class="font-body text-[13px] text-on-surface-variant">Custom feature design & engineering</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="material-symbols-outlined text-primary text-[18px] mt-0.5" style="font-variation-settings: 'FILL' 1;">check</span>
+                            <span class="font-body text-[13px] text-on-surface-variant">Advanced guest personalisation logic</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="material-symbols-outlined text-primary text-[18px] mt-0.5" style="font-variation-settings: 'FILL' 1;">check</span>
+                            <span class="font-body text-[13px] text-on-surface-variant">Extended post-launch support</span>
+                        </li>
+                    </ul>
+                    <div class="font-body text-[12px] text-secondary italic">
+                        Best for: Estate weekends, multi-event commissions, or high-profile weddings.
+                    </div>
+                    <a href="/portfolio/the-santorini-serenity" class="block mt-4 font-label text-[11px] font-semibold text-primary hover:underline">→ See it in The Santorini Serenity</a>
+                </div>
+            </div>
+
+            <!-- 07 Grand Scale -->
+            <div class="mt-8 bg-surface border border-outline-variant/20 p-8 rounded-sm hover:shadow-md transition-all animate-on-scroll">
+                <div class="flex flex-col md:flex-row gap-8 items-start md:items-center justify-between">
+                    <div>
+                        <div class="font-headline italic text-[48px] text-primary-fixed-dim mb-2">07</div>
+                        <h3 class="font-headline text-[24px] text-on-surface mb-2">Grand Scale Commission</h3>
+                        <p class="font-body text-[14px] leading-[1.65] text-secondary max-w-2xl">
+                            For multi-event celebrations and commissions that don't fit a standard brief. We begin with a dedicated scoping session and build the brief from scratch around your specific requirements. Priced individually on inquiry.
+                        </p>
+                    </div>
+                    <div class="flex-shrink-0">
+                        <Button href="/contact" variant="primary" class="shadow-sm">Book a Discovery Call</Button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <!-- Bottom CTA -->
-    <section class="py-32 bg-surface">
-      <div class="max-w-4xl mx-auto px-6 text-center animate-on-scroll">
-        <h2 class="text-5xl md:text-6xl font-display text-primary leading-tight mb-8">Let's Discuss Your Vision</h2>
-        <p class="text-lg text-on-surface-variant leading-relaxed mb-12">Most couples start with a conversation. Tell us about your wedding — the location, the guest list, how many people are travelling internationally — and we'll recommend the right digital approach. No obligation, no sales pressure.</p>
-        <Button href="/contact" variant="primary">Book a Discovery Call</Button>
-      </div>
+    <!-- Comparison Matrix -->
+    <section class="w-full bg-surface py-24 border-b border-outline-variant/10">
+        <div class="max-w-[1440px] mx-auto px-6 md:px-12 animate-on-scroll">
+            <span class="block mb-4 font-label text-[11px] uppercase tracking-[0.28em] text-primary text-center">NOT SURE WHICH ONE IS RIGHT FOR YOU?</span>
+            <h2 class="font-headline text-3xl md:text-[40px] text-on-surface mb-6 text-center">Find Your Commission</h2>
+            <p class="font-body text-[15px] text-secondary text-center max-w-2xl mx-auto mb-16">
+                The table below shows what's included in each tier. Every commission includes bespoke design, password protection, mobile-optimised build, and a post-event archive — regardless of tier. <br/>
+                <a href="/pricing" class="text-primary hover:underline mt-2 inline-block">See everything that's always included and view pricing ranges →</a>
+            </p>
+
+            <div class="overflow-x-auto border border-outline-variant/20 rounded-sm shadow-sm bg-surface">
+                <table class="w-full text-left border-collapse min-w-[900px]">
+                    <thead>
+                        <tr class="bg-surface-container-low border-b border-outline-variant/20">
+                            <th class="p-6 font-label text-[11px] uppercase tracking-[0.2em] text-secondary">Feature</th>
+                            <th class="p-6 font-label text-[11px] uppercase tracking-[0.2em] text-secondary text-center">Paperless</th>
+                            <th class="p-6 font-label text-[11px] uppercase tracking-[0.2em] text-secondary text-center">Single Pg</th>
+                            <th class="p-6 font-label text-[11px] uppercase tracking-[0.2em] text-secondary text-center">Multi-Pg</th>
+                            <th class="p-6 font-label text-[11px] uppercase tracking-[0.2em] text-primary font-bold text-center bg-primary-container/10">Full Comm.</th>
+                            <th class="p-6 font-label text-[11px] uppercase tracking-[0.2em] text-secondary text-center">Destination</th>
+                            <th class="p-6 font-label text-[11px] uppercase tracking-[0.2em] text-secondary text-center">Concierge</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-outline-variant/10">
+                        <tr class="hover:bg-surface-container-lowest transition-colors">
+                            <td class="p-6 font-body text-[14px] text-on-surface font-medium">Digital invitation & RSVP</td>
+                            <td class="p-6 text-center"><span class="material-symbols-outlined text-primary text-[20px]" style="font-variation-settings: 'FILL' 1;">check_circle</span></td>
+                            <td class="p-6 text-center"><span class="material-symbols-outlined text-primary text-[20px]" style="font-variation-settings: 'FILL' 1;">check_circle</span></td>
+                            <td class="p-6 text-center"><span class="material-symbols-outlined text-primary text-[20px]" style="font-variation-settings: 'FILL' 1;">check_circle</span></td>
+                            <td class="p-6 text-center bg-primary-container/5"><span class="material-symbols-outlined text-primary text-[20px]" style="font-variation-settings: 'FILL' 1;">check_circle</span></td>
+                            <td class="p-6 text-center"><span class="material-symbols-outlined text-primary text-[20px]" style="font-variation-settings: 'FILL' 1;">check_circle</span></td>
+                            <td class="p-6 text-center"><span class="material-symbols-outlined text-primary text-[20px]" style="font-variation-settings: 'FILL' 1;">check_circle</span></td>
+                        </tr>
+                        <tr class="hover:bg-surface-container-lowest transition-colors">
+                            <td class="p-6 font-body text-[14px] text-on-surface font-medium">Multi-page editorial website</td>
+                            <td class="p-6 text-center text-outline-variant text-[14px]">—</td>
+                            <td class="p-6 text-center text-outline-variant text-[14px]">—</td>
+                            <td class="p-6 text-center"><span class="material-symbols-outlined text-primary text-[20px]" style="font-variation-settings: 'FILL' 1;">check_circle</span></td>
+                            <td class="p-6 text-center bg-primary-container/5"><span class="material-symbols-outlined text-primary text-[20px]" style="font-variation-settings: 'FILL' 1;">check_circle</span></td>
+                            <td class="p-6 text-center"><span class="material-symbols-outlined text-primary text-[20px]" style="font-variation-settings: 'FILL' 1;">check_circle</span></td>
+                            <td class="p-6 text-center"><span class="material-symbols-outlined text-primary text-[20px]" style="font-variation-settings: 'FILL' 1;">check_circle</span></td>
+                        </tr>
+                        <tr class="hover:bg-surface-container-lowest transition-colors">
+                            <td class="p-6 font-body text-[14px] text-on-surface font-medium">RSVP with conditional logic</td>
+                            <td class="p-6 text-center text-outline-variant text-[14px]">—</td>
+                            <td class="p-6 text-center text-outline-variant text-[14px]">—</td>
+                            <td class="p-6 text-center"><span class="material-symbols-outlined text-primary text-[20px]" style="font-variation-settings: 'FILL' 1;">check_circle</span></td>
+                            <td class="p-6 text-center bg-primary-container/5"><span class="material-symbols-outlined text-primary text-[20px]" style="font-variation-settings: 'FILL' 1;">check_circle</span></td>
+                            <td class="p-6 text-center"><span class="material-symbols-outlined text-primary text-[20px]" style="font-variation-settings: 'FILL' 1;">check_circle</span></td>
+                            <td class="p-6 text-center"><span class="material-symbols-outlined text-primary text-[20px]" style="font-variation-settings: 'FILL' 1;">check_circle</span></td>
+                        </tr>
+                        <tr class="hover:bg-surface-container-lowest transition-colors">
+                            <td class="p-6 font-body text-[14px] text-on-surface font-medium">Guest mobile app (no download)</td>
+                            <td class="p-6 text-center text-outline-variant text-[14px]">—</td>
+                            <td class="p-6 text-center text-outline-variant text-[14px]">—</td>
+                            <td class="p-6 text-center text-outline-variant text-[14px]">—</td>
+                            <td class="p-6 text-center bg-primary-container/5"><span class="material-symbols-outlined text-primary text-[20px]" style="font-variation-settings: 'FILL' 1;">check_circle</span></td>
+                            <td class="p-6 text-center"><span class="material-symbols-outlined text-primary text-[20px]" style="font-variation-settings: 'FILL' 1;">check_circle</span></td>
+                            <td class="p-6 text-center"><span class="material-symbols-outlined text-primary text-[20px]" style="font-variation-settings: 'FILL' 1;">check_circle</span></td>
+                        </tr>
+                        <tr class="hover:bg-surface-container-lowest transition-colors">
+                            <td class="p-6 font-body text-[14px] text-on-surface font-medium">Live itinerary & push notifications</td>
+                            <td class="p-6 text-center text-outline-variant text-[14px]">—</td>
+                            <td class="p-6 text-center text-outline-variant text-[14px]">—</td>
+                            <td class="p-6 text-center text-outline-variant text-[14px]">—</td>
+                            <td class="p-6 text-center bg-primary-container/5"><span class="material-symbols-outlined text-primary text-[20px]" style="font-variation-settings: 'FILL' 1;">check_circle</span></td>
+                            <td class="p-6 text-center"><span class="material-symbols-outlined text-primary text-[20px]" style="font-variation-settings: 'FILL' 1;">check_circle</span></td>
+                            <td class="p-6 text-center"><span class="material-symbols-outlined text-primary text-[20px]" style="font-variation-settings: 'FILL' 1;">check_circle</span></td>
+                        </tr>
+                        <tr class="hover:bg-surface-container-lowest transition-colors">
+                            <td class="p-6 font-body text-[14px] text-on-surface font-medium">Guest photo sharing</td>
+                            <td class="p-6 text-center text-outline-variant text-[14px]">—</td>
+                            <td class="p-6 text-center text-outline-variant text-[14px]">—</td>
+                            <td class="p-6 text-center text-outline-variant text-[14px]">—</td>
+                            <td class="p-6 text-center bg-primary-container/5"><span class="material-symbols-outlined text-primary text-[20px]" style="font-variation-settings: 'FILL' 1;">check_circle</span></td>
+                            <td class="p-6 text-center"><span class="material-symbols-outlined text-primary text-[20px]" style="font-variation-settings: 'FILL' 1;">check_circle</span></td>
+                            <td class="p-6 text-center"><span class="material-symbols-outlined text-primary text-[20px]" style="font-variation-settings: 'FILL' 1;">check_circle</span></td>
+                        </tr>
+                        <tr class="hover:bg-surface-container-lowest transition-colors">
+                            <td class="p-6 font-body text-[14px] text-on-surface font-medium">Interactive travel hub</td>
+                            <td class="p-6 text-center text-outline-variant text-[14px]">—</td>
+                            <td class="p-6 text-center text-outline-variant text-[14px]">—</td>
+                            <td class="p-6 text-center text-outline-variant text-[14px]">—</td>
+                            <td class="p-6 text-center bg-primary-container/5 text-outline-variant text-[14px]">—</td>
+                            <td class="p-6 text-center"><span class="material-symbols-outlined text-primary text-[20px]" style="font-variation-settings: 'FILL' 1;">check_circle</span></td>
+                            <td class="p-6 text-center"><span class="material-symbols-outlined text-primary text-[20px]" style="font-variation-settings: 'FILL' 1;">check_circle</span></td>
+                        </tr>
+                        <tr class="hover:bg-surface-container-lowest transition-colors">
+                            <td class="p-6 font-body text-[14px] text-on-surface font-medium">Real-time flight tracking</td>
+                            <td class="p-6 text-center text-outline-variant text-[14px]">—</td>
+                            <td class="p-6 text-center text-outline-variant text-[14px]">—</td>
+                            <td class="p-6 text-center text-outline-variant text-[14px]">—</td>
+                            <td class="p-6 text-center bg-primary-container/5 text-outline-variant text-[14px]">—</td>
+                            <td class="p-6 text-center"><span class="material-symbols-outlined text-primary text-[20px]" style="font-variation-settings: 'FILL' 1;">check_circle</span></td>
+                            <td class="p-6 text-center"><span class="material-symbols-outlined text-primary text-[20px]" style="font-variation-settings: 'FILL' 1;">check_circle</span></td>
+                        </tr>
+                        <tr class="hover:bg-surface-container-lowest transition-colors">
+                            <td class="p-6 font-body text-[14px] text-on-surface font-medium">Multilingual support</td>
+                            <td class="p-6 text-center text-outline-variant text-[14px]">—</td>
+                            <td class="p-6 text-center text-outline-variant text-[14px]">—</td>
+                            <td class="p-6 text-center text-outline-variant text-[14px]">—</td>
+                            <td class="p-6 text-center bg-primary-container/5 text-outline-variant text-[14px]">—</td>
+                            <td class="p-6 text-center"><span class="material-symbols-outlined text-primary text-[20px]" style="font-variation-settings: 'FILL' 1;">check_circle</span></td>
+                            <td class="p-6 text-center"><span class="material-symbols-outlined text-primary text-[20px]" style="font-variation-settings: 'FILL' 1;">check_circle</span></td>
+                        </tr>
+                        <tr class="hover:bg-surface-container-lowest transition-colors">
+                            <td class="p-6 font-body text-[14px] text-on-surface font-medium">Custom feature engineering</td>
+                            <td class="p-6 text-center text-outline-variant text-[14px]">—</td>
+                            <td class="p-6 text-center text-outline-variant text-[14px]">—</td>
+                            <td class="p-6 text-center text-outline-variant text-[14px]">—</td>
+                            <td class="p-6 text-center bg-primary-container/5 text-outline-variant text-[14px]">—</td>
+                            <td class="p-6 text-center text-outline-variant text-[14px]">—</td>
+                            <td class="p-6 text-center"><span class="material-symbols-outlined text-primary text-[20px]" style="font-variation-settings: 'FILL' 1;">check_circle</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="mt-8 text-center">
+                <Button href="/pricing" variant="secondary" class="shadow-sm">View Indicative Pricing</Button>
+            </div>
+        </div>
     </section>
+
+    <!-- Add-On Services -->
+    <section class="w-full bg-surface-container-low py-24 border-b border-outline-variant/10">
+        <div class="max-w-[1440px] mx-auto px-6 md:px-12">
+            <div class="mb-16 animate-on-scroll">
+                <span class="block mb-4 font-label text-[11px] uppercase tracking-[0.28em] text-primary">ADD-ONS & COMPLEMENTARY SERVICES</span>
+                <h2 class="font-headline text-3xl md:text-[40px] text-on-surface mb-6 leading-tight" style="text-wrap: balance;">Beyond the Commission</h2>
+                <p class="font-body text-[15px] leading-[1.7] text-secondary max-w-2xl">
+                    The following services can be added to any commission, or engaged on their own where they stand alone. 
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- A01 -->
+                <div class="bg-surface border border-outline-variant/20 p-8 rounded-sm animate-on-scroll">
+                    <div class="flex items-center gap-4 mb-4">
+                        <span class="font-label text-[12px] font-bold text-primary-fixed-dim uppercase tracking-wider">A01</span>
+                        <h3 class="font-headline text-xl text-on-surface">Editorial Copywriting</h3>
+                    </div>
+                    <p class="font-body text-[14px] leading-[1.65] text-secondary mb-4">
+                        Your love story, written by our in-house editorial team. We interview you and write the full copy for your commission: your narrative, section introductions, and tone of voice.
+                    </p>
+                    <ul class="font-body text-[13px] text-secondary space-y-2">
+                        <li>— One editorial interview (video call)</li>
+                        <li>— Full love story, written and edited</li>
+                        <li>— Section introductions for every page</li>
+                        <li>— One round of revisions</li>
+                    </ul>
+                </div>
+
+                <!-- A02 -->
+                <div class="bg-surface border border-outline-variant/20 p-8 rounded-sm animate-on-scroll" style="transition-delay: 100ms;">
+                    <div class="flex items-center gap-4 mb-4">
+                        <span class="font-label text-[12px] font-bold text-primary-fixed-dim uppercase tracking-wider">A02</span>
+                        <h3 class="font-headline text-xl text-on-surface">Illustrated Digital Maps</h3>
+                    </div>
+                    <p class="font-body text-[14px] leading-[1.65] text-secondary mb-4">
+                        Hand-drawn, interactive digital maps of your venue, town, or estate. Each map is illustrated for your commission specifically, showing the local spots you love.
+                    </p>
+                    <ul class="font-body text-[13px] text-secondary space-y-2">
+                        <li>— Custom illustrated map in Still's editorial style</li>
+                        <li>— Interactive pins with titles, descriptions, and links</li>
+                        <li>— Embedded in your site and/or guest app</li>
+                        <li>— Printable static version included</li>
+                    </ul>
+                </div>
+
+                <!-- A03 -->
+                <div class="bg-surface border border-outline-variant/20 p-8 rounded-sm animate-on-scroll">
+                    <div class="flex items-center gap-4 mb-4">
+                        <span class="font-label text-[12px] font-bold text-primary-fixed-dim uppercase tracking-wider">A03</span>
+                        <h3 class="font-headline text-xl text-on-surface">Additional Language Build</h3>
+                    </div>
+                    <p class="font-body text-[14px] leading-[1.65] text-secondary mb-4">
+                        The first language is always included. Each additional language is fully implemented and tested by our team — adapting automatically to each visitor's browser language.
+                    </p>
+                    <ul class="font-body text-[13px] text-secondary space-y-2">
+                        <li>— Full interface adaptation</li>
+                        <li>— Structured content brief for translation</li>
+                        <li>— Technical implementation & cross-device testing</li>
+                    </ul>
+                </div>
+
+                <!-- A04 -->
+                <div class="bg-surface border border-outline-variant/20 p-8 rounded-sm animate-on-scroll" style="transition-delay: 100ms;">
+                    <div class="flex items-center gap-4 mb-4">
+                        <span class="font-label text-[12px] font-bold text-primary-fixed-dim uppercase tracking-wider">A04</span>
+                        <h3 class="font-headline text-xl text-on-surface">Native App Publishing</h3>
+                    </div>
+                    <p class="font-body text-[14px] leading-[1.65] text-secondary mb-4">
+                        Our guest apps work in the browser. For couples who want their app available directly in the Apple App Store or Google Play Store, this handles the full submission.
+                    </p>
+                    <ul class="font-body text-[13px] text-secondary space-y-2">
+                        <li>— App Store and/or Google Play submission</li>
+                        <li>— App Store listing design and copy</li>
+                        <li>— Compliance review and technical packaging</li>
+                    </ul>
+                </div>
+
+                <!-- A05 -->
+                <div class="bg-surface border border-outline-variant/20 p-8 rounded-sm animate-on-scroll">
+                    <div class="flex items-center gap-4 mb-4">
+                        <span class="font-label text-[12px] font-bold text-primary-fixed-dim uppercase tracking-wider">A05</span>
+                        <h3 class="font-headline text-xl text-on-surface">Dedicated Concierge Service</h3>
+                    </div>
+                    <p class="font-body text-[14px] leading-[1.65] text-secondary mb-4">
+                        A dedicated Still team member on standby throughout your wedding day — pushing real-time updates, responding to guest queries, and managing last-minute changes.
+                    </p>
+                    <ul class="font-body text-[13px] text-secondary space-y-2">
+                        <li>— Dedicated concierge contact from 8am</li>
+                        <li>— Real-time itinerary and notification updates</li>
+                        <li>— Emergency content changes within 15 minutes</li>
+                    </ul>
+                </div>
+
+                <!-- A06 -->
+                <div class="bg-surface border border-outline-variant/20 p-8 rounded-sm animate-on-scroll" style="transition-delay: 100ms;">
+                    <div class="flex items-center gap-4 mb-4">
+                        <span class="font-label text-[12px] font-bold text-primary-fixed-dim uppercase tracking-wider">A06</span>
+                        <h3 class="font-headline text-xl text-on-surface">Post-Wedding Printed Archive</h3>
+                    </div>
+                    <p class="font-body text-[14px] leading-[1.65] text-secondary mb-4">
+                        Your digital experience becomes a permanent physical record: a beautifully printed and bound keepsake of your guestbook messages, photographs, and love story.
+                    </p>
+                    <ul class="font-body text-[13px] text-secondary space-y-2">
+                        <li>— Editorial design and layout by Still</li>
+                        <li>— Guestbook messages, curated and typeset</li>
+                        <li>— Printed on premium stock, cloth bound</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Bottom CTA (Dark Theme) -->
+    <section class="w-full bg-on-surface py-24 md:py-[120px]">
+        <div class="max-w-[700px] mx-auto px-6 md:px-12 text-center animate-on-scroll">
+            <span class="block mb-6 font-label text-[11px] font-semibold uppercase tracking-[0.28em] text-primary-fixed-dim">
+                LIMITED COMMISSIONS — 2026 &amp; 2027
+            </span>
+            <h2 class="font-headline text-4xl md:text-[48px] leading-[1.1] mb-8" style="text-wrap: balance;">
+                <span class="text-surface block">Start with a</span>
+                <span class="text-primary-fixed-dim italic">Conversation.</span>
+            </h2>
+            <p class="font-body text-[18px] leading-[1.7] text-surface-dim mb-12 max-w-xl mx-auto">
+                Most couples begin with a free discovery call. Tell us about your wedding — the date, the location, the guest count — and we'll give you an honest recommendation. No obligation.
+            </p>
+            <div class="flex flex-col items-center gap-6">
+                <Button href="/contact" variant="primary" class="h-[48px] px-[32px] w-full sm:w-auto shadow-xl">
+                    BOOK A DISCOVERY CALL
+                </Button>
+                <div class="flex items-center justify-center gap-4 mt-2">
+                    <a class="font-label text-[12px] text-outline-variant hover:text-surface transition-colors" href="/pricing">See pricing</a>
+                    <span class="text-outline-variant/30">•</span>
+                    <a class="font-label text-[12px] text-outline-variant hover:text-surface transition-colors" href="/process">How we work</a>
+                    <span class="text-outline-variant/30">•</span>
+                    <a class="font-label text-[12px] text-outline-variant hover:text-surface transition-colors" href="/faq">Browse FAQ</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
   </main>
   
   <Footer />

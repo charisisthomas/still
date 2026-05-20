@@ -1,0 +1,285 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Button from '../components/ui/Button.astro';
+import caseStudiesData from '../data/extracted_case_studies.json';
+
+const getHiResImage = (slug, fallback) => {
+  const caseData = caseStudiesData.find(c => c.slug === slug);
+  return (caseData && caseData.images && caseData.images[0]) ? caseData.images[0] : `/assets/${fallback}`;
+};
+---
+
+<Layout title="The Global Commission | Still Studio">
+  
+  <!-- Stripped-down Header (CRO: No exit links) -->
+  <header class="absolute top-0 left-0 right-0 z-50 h-[100px] flex items-center justify-between px-6 md:px-12 bg-gradient-to-b from-on-surface/80 to-transparent">
+    <div class="font-headline text-3xl tracking-widest text-surface font-bold">Still</div>
+    <div class="text-[11px] font-label uppercase tracking-widest text-surface/80 hidden md:block">
+      Bespoke Digital Environments
+    </div>
+  </header>
+
+  <main class="bg-surface">
+    
+    <!-- Cinematic Full-Bleed Hero -->
+    <section class="relative h-[90vh] min-h-[700px] w-full flex items-center justify-center overflow-hidden">
+      <!-- Background Image -->
+      <div class="absolute inset-0 z-0">
+        <img src={getHiResImage('the-amalfi-grandeur', 'Wedding_Atmosphere.png')} alt="Luxury Wedding Ambiance" class="w-full h-full object-cover animate-[scale-in_20s_ease-out_forwards] scale-105" />
+        <div class="absolute inset-0 bg-on-surface/40 mix-blend-multiply"></div>
+        <div class="absolute inset-0 bg-gradient-to-t from-surface via-surface/20 to-transparent opacity-90"></div>
+      </div>
+      
+      <!-- Hero Content -->
+      <div class="relative z-10 max-w-[1000px] mx-auto px-6 text-center pt-20">
+        <div class="animate-on-scroll">
+          <span class="inline-block mb-6 px-4 py-1.5 border border-surface/30 rounded-full font-label text-[10px] uppercase tracking-[0.3em] text-surface backdrop-blur-sm bg-on-surface/20">
+            For Discerning Celebrations
+          </span>
+        </div>
+        <h1 class="text-5xl md:text-[80px] font-headline text-surface leading-[1.05] mb-8 drop-shadow-lg animate-on-scroll" style="transition-delay: 100ms; text-wrap: balance;">
+          The Architecture of <br/><span class="italic text-primary-fixed-dim">Anticipation</span>
+        </h1>
+        <p class="text-lg md:text-[22px] text-surface-dim leading-[1.6] max-w-2xl mx-auto font-body drop-shadow-md mb-12 animate-on-scroll" style="transition-delay: 200ms;">
+          We construct uncompromising, one-of-one digital ecosystems for the world's most spectacular destination weddings. Unrivaled aesthetics. Flawless execution.
+        </p>
+        <div class="animate-on-scroll flex flex-col sm:flex-row items-center justify-center gap-6" style="transition-delay: 300ms;">
+          <a href="#inquire-terminal" class="bg-primary-fixed-dim text-on-primary-fixed py-5 px-12 rounded-[2px] font-label text-[13px] uppercase tracking-[0.2em] font-bold shadow-2xl hover:bg-surface hover:text-primary transition-all hover:-translate-y-1 block w-full sm:w-auto">
+            Initiate Commission
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- By The Numbers (Social Proof) -->
+    <section class="w-full py-16 bg-surface border-b border-outline-variant/10 relative z-20 -mt-10">
+        <div class="max-w-[1200px] mx-auto px-6">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12 divide-x divide-outline-variant/20">
+                <div class="text-center animate-on-scroll">
+                    <div class="font-headline text-4xl md:text-5xl text-primary mb-2">50+</div>
+                    <div class="font-label text-[10px] uppercase tracking-[0.2em] text-secondary font-bold">Global Destinations</div>
+                </div>
+                <div class="text-center animate-on-scroll" style="transition-delay: 100ms;">
+                    <div class="font-headline text-4xl md:text-5xl text-primary mb-2">0</div>
+                    <div class="font-label text-[10px] uppercase tracking-[0.2em] text-secondary font-bold">Templates Used</div>
+                </div>
+                <div class="text-center animate-on-scroll" style="transition-delay: 200ms;">
+                    <div class="font-headline text-4xl md:text-5xl text-primary mb-2">3+</div>
+                    <div class="font-label text-[10px] uppercase tracking-[0.2em] text-secondary font-bold">Languages Integrated</div>
+                </div>
+                <div class="text-center animate-on-scroll" style="transition-delay: 300ms;">
+                    <div class="font-headline text-4xl md:text-5xl text-primary mb-2">100%</div>
+                    <div class="font-label text-[10px] uppercase tracking-[0.2em] text-secondary font-bold">Uptime Delivery</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Deep-Dive Services (Zig-Zag Layout) -->
+    <section class="py-24 md:py-[140px] bg-surface overflow-hidden">
+      <div class="max-w-[1440px] mx-auto px-6 md:px-12 space-y-32 md:space-y-[200px]">
+        
+        <!-- Block 1 -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
+            <div class="order-2 lg:order-1 space-y-8 animate-on-scroll">
+                <div class="flex items-center gap-4">
+                    <span class="w-12 h-px bg-primary"></span>
+                    <span class="font-label text-[11px] uppercase tracking-[0.2em] text-primary font-bold">Phase One</span>
+                </div>
+                <h2 class="text-4xl md:text-5xl font-headline text-on-surface leading-[1.1]" style="text-wrap: balance;">The Paperless <br/><span class="italic text-primary">Portal</span></h2>
+                <p class="font-body text-[16px] text-secondary leading-[1.8] max-w-md">
+                    Replace conventional print logistics with a seamless, highly secure digital invitation suite. We coordinate the precise pantones of your floral arrangements and mirror the typography of your physical stationery to create a digital asset that feels undeniably tangible.
+                </p>
+                <ul class="space-y-4 pt-4">
+                    <li class="flex items-start gap-4">
+                        <span class="material-symbols-outlined text-primary text-[20px] mt-0.5" style="font-variation-settings: 'FILL' 1;">done</span>
+                        <div>
+                            <strong class="block font-headline text-[18px] text-on-surface mb-1">Complex RSVP Logic</strong>
+                            <span class="font-body text-[14px] text-secondary leading-relaxed">Dynamic dietary tracking, plus-one allocations, and conditional event invitations based on guest tiers.</span>
+                        </div>
+                    </li>
+                    <li class="flex items-start gap-4">
+                        <span class="material-symbols-outlined text-primary text-[20px] mt-0.5" style="font-variation-settings: 'FILL' 1;">done</span>
+                        <div>
+                            <strong class="block font-headline text-[18px] text-on-surface mb-1">Absolute Sustainability</strong>
+                            <span class="font-body text-[14px] text-secondary leading-relaxed">Eliminate the massive carbon and waste footprint of global postal distribution without sacrificing luxury.</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="order-1 lg:order-2 h-[500px] lg:h-[700px] w-full rounded-[2px] overflow-hidden shadow-2xl relative animate-on-scroll">
+                <img src={getHiResImage('the-parisian-elope', 'The_Parisian_Elope.png')} class="w-full h-full object-cover" alt="Paperless Portal Interface" />
+                <div class="absolute inset-0 bg-on-surface/10 hover:bg-transparent transition-colors duration-700"></div>
+            </div>
+        </div>
+
+        <!-- Block 2 (Reversed) -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
+            <div class="h-[500px] lg:h-[700px] w-full rounded-[2px] overflow-hidden shadow-2xl relative animate-on-scroll">
+                <img src={getHiResImage('the-cairo-tradition', 'The_Cairo_Tradition.png')} class="w-full h-full object-cover" alt="Mobile Concierge App" />
+                <div class="absolute inset-0 bg-on-surface/10 hover:bg-transparent transition-colors duration-700"></div>
+            </div>
+            <div class="space-y-8 animate-on-scroll">
+                <div class="flex items-center gap-4">
+                    <span class="w-12 h-px bg-primary"></span>
+                    <span class="font-label text-[11px] uppercase tracking-[0.2em] text-primary font-bold">Phase Two</span>
+                </div>
+                <h2 class="text-4xl md:text-5xl font-headline text-on-surface leading-[1.1]" style="text-wrap: balance;">The Mobile <br/><span class="italic text-primary">Concierge</span></h2>
+                <p class="font-body text-[16px] text-secondary leading-[1.8] max-w-md">
+                    Frictionless execution on the ground. A progressive web application that lives directly in your guests' browsers—no app store downloads, no passwords required. It acts as their personalized guide from the moment they land.
+                </p>
+                <ul class="space-y-4 pt-4">
+                    <li class="flex items-start gap-4">
+                        <span class="material-symbols-outlined text-primary text-[20px] mt-0.5" style="font-variation-settings: 'FILL' 1;">done</span>
+                        <div>
+                            <strong class="block font-headline text-[18px] text-on-surface mb-1">Live Flight & Transport Sync</strong>
+                            <span class="font-body text-[14px] text-secondary leading-relaxed">Integrated APIs track international arrivals, displaying custom transfer schedules to VIP guests automatically.</span>
+                        </div>
+                    </li>
+                    <li class="flex items-start gap-4">
+                        <span class="material-symbols-outlined text-primary text-[20px] mt-0.5" style="font-variation-settings: 'FILL' 1;">done</span>
+                        <div>
+                            <strong class="block font-headline text-[18px] text-on-surface mb-1">Interactive Territorial Maps</strong>
+                            <span class="font-body text-[14px] text-secondary leading-relaxed">Hand-drawn, digitised maps of your estate or island, guiding guests precisely to discrete event locations.</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Interactive Case Study Scroll (Past Experience) -->
+    <section class="py-24 md:py-[140px] bg-surface-container-lowest border-y border-outline-variant/10 overflow-hidden">
+        <div class="max-w-[1440px] mx-auto px-6 md:px-12 mb-16 animate-on-scroll">
+            <h2 class="text-4xl md:text-[56px] font-headline text-on-surface mb-6 leading-[1.1]">
+                Masterpieces in <span class="italic text-primary">Motion.</span>
+            </h2>
+            <p class="font-body text-[18px] text-secondary max-w-2xl leading-[1.7]">
+                A curated selection of our most technically demanding commissions. Hover to reveal the engineering feats that powered these flawless events.
+            </p>
+        </div>
+
+        <!-- Horizontal scroll container -->
+        <div class="flex overflow-x-auto pb-16 px-6 md:px-12 gap-8 snap-x snap-mandatory scrollbar-hide w-full">
+            {[
+                { title: "The Amalfi Grandeur", couple: "Julia & Robert", image: getHiResImage('the-amalfi-grandeur', 'The_Amalfi_Grandeur.png'), stat1: "300+ Guests", stat2: "Real-time Itinerary", stat3: "Photo Feed" },
+                { title: "The Santorini Serenity", couple: "Mei & Kenji", image: getHiResImage('the-santorini-serenity', 'The_Santorini_Serenity.png'), stat1: "Estate Mapping", stat2: "Multi-Day Tracking", stat3: "VIP Logistics" },
+                { title: "The Stockholm Summer", couple: "Astrid & Nils", image: getHiResImage('the-stockholm-summer', 'The_Stockholm_Summer.png'), stat1: "Sustainable Tech", stat2: "Bilingual (ENG/SWE)", stat3: "Zero Print" }
+            ].map((item, i) => (
+                <div class="min-w-[85vw] md:min-w-[500px] lg:min-w-[600px] group relative rounded-[2px] overflow-hidden snap-center animate-on-scroll" style={`transition-delay: ${i * 100}ms;`}>
+                    <div class="aspect-[4/3] relative w-full h-full">
+                        <img src={item.image} alt={item.title} class="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" />
+                        <!-- Dark overlay that appears on hover -->
+                        <div class="absolute inset-0 bg-on-surface/80 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-center px-12">
+                            <h3 class="font-headline text-3xl text-surface mb-2 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">{item.title}</h3>
+                            <p class="font-label text-[11px] uppercase tracking-[0.2em] text-primary-fixed-dim mb-8 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500 delay-75">{item.couple}</p>
+                            
+                            <ul class="space-y-4 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500 delay-100">
+                                <li class="flex items-center gap-3">
+                                    <span class="w-1.5 h-1.5 rounded-full bg-primary-fixed-dim"></span>
+                                    <span class="font-body text-[15px] text-surface-dim">{item.stat1}</span>
+                                </li>
+                                <li class="flex items-center gap-3">
+                                    <span class="w-1.5 h-1.5 rounded-full bg-primary-fixed-dim"></span>
+                                    <span class="font-body text-[15px] text-surface-dim">{item.stat2}</span>
+                                </li>
+                                <li class="flex items-center gap-3">
+                                    <span class="w-1.5 h-1.5 rounded-full bg-primary-fixed-dim"></span>
+                                    <span class="font-body text-[15px] text-surface-dim">{item.stat3}</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            ))}
+        </div>
+    </section>
+
+    <!-- Dark Theme Lead Terminal -->
+    <section id="inquire-terminal" class="w-full bg-on-surface py-24 md:py-[140px] text-surface border-t-8 border-primary-fixed-dim">
+      <div class="max-w-[800px] mx-auto px-6">
+        <div class="text-center mb-16 space-y-6 animate-on-scroll">
+          <span class="text-[11px] tracking-[0.3em] text-primary-fixed-dim uppercase block font-label font-bold">APPLICATION FOR COMMISSION</span>
+          <h2 class="text-4xl md:text-[56px] font-headline text-surface leading-[1.1]" style="text-wrap: balance;">Secure Your Horizon</h2>
+          <p class="text-[16px] text-surface-dim max-w-lg mx-auto font-body leading-[1.8]">
+            We operate at strict capacity to ensure absolute dedication to our active commissions. Submit your logistical targets below for immediate review by our engineering team.
+          </p>
+        </div>
+
+        <div class="animate-on-scroll" style="transition-delay: 200ms;">
+          <form class="space-y-8 bg-on-surface-variant/20 p-8 md:p-12 border border-surface/10 rounded-[2px] shadow-2xl backdrop-blur-md">
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <div class="flex flex-col gap-3">
+                <label class="text-[10px] uppercase tracking-[0.2em] font-label font-bold text-surface-dim">Your Name</label>
+                <input type="text" required class="w-full bg-on-surface border-b border-surface/20 p-3 text-[16px] text-surface font-body focus:outline-none focus:border-primary-fixed-dim transition-colors placeholder:text-surface/20" placeholder="e.g. Eleanor Vance" />
+              </div>
+              <div class="flex flex-col gap-3">
+                <label class="text-[10px] uppercase tracking-[0.2em] font-label font-bold text-surface-dim">Email Address</label>
+                <input type="email" required class="w-full bg-on-surface border-b border-surface/20 p-3 text-[16px] text-surface font-body focus:outline-none focus:border-primary-fixed-dim transition-colors placeholder:text-surface/20" placeholder="eleanor@example.com" />
+              </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <div class="flex flex-col gap-3">
+                <label class="text-[10px] uppercase tracking-[0.2em] font-label font-bold text-surface-dim">Target Dates</label>
+                <input type="text" required class="w-full bg-on-surface border-b border-surface/20 p-3 text-[16px] text-surface font-body focus:outline-none focus:border-primary-fixed-dim transition-colors placeholder:text-surface/20" placeholder="e.g. September 12-14, 2026" />
+              </div>
+              <div class="flex flex-col gap-3">
+                <label class="text-[10px] uppercase tracking-[0.2em] font-label font-bold text-surface-dim">Global Location</label>
+                <input type="text" required class="w-full bg-on-surface border-b border-surface/20 p-3 text-[16px] text-surface font-body focus:outline-none focus:border-primary-fixed-dim transition-colors placeholder:text-surface/20" placeholder="e.g. Lake Como, Italy" />
+              </div>
+            </div>
+
+            <div class="flex flex-col gap-3">
+              <label class="text-[10px] uppercase tracking-[0.2em] font-label font-bold text-surface-dim">Estimated Guest Complexity</label>
+              <select class="w-full bg-on-surface border-b border-surface/20 p-3 text-[16px] text-surface font-body focus:outline-none focus:border-primary-fixed-dim transition-colors appearance-none">
+                <option value="" disabled selected>Select scale...</option>
+                <option>Intimate (Under 100 Guests)</option>
+                <option>Standard (100 - 250 Guests)</option>
+                <option>Grand Scale (250+ Guests)</option>
+                <option>Multi-Destination / Enterprise</option>
+              </select>
+            </div>
+
+            <div class="flex flex-col gap-3">
+              <label class="text-[10px] uppercase tracking-[0.2em] font-label font-bold text-surface-dim">Technical Requirements</label>
+              <textarea rows="3" class="w-full bg-on-surface border-b border-surface/20 p-3 text-[16px] text-surface font-body focus:outline-none focus:border-primary-fixed-dim transition-colors placeholder:text-surface/20 resize-none" placeholder="Briefly describe your vision: languages needed, complex transport logistics, specific aesthetic requirements..."></textarea>
+            </div>
+
+            <div class="pt-8">
+              <button type="submit" class="w-full bg-primary-fixed-dim text-on-primary-fixed py-5 uppercase tracking-[0.2em] text-[13px] font-label font-bold rounded-[2px] shadow-[0_0_40px_rgba(224,195,131,0.2)] hover:bg-surface transition-all cursor-pointer">
+                Submit Formal Inquiry
+              </button>
+            </div>
+            
+            <p class="text-[11px] text-center text-surface-dim opacity-70 leading-relaxed font-body mt-6">
+              Confidentiality is our foundation. Your details are processed via encrypted channels and never shared. Review our <a href="/privacy" target="_blank" class="text-primary-fixed-dim hover:underline">Privacy Architecture</a>.
+            </p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Stripped-down Footer (CRO: No exit links) -->
+  <footer class="bg-on-surface py-12 px-6 border-t border-surface/10 text-center">
+    <div class="font-headline text-xl tracking-widest text-surface/50 font-bold mb-4">STILL STUDIO</div>
+    <p class="text-[11px] font-body text-surface/30 max-w-md mx-auto leading-[1.7]">
+      An independent digital innovation initiative of Massion Digital. All rights reserved &copy; 2026.
+    </p>
+  </footer>
+</Layout>
+
+<style>
+  /* Hide scrollbar for the horizontal gallery */
+  .scrollbar-hide::-webkit-scrollbar {
+      display: none;
+  }
+  .scrollbar-hide {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+  }
+</style>

@@ -7,61 +7,92 @@ import Footer from '../components/layout/Footer.astro';
 <Layout title="Privacy Policy | Still">
   <Header />
   
-  <main class="pt-32 min-h-screen flex flex-col">
-    <section class="py-24 bg-surface flex-grow">
-      <div class="max-w-4xl mx-auto px-6">
-        <header class="mb-16">
-          <h1 class="text-5xl md:text-6xl font-display text-primary leading-tight mb-4">Privacy Policy</h1>
-          <p class="text-sm uppercase tracking-widest text-on-surface-variant opacity-70">Last Updated: May 2026</p>
+  <main class="pt-[84px] min-h-screen flex flex-col bg-surface">
+    <section class="py-24 flex-grow">
+      <div class="max-w-[800px] mx-auto px-6 md:px-12">
+        <header class="mb-16 animate-on-scroll">
+          <h1 class="text-5xl md:text-[60px] font-headline text-primary leading-[1.1] mb-6" style="text-wrap: balance;">Privacy Policy</h1>
+          <p class="text-[11px] uppercase tracking-[0.28em] font-label font-semibold text-secondary">Last Updated: May 18, 2026</p>
         </header>
 
-        <div class="prose prose-lg max-w-none text-on-surface-variant space-y-12">
+        <div class="prose prose-lg max-w-none text-secondary space-y-12 font-body leading-[1.7] animate-on-scroll" style="transition-delay: 100ms;">
           
           <section>
-            <h2 class="text-2xl font-display text-primary mb-4 border-b border-outline-variant pb-2">1. Our Commitment to Privacy</h2>
-            <p class="leading-relaxed">
-              At Still Studio, we treat your digital presence with the same reverence as a physical heirloom. We believe that luxury and privacy are inextricably linked. This policy outlines our rigorous standards for collecting, protecting, and managing the data of our clients and their esteemed guests.
+            <h2 class="text-2xl font-headline text-on-surface mb-6 border-b border-outline-variant/20 pb-4">1. Our Commitment to Privacy</h2>
+            <p>
+              At Still Studio, we treat your digital presence with the utmost care and respect. This Privacy Policy details how we collect, handle, safeguard, and utilize information gathered through our public digital channels, primary inquiry frameworks, and custom guest ecosystems. By using this website or submitting an inquiry form, you consent to the data protocols detailed below.
             </p>
           </section>
 
           <section>
-            <h2 class="text-2xl font-display text-primary mb-4 border-b border-outline-variant pb-2">2. Data We Collect</h2>
-            <p class="mb-4">To provide a seamless "Digital Concierge" experience, we collect specific information:</p>
-            <ul class="list-disc pl-6 space-y-2">
-              <li><strong>Client Data:</strong> Personal identifiers and billing details required to fulfill your bespoke commission.</li>
-              <li><strong>Guest Data:</strong> Names, RSVP status, dietary requirements, and itinerary preferences shared via your portal.</li>
-              <li><strong>Technical Data:</strong> Standard server logs and secure cookies used solely to optimize performance and protect against unauthorized access.</li>
+            <h2 class="text-2xl font-headline text-on-surface mb-6 border-b border-outline-variant/20 pb-4">2. Information We Collect</h2>
+            <p class="mb-4">We collect information that allows us to communicate with you and provide highly tailored design services. This includes:</p>
+            <ul class="list-none space-y-4 text-[15px]">
+              <li class="flex items-start gap-3">
+                <span class="text-primary-fixed-dim font-bold mt-1">—</span>
+                <span><strong class="text-on-surface font-semibold">Contact Information:</strong> Full names, email addresses, phone numbers, and communication histories submitted via entry fields.</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="text-primary-fixed-dim font-bold mt-1">—</span>
+                <span><strong class="text-on-surface font-semibold">Project Logistics:</strong> Calendar deadlines, structural targets, geographical venues, guest approximations, and initial design notes.</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="text-primary-fixed-dim font-bold mt-1">—</span>
+                <span><strong class="text-on-surface font-semibold">Technical Metadata:</strong> System IP indicators, browser classifications, localization contexts, and anonymous behavior tracking collected via cookies to optimize website performance.</span>
+              </li>
             </ul>
           </section>
 
           <section>
-            <h2 class="text-2xl font-display text-primary mb-4 border-b border-outline-variant pb-2">3. Purpose and Guest Handling</h2>
-            <p class="leading-relaxed">
-              Data is collected exclusively to facilitate your event. We do not sell, trade, or share guest or client information with third-party marketers. Your guest list is treated with the highest level of confidentiality and remains your property.
+            <h2 class="text-2xl font-headline text-on-surface mb-6 border-b border-outline-variant/20 pb-4">3. Safeguarding Guest Data</h2>
+            <p class="mb-4">
+              We understand that destination weddings require the collection of highly sensitive logistical data. We implement enterprise-grade security protocols to protect all guest-submitted information, including dietary restrictions, flight itineraries, passport details, and RSVP responses. This data is strictly siloed, encrypted in transit and at rest, and never utilized for marketing purposes or shared with unauthorized third parties.
             </p>
           </section>
 
           <section>
-            <h2 class="text-2xl font-display text-primary mb-4 border-b border-outline-variant pb-2">4. GDPR & Your Rights</h2>
-            <p class="mb-4">In accordance with global privacy standards, including GDPR, every individual has the right to:</p>
-            <ul class="list-disc pl-6 space-y-2">
-              <li>Access and receive a copy of their personal data.</li>
-              <li>Request the immediate rectification or erasure of their information.</li>
-              <li>Withdraw consent for data processing at any time.</li>
+            <h2 class="text-2xl font-headline text-on-surface mb-6 border-b border-outline-variant/20 pb-4">4. Purpose of Processing and Data Utilization</h2>
+            <p class="mb-4">The details you provide through our digital portals are utilized explicitly under the following operational scopes:</p>
+            <ul class="list-none space-y-4 text-[15px]">
+              <li class="flex items-start gap-3">
+                <span class="text-primary-fixed-dim font-bold mt-1">—</span>
+                <span>To evaluate availability requests and construct accurate commercial service proposals.</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="text-primary-fixed-dim font-bold mt-1">—</span>
+                <span>To execute direct client communication, manage scheduling, and coordinate discovery phone consultations.</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="text-primary-fixed-dim font-bold mt-1">—</span>
+                <span>To continuously monitor and enhance the stability, security, and rendering speed of our digital platform layouts.</span>
+              </li>
             </ul>
-          </section>
-
-          <section>
-            <h2 class="text-2xl font-display text-primary mb-4 border-b border-outline-variant pb-2">5. Data Retention & Archiving</h2>
-            <p class="leading-relaxed">
-              Active guest portals are maintained throughout your event cycle. Following your celebration, we provide a "Digital Heirloom" archive for your records. All active guest data is purged from our primary servers 12 months post-event unless otherwise directed.
+            <p class="mt-8 p-6 bg-surface-container-low border-l-4 border-primary text-[15px] italic text-on-surface-variant rounded-[2px]">
+              We operate under a strict anti-exploitation architecture: we do not sell, rent, lease, trade, or distribute client or guest datasets to external marketing bureaus, network brokers, or third-party commercial entities.
             </p>
           </section>
 
           <section>
-            <h2 class="text-2xl font-display text-primary mb-4 border-b border-outline-variant pb-2">6. Contact for Inquiries</h2>
-            <p class="leading-relaxed">
-              For all data requests, privacy questions, or to exercise your rights, please contact our studio directly at <strong class="text-primary">privacy@still-studio.com</strong>.
+            <h2 class="text-2xl font-headline text-on-surface mb-6 border-b border-outline-variant/20 pb-4">5. Third-Party Framework Integrations</h2>
+            <p>
+              To guarantee enterprise-grade server logic and database storage, we coordinate information distribution with select technical infrastructure entities. Data is routed strictly to secure cloud infrastructure, automated workflow tools, and encrypted client-relation frameworks. Each integrated system complies with industry-standard confidentiality rules and is blocked from repurposed data profiling.
+            </p>
+          </section>
+
+          <section>
+            <h2 class="text-2xl font-headline text-on-surface mb-6 border-b border-outline-variant/20 pb-4">6. Data Retention and Safe Disposal</h2>
+            <p>
+              Operational information collected during initial exploratory phases is stored within our live communication framework for a period required to fulfill original scheduling goals. For formal commissions, data assets persist through the duration of your contract cycle to facilitate support workflows. Inactive records and client histories are cleared automatically after 12 months, unless formal regulatory or ongoing retention configurations are explicitly requested.
+            </p>
+          </section>
+
+          <section>
+            <h2 class="text-2xl font-headline text-on-surface mb-6 border-b border-outline-variant/20 pb-4">7. Global Rights, Inquiries, and Erasure</h2>
+            <p>
+              Depending on your country of residence, you may possess comprehensive tracking rights regarding your information metrics under frameworks such as GDPR or CCPA. You maintain the absolute right to inspect stored parameter profiles, prompt structural updates, dictate formatting modifications, or invoke absolute data erasure.
+            </p>
+            <p class="mt-4">
+              To check data properties, request structural extraction, or invoke right-to-be-forgotten server purges, please route your formal intent to our secure support bureau: <a href="mailto:privacy@still-studio.com" class="text-primary hover:underline font-semibold">privacy@still-studio.com</a>.
             </p>
           </section>
 
