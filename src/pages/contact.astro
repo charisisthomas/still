@@ -30,52 +30,53 @@ import Button from '../components/ui/Button.astro';
       <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-16">
         
         <!-- Form -->
-        <div class="lg:col-span-8 bg-surface-container-low p-12 rounded-sm border border-outline-variant/10">
-          <form class="flex flex-col gap-8">
+        <div class="lg:col-span-8 bg-surface-container-low p-12 rounded-sm border border-outline-variant/10 transition-all duration-500">
+          <div id="form-status" class="hidden mb-6"></div>
+          <form id="contact-form" class="flex flex-col gap-8">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div class="flex flex-col gap-2">
                 <label class="text-sm font-medium text-secondary">Name</label>
-                <input type="text" placeholder="Your full name" class="bg-transparent border-b border-outline-variant/20 py-2 focus:outline-none focus:border-primary transition-colors text-on-surface placeholder:text-outline-variant/50">
+                <input type="text" name="name" required placeholder="Your full name" class="bg-transparent border-b border-outline-variant/20 py-2 focus:outline-none focus:border-primary transition-colors text-on-surface placeholder:text-outline-variant/50">
               </div>
               <div class="flex flex-col gap-2">
                 <label class="text-sm font-medium text-secondary">Email</label>
-                <input type="email" placeholder="Your email address" class="bg-transparent border-b border-outline-variant/20 py-2 focus:outline-none focus:border-primary transition-colors text-on-surface placeholder:text-outline-variant/50">
+                <input type="email" name="email" required placeholder="Your email address" class="bg-transparent border-b border-outline-variant/20 py-2 focus:outline-none focus:border-primary transition-colors text-on-surface placeholder:text-outline-variant/50">
               </div>
             </div>
             
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div class="flex flex-col gap-2">
                 <label class="text-sm font-medium text-secondary">Wedding Date</label>
-                <input type="date" class="bg-transparent border-b border-outline-variant/20 py-2 focus:outline-none focus:border-primary transition-colors text-on-surface placeholder:text-outline-variant/50">
+                <input type="date" name="weddingDate" required class="bg-transparent border-b border-outline-variant/20 py-2 focus:outline-none focus:border-primary transition-colors text-on-surface placeholder:text-outline-variant/50">
               </div>
               <div class="flex flex-col gap-2">
                 <label class="text-sm font-medium text-secondary">Venue & Location</label>
-                <input type="text" placeholder="City, country — or 'still deciding'" class="bg-transparent border-b border-outline-variant/20 py-2 focus:outline-none focus:border-primary transition-colors text-on-surface placeholder:text-outline-variant/50">
+                <input type="text" name="location" required placeholder="City, country — or 'still deciding'" class="bg-transparent border-b border-outline-variant/20 py-2 focus:outline-none focus:border-primary transition-colors text-on-surface placeholder:text-outline-variant/50">
               </div>
             </div>
 
             <div class="flex flex-col gap-2">
               <label class="text-sm font-medium text-secondary">Approximate Guest Count</label>
-              <input type="text" placeholder="Including international guests" class="bg-transparent border-b border-outline-variant/20 py-2 focus:outline-none focus:border-primary transition-colors text-on-surface placeholder:text-outline-variant/50">
+              <input type="text" name="guests" required placeholder="Including international guests" class="bg-transparent border-b border-outline-variant/20 py-2 focus:outline-none focus:border-primary transition-colors text-on-surface placeholder:text-outline-variant/50">
             </div>
 
             <div class="flex flex-col gap-4">
               <label class="text-sm font-medium text-secondary">What Are You Looking For?</label>
               <div class="flex flex-wrap gap-6">
                 <label class="flex items-center gap-2 cursor-pointer">
-                  <input type="checkbox" class="accent-primary w-4 h-4">
+                  <input type="checkbox" name="services" value="Seamless Website" class="accent-primary w-4 h-4">
                   <span class="text-on-surface">Seamless Website</span>
                 </label>
                 <label class="flex items-center gap-2 cursor-pointer">
-                  <input type="checkbox" class="accent-primary w-4 h-4">
+                  <input type="checkbox" name="services" value="Paperless Portal" class="accent-primary w-4 h-4">
                   <span class="text-on-surface">Paperless Portal</span>
                 </label>
                 <label class="flex items-center gap-2 cursor-pointer">
-                  <input type="checkbox" class="accent-primary w-4 h-4">
+                  <input type="checkbox" name="services" value="Destination Logistics" class="accent-primary w-4 h-4">
                   <span class="text-on-surface">Destination Logistics</span>
                 </label>
                 <label class="flex items-center gap-2 cursor-pointer">
-                  <input type="checkbox" class="accent-primary w-4 h-4">
+                  <input type="checkbox" name="services" value="Not Sure Yet" class="accent-primary w-4 h-4">
                   <span class="text-on-surface">Not Sure Yet</span>
                 </label>
               </div>
@@ -83,14 +84,109 @@ import Button from '../components/ui/Button.astro';
 
             <div class="flex flex-col gap-2">
               <label class="text-sm font-medium text-secondary">Tell Us About Your Wedding</label>
-              <textarea rows="5" placeholder="Where, when, how you're imagining it..." class="bg-transparent border-b border-outline-variant/20 py-2 focus:outline-none focus:border-primary transition-colors text-on-surface placeholder:text-outline-variant/50 resize-none"></textarea>
+              <textarea name="message" rows="5" placeholder="Where, when, how you're imagining it..." class="bg-transparent border-b border-outline-variant/20 py-2 focus:outline-none focus:border-primary transition-colors text-on-surface placeholder:text-outline-variant/50 resize-none"></textarea>
             </div>
 
             <div class="mt-4">
-              <Button variant="primary">Send Inquiry</Button>
+              <Button id="submit-btn" type="submit" variant="primary">Send Inquiry</Button>
             </div>
           </form>
         </div>
+
+        <script>
+          const form = document.getElementById('contact-form');
+          const submitBtn = document.getElementById('submit-btn');
+          const formStatus = document.getElementById('form-status');
+          
+          if (form && submitBtn) {
+            const formFields = form.querySelectorAll('input, textarea, select');
+            
+            form.addEventListener('submit', async (e) => {
+              e.preventDefault();
+              
+              if (formStatus) {
+                formStatus.innerHTML = '';
+                formStatus.className = 'hidden';
+              }
+              
+              const formData = new FormData(form);
+              
+              formFields.forEach(field => field.setAttribute('disabled', 'true'));
+              submitBtn.setAttribute('disabled', 'true');
+              const originalBtnText = submitBtn.innerHTML;
+              submitBtn.innerHTML = `
+                <svg class="animate-spin -ml-1 mr-3 h-5 w-5 text-on-primary inline-block" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                  <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                  <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                </svg>
+                Sending...
+              `;
+              
+              try {
+                const data = {};
+                formData.forEach((value, key) => {
+                  if (key === 'services') {
+                    if (!data[key]) data[key] = [];
+                    data[key].push(value);
+                  } else {
+                    data[key] = value;
+                  }
+                });
+                
+                const response = await fetch('/api/contact', {
+                  method: 'POST',
+                  headers: { 'Content-Type': 'application/json' },
+                  body: JSON.stringify(data)
+                });
+                
+                const result = await response.json();
+                
+                if (response.ok && result.success) {
+                  const container = form.parentElement;
+                  if (container) {
+                    container.style.transition = 'opacity 0.4s ease';
+                    container.style.opacity = '0';
+                    setTimeout(() => {
+                      container.innerHTML = `
+                        <div class="text-center py-16 px-6" style="animation: fadeIn 0.5s ease forwards;">
+                          <div class="w-16 h-16 bg-primary/10 border border-primary/20 rounded-full flex items-center justify-center mx-auto mb-6">
+                            <span class="material-symbols-outlined text-primary text-3xl" style="font-variation-settings: 'FILL' 1;">done</span>
+                          </div>
+                          <h3 class="font-display text-3xl text-primary italic mb-4">Inquiry Received</h3>
+                          <p class="font-body text-[15px] text-secondary leading-relaxed max-w-md mx-auto mb-8">
+                            Thank you, <strong class="text-on-surface font-semibold">${data.name}</strong>. Your details have been transmitted via secure connection to our studio.
+                          </p>
+                          <p class="font-body text-xs text-secondary/60 max-w-sm mx-auto leading-relaxed border-t border-outline-variant/10 pt-6 uppercase tracking-wider">
+                            We review all applications within 48 hours and will respond with a tailored proposal mapping to your aesthetic targets.
+                          </p>
+                        </div>
+                      `;
+                      container.style.opacity = '1';
+                    }, 400);
+                  }
+                } else {
+                  throw new Error(result.error || 'Something went wrong. Please try again.');
+                }
+              } catch (err) {
+                console.error(err);
+                formFields.forEach(field => field.removeAttribute('disabled'));
+                submitBtn.removeAttribute('disabled');
+                submitBtn.innerHTML = originalBtnText;
+                
+                if (formStatus) {
+                  formStatus.innerHTML = `
+                    <div class="flex items-center gap-3 p-4 bg-red-500/10 border border-red-500/20 text-red-800 text-sm rounded-sm">
+                      <span class="material-symbols-outlined text-red-800 text-[20px]" style="font-variation-settings: 'FILL' 1;">error</span>
+                      <span>${err.message || 'There was a connection issue. Please check your network and try again.'}</span>
+                    </div>
+                  `;
+                  formStatus.className = 'block';
+                  formStatus.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                }
+              }
+            });
+          }
+        </script>
 
         <!-- Sidebar -->
         <div class="lg:col-span-4 flex flex-col gap-12">

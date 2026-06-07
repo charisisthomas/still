@@ -1,0 +1,108 @@
+---
+// Cookie Consent Component
+---
+
+<div id="cookie-banner" class="fixed bottom-6 left-6 right-6 md:left-auto md:right-8 md:max-w-md z-50 transform translate-y-12 opacity-0 transition-all duration-500 pointer-events-none">
+  <div class="bg-surface/90 backdrop-blur-md border border-outline-variant/25 p-6 shadow-2xl flex flex-col gap-4 text-left rounded-sm">
+    <p class="font-body text-[12px] text-secondary leading-relaxed">
+      We use cookies to elevate your digital journey. By continuing to explore, scroll, or clicking "Accept", you agree to our information parameters detailed in our <a href="/privacy" class="text-primary underline hover:text-primary-dim transition-colors">Privacy Framework</a>.
+    </p>
+    <div class="flex justify-end gap-5 items-center">
+      <button id="cookie-decline" class="font-label text-[10px] uppercase tracking-widest text-secondary hover:text-primary transition-colors cursor-pointer outline-none">Decline</button>
+      <button id="cookie-accept" class="bg-primary text-on-primary font-label text-[10px] uppercase tracking-widest font-bold px-6 py-2.5 hover:opacity-90 transition-opacity rounded-sm cursor-pointer shadow-sm outline-none">Accept</button>
+    </div>
+  </div>
+</div>
+
+<script is:inline>
+  (function() {
+    const storageKey = 'still_cookie_consent';
+    const banner = document.getElementById('cookie-banner');
+    const acceptBtn = document.getElementById('cookie-accept');
+    const declineBtn = document.getElementById('cookie-decline');
+
+    // Initialize dataLayer
+    window.dataLayer = window.dataLayer || [];
+
+    function grantConsent() {
+      if (localStorage.getItem(storageKey) === 'accepted') return;
+      
+      localStorage.setItem(storageKey, 'accepted');
+      
+      // Push event to GTM dataLayer
+      window.dataLayer.push({ 'event': 'cookie_consent_accepted' });
+      
+      // Animate banner out
+      if (banner) {
+        banner.style.pointerEvents = 'none';
+        banner.classList.remove('translate-y-0', 'opacity-100');
+        banner.classList.add('translate-y-12', 'opacity-0');
+      }
+      
+      removeListeners();
+    }
+
+    function declineConsent() {
+      localStorage.setItem(storageKey, 'declined');
+      
+      if (banner) {
+        banner.style.pointerEvents = 'none';
+        banner.classList.remove('translate-y-0', 'opacity-100');
+        banner.classList.add('translate-y-12', 'opacity-0');
+      }
+      
+      removeListeners();
+    }
+
+    // Silent consent triggers
+    let startScrollY = window.scrollY;
+
+    function handleScroll() {
+      const distance = Math.abs(window.scrollY - startScrollY);
+      if (distance > 60) {
+        grantConsent();
+      }
+    }
+
+    function handleInteraction(e) {
+      // Grant consent if user clicks outside the banner
+      if (banner && !banner.contains(e.target)) {
+        grantConsent();
+      }
+    }
+
+    function addListeners() {
+      window.addEventListener('scroll', handleScroll, { passive: true });
+      document.addEventListener('click', handleInteraction, { passive: true });
+    }
+
+    function removeListeners() {
+      window.removeEventListener('scroll', handleScroll);
+      document.removeEventListener('click', handleInteraction);
+    }
+
+    // Check status
+    const consent = localStorage.getItem(storageKey);
+    if (consent === 'accepted') {
+      window.dataLayer.push({ 'event': 'cookie_consent_accepted' });
+    } else if (consent !== 'declined') {
+      // Show banner with elegant delay
+      setTimeout(() => {
+        if (banner) {
+          banner.classList.remove('translate-y-12', 'opacity-0');
+          banner.classList.add('translate-y-0', 'opacity-100');
+          banner.style.pointerEvents = 'auto';
+        }
+        startScrollY = window.scrollY;
+        addListeners();
+      }, 1500);
+    }
+
+    if (acceptBtn) {
+      acceptBtn.addEventListener('click', grantConsent);
+    }
+    if (declineBtn) {
+      declineBtn.addEventListener('click', declineConsent);
+    }
+  })();
+</script>

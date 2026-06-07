@@ -208,49 +208,50 @@ const getHiResImage = (slug, fallback) => {
           </p>
         </div>
 
-        <div class="animate-on-scroll" style="transition-delay: 200ms;">
-          <form class="space-y-8 bg-on-surface-variant/20 p-8 md:p-12 border border-surface/10 rounded-[2px] shadow-2xl backdrop-blur-md">
+        <div class="animate-on-scroll transition-all duration-500" style="transition-delay: 200ms;">
+          <div id="landing-b-form-status" class="hidden mb-6"></div>
+          <form id="landing-b-form" class="space-y-8 bg-on-surface-variant/20 p-8 md:p-12 border border-surface/10 rounded-[2px] shadow-2xl backdrop-blur-md">
             
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div class="flex flex-col gap-3">
                 <label class="text-[10px] uppercase tracking-[0.2em] font-label font-bold text-surface-dim">Your Name</label>
-                <input type="text" required class="w-full bg-on-surface border-b border-surface/20 p-3 text-[16px] text-surface font-body focus:outline-none focus:border-primary-fixed-dim transition-colors placeholder:text-surface/20" placeholder="e.g. Eleanor Vance" />
+                <input type="text" name="name" required class="w-full bg-on-surface border-b border-surface/20 p-3 text-[16px] text-surface font-body focus:outline-none focus:border-primary-fixed-dim transition-colors placeholder:text-surface/20" placeholder="e.g. Eleanor Vance" />
               </div>
               <div class="flex flex-col gap-3">
                 <label class="text-[10px] uppercase tracking-[0.2em] font-label font-bold text-surface-dim">Email Address</label>
-                <input type="email" required class="w-full bg-on-surface border-b border-surface/20 p-3 text-[16px] text-surface font-body focus:outline-none focus:border-primary-fixed-dim transition-colors placeholder:text-surface/20" placeholder="eleanor@example.com" />
+                <input type="email" name="email" required class="w-full bg-on-surface border-b border-surface/20 p-3 text-[16px] text-surface font-body focus:outline-none focus:border-primary-fixed-dim transition-colors placeholder:text-surface/20" placeholder="eleanor@example.com" />
               </div>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div class="flex flex-col gap-3">
                 <label class="text-[10px] uppercase tracking-[0.2em] font-label font-bold text-surface-dim">Target Dates</label>
-                <input type="text" required class="w-full bg-on-surface border-b border-surface/20 p-3 text-[16px] text-surface font-body focus:outline-none focus:border-primary-fixed-dim transition-colors placeholder:text-surface/20" placeholder="e.g. September 12-14, 2026" />
+                <input type="text" name="date" required class="w-full bg-on-surface border-b border-surface/20 p-3 text-[16px] text-surface font-body focus:outline-none focus:border-primary-fixed-dim transition-colors placeholder:text-surface/20" placeholder="e.g. September 12-14, 2026" />
               </div>
               <div class="flex flex-col gap-3">
                 <label class="text-[10px] uppercase tracking-[0.2em] font-label font-bold text-surface-dim">Global Location</label>
-                <input type="text" required class="w-full bg-on-surface border-b border-surface/20 p-3 text-[16px] text-surface font-body focus:outline-none focus:border-primary-fixed-dim transition-colors placeholder:text-surface/20" placeholder="e.g. Lake Como, Italy" />
+                <input type="text" name="location" required class="w-full bg-on-surface border-b border-surface/20 p-3 text-[16px] text-surface font-body focus:outline-none focus:border-primary-fixed-dim transition-colors placeholder:text-surface/20" placeholder="e.g. Lake Como, Italy" />
               </div>
             </div>
 
             <div class="flex flex-col gap-3">
               <label class="text-[10px] uppercase tracking-[0.2em] font-label font-bold text-surface-dim">Estimated Guest Complexity</label>
-              <select class="w-full bg-on-surface border-b border-surface/20 p-3 text-[16px] text-surface font-body focus:outline-none focus:border-primary-fixed-dim transition-colors appearance-none">
+              <select name="guests" required class="w-full bg-on-surface border-b border-surface/20 p-3 text-[16px] text-surface font-body focus:outline-none focus:border-primary-fixed-dim transition-colors appearance-none cursor-pointer">
                 <option value="" disabled selected>Select scale...</option>
-                <option>Intimate (Under 100 Guests)</option>
-                <option>Standard (100 - 250 Guests)</option>
-                <option>Grand Scale (250+ Guests)</option>
-                <option>Multi-Destination / Enterprise</option>
+                <option value="Intimate (Under 100 Guests)">Intimate (Under 100 Guests)</option>
+                <option value="Standard (100 - 250 Guests)">Standard (100 - 250 Guests)</option>
+                <option value="Grand Scale (250+ Guests)">Grand Scale (250+ Guests)</option>
+                <option value="Multi-Destination / Enterprise">Multi-Destination / Enterprise</option>
               </select>
             </div>
 
             <div class="flex flex-col gap-3">
               <label class="text-[10px] uppercase tracking-[0.2em] font-label font-bold text-surface-dim">Technical Requirements</label>
-              <textarea rows="3" class="w-full bg-on-surface border-b border-surface/20 p-3 text-[16px] text-surface font-body focus:outline-none focus:border-primary-fixed-dim transition-colors placeholder:text-surface/20 resize-none" placeholder="Briefly describe your vision: languages needed, complex transport logistics, specific aesthetic requirements..."></textarea>
+              <textarea name="message" rows="3" class="w-full bg-on-surface border-b border-surface/20 p-3 text-[16px] text-surface font-body focus:outline-none focus:border-primary-fixed-dim transition-colors placeholder:text-surface/20 resize-none" placeholder="Briefly describe your vision: languages needed, complex transport logistics, specific aesthetic requirements..."></textarea>
             </div>
 
             <div class="pt-8">
-              <button type="submit" class="w-full bg-primary-fixed-dim text-on-primary-fixed py-5 uppercase tracking-[0.2em] text-[13px] font-label font-bold rounded-[2px] shadow-[0_0_40px_rgba(224,195,131,0.2)] hover:bg-surface transition-all cursor-pointer">
+              <button id="landing-b-submit-btn" type="submit" class="w-full bg-primary-fixed-dim text-on-primary-fixed py-5 uppercase tracking-[0.2em] text-[13px] font-label font-bold rounded-[2px] shadow-[0_0_40px_rgba(224,195,131,0.2)] hover:bg-surface hover:text-primary transition-all cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2">
                 Submit Formal Inquiry
               </button>
             </div>
@@ -261,6 +262,96 @@ const getHiResImage = (slug, fallback) => {
           </form>
         </div>
       </div>
+
+      <script>
+        const formB = document.getElementById('landing-b-form');
+        const submitBtnB = document.getElementById('landing-b-submit-btn');
+        const formStatusB = document.getElementById('landing-b-form-status');
+        
+        if (formB && submitBtnB) {
+          const fieldsB = formB.querySelectorAll('input, textarea, select');
+          
+          formB.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            
+            if (formStatusB) {
+              formStatusB.innerHTML = '';
+              formStatusB.className = 'hidden';
+            }
+            
+            const formData = new FormData(formB);
+            
+            fieldsB.forEach(field => field.setAttribute('disabled', 'true'));
+            submitBtnB.setAttribute('disabled', 'true');
+            const originalBtnText = submitBtnB.innerHTML;
+            submitBtnB.innerHTML = `
+              <svg class="animate-spin h-5 w-5 text-on-primary-fixed" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+              </svg>
+              SENDING...
+            `;
+            
+            try {
+              const data = {};
+              formData.forEach((value, key) => {
+                data[key] = value;
+              });
+              
+              const response = await fetch('/api/contact', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(data)
+              });
+              
+              const result = await response.json();
+              
+              if (response.ok && result.success) {
+                const container = formB.parentElement;
+                if (container) {
+                  container.style.transition = 'opacity 0.4s ease';
+                  container.style.opacity = '0';
+                  setTimeout(() => {
+                    container.innerHTML = `
+                      <div class="text-center py-16 px-6 bg-on-surface-variant/10 border border-surface/10 rounded-[2px] shadow-2xl backdrop-blur-md" style="animation: fadeIn 0.5s ease forwards;">
+                        <div class="w-16 h-16 bg-primary-fixed-dim/15 border border-primary-fixed-dim/20 rounded-full flex items-center justify-center mx-auto mb-6">
+                          <span class="material-symbols-outlined text-primary-fixed-dim text-3xl" style="font-variation-settings: 'FILL' 1;">done</span>
+                        </div>
+                        <h3 class="font-display text-3xl text-primary-fixed-dim italic mb-4">Inquiry Received</h3>
+                        <p class="font-body text-[15px] text-surface-dim leading-relaxed max-w-md mx-auto mb-8">
+                          Thank you, <strong class="text-surface font-semibold">${data.name}</strong>. Your details have been transmitted via encrypted connection to our engineering team.
+                        </p>
+                        <p class="font-body text-xs text-surface-dim/40 max-w-sm mx-auto leading-relaxed border-t border-surface/10 pt-6 uppercase tracking-wider">
+                          We review all active applications within 48 hours to preserve execution clarity.
+                        </p>
+                      </div>
+                    `;
+                    container.style.opacity = '1';
+                  }, 400);
+                }
+              } else {
+                throw new Error(result.error || 'Something went wrong. Please try again.');
+              }
+            } catch (err) {
+              console.error(err);
+              fieldsB.forEach(field => field.removeAttribute('disabled'));
+              submitBtnB.removeAttribute('disabled');
+              submitBtnB.innerHTML = originalBtnText;
+              
+              if (formStatusB) {
+                formStatusB.innerHTML = `
+                  <div class="flex items-center gap-3 p-4 bg-red-500/10 border border-red-500/20 text-red-400 text-sm rounded-sm">
+                    <span class="material-symbols-outlined text-red-400 text-[20px]" style="font-variation-settings: 'FILL' 1;">error</span>
+                    <span>${err.message || 'There was a connection issue. Please check your network and try again.'}</span>
+                  </div>
+                `;
+                formStatusB.className = 'block';
+                formStatusB.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+              }
+            }
+          });
+        }
+      </script>
     </section>
   </main>
 
